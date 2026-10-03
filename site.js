@@ -107,9 +107,32 @@
       document.documentElement.lang = lang === 'en' ? 'en' : 'zh-Hant-HK';
     }
     draw();
-    // Jump to #section links. Images and fonts load after the first draw and
-    // push content down, so jump again once they finish (unless the visitor
-    // has already started scrolling).
+    // Jump to #section links, stopping right below the sticky header so the
+    // section starts at the top of the screen. Images and fonts load after the
+    // first draw and push content down, so jump again once they finish (unless
+    // the visitor has already started scrolling).
+    function headerHeight() {
+      var h = root.querySelector('header');
+      return h ? h.getBoundingClientRect().height : 0;
+    }
+    function scrollToId(id, smooth) {
+      var target = id && document.getElementById(id);
+      if (!target) return false;
+      var y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight();
+      window.scrollTo({ top: Math.max(0, Math.round(y)), behavior: smooth ? 'smooth' : 'auto' });
+      return true;
+    }
+    root.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href^="#"]');
+      if (!a) return;
+      var id = a.getAttribute('href').slice(1);
+      if (scrollToId(id, true)) {
+        e.preventDefault();
+        history.pushState(null, '', '#' + id);
+      }
+    });
+    window.addEventListener('hashchange', function () { scrollToId(location.hash.slice(1), false); });
+    window.addEventListener('popstate', function () { if (location.hash) scrollToId(location.hash.slice(1), false); });
     if (location.hash) {
       if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
       var userMoved = false;
@@ -117,11 +140,10 @@
         window.addEventListener(ev, function () { userMoved = true; }, { once: true, passive: true });
       });
       var goHash = function () {
-        if (userMoved) return;
-        var target = document.getElementById(location.hash.slice(1));
-        if (target) target.scrollIntoView({ block: 'start' });
+        if (!userMoved) scrollToId(location.hash.slice(1), false);
       };
       goHash();
+      requestAnimationFrame(goHash);
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(goHash);
       if (document.readyState === 'complete') setTimeout(goHash, 0);
       else window.addEventListener('load', function () { goHash(); setTimeout(goHash, 300); });

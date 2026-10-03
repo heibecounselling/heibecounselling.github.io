@@ -4,14 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr. Heibe｜輔導空間</title>
-<meta name="description" content="Dr. Heibe｜輔導空間：寵物哀傷輔導及獸醫業界心理支援。Pet loss counselling and wellbeing support for veterinary professionals in Hong Kong.">
+<meta name="description" content="Dr. Heibe｜輔導空間：寵物哀傷輔導及獸醫業界心理支援。Pet bereavement counselling and wellbeing support for veterinary professionals in Hong Kong.">
 <link rel="icon" href="images/logo.png">
 <style>
 /* 手機版：避免固定寬度的元素超出螢幕 Mobile: keep fixed-width blocks inside the screen */
-#page-root section { scroll-margin-top: 90px; }
-@media (max-width: 760px) {
+
+/* 平板及手機：避免固定寬度的元素超出螢幕 Tablets & phones: keep fixed-width blocks inside the screen */
+@media (max-width: 1100px) {
   #page-root h1, #page-root h2, #page-root section div, #page-root section img, #page-root footer a, #page-root footer img { max-width: 100% !important; }
+  #page-root section [style*="grid"] > * { min-width: 0; }
   #page-root section img[style*="aspect-ratio: 4 / 5"] { height: auto !important; width: 100% !important; }
+}
+@media (max-width: 420px) {
+  #page-root section [style*="grid-template-columns"] { grid-template-columns: minmax(0, 1fr) !important; }
 }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,9 +59,9 @@ a{color:#3E5040}a:hover{color:#26332A}
 <section id="top" style="position: relative; overflow: hidden; padding: 96px 24px 88px;">
 <img src="images/hero-cat.jpg" alt="" aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 42%; opacity: 0.3; mix-blend-mode: multiply; display: block; pointer-events: none;">
 <div style="position: relative; max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center;">
-<div style="display: flex; flex-direction: column; gap: 24px;">
+<div style="display: flex; flex-direction: column; gap: 24px; container-type: inline-size; min-width: 0;">
 <span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.hero.eyebrow}}</span>
-<h1 style="margin: 0; font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.35; color: #2F3D31; max-width: 586px; width: 637px">{{t.hero.l1}}<br>{{t.hero.l2}}</h1>
+<h1 style="{{heroH1Style}}"><span style="{{heroLineStyle}}">{{t.hero.l1}}</span><br><span style="{{heroLineStyle}}">{{t.hero.l2}}</span></h1>
 <p style="margin: 0; font-size: 18px; color: #4A443D; max-width: 34em;">{{t.hero.body}}</p>
 <div style="display: flex; gap: 12px; flex-wrap: wrap;">
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 28px; border-radius: 999px; font-weight: 500;">{{t.hero.cta}}</a>
@@ -91,20 +96,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: start;">
 <div style="display: flex; flex-direction: column; gap: 20px; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-bottom: 0px; width: 329px">
 <img src="images/profile.jpg" alt="Dr. Heibe 個人照" style="width: 382px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 24px; display: block; background: #DCD2BF; height: 429px">
-<div style="width: 382px; display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
-<span style="font-size: 14px; letter-spacing: 0.12em; color: #8A4F35; font-weight: 500;">{{momentsLabel}}</span>
-<span style="font-size: 12px; color: #5E574F;">{{momentsHint}}</span>
-</div>
-<div style="display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; -webkit-overflow-scrolling: touch;">
-<sc-for list="{{moments}}" as="m" hint-placeholder-count="2">
-<figure style="margin: 0; flex: 0 0 64%; scroll-snap-align: start; background: #F7F2E9; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column;">
-<img src="{{m.src}}" alt="{{m.caption}}" loading="lazy" style="{{m.imgStyle}}">
-<figcaption style="padding: 10px 12px 12px; font-size: 13px; line-height: 1.5; color: #2E2A26;">{{m.caption}}</figcaption>
-</figure>
-</sc-for>
-</div>
-</div>
+<a href="vets.html#moments" style="margin-top: 40px; font-family: 'Noto Serif TC', serif; font-size: 21px; font-weight: 700; line-height: 1.5;">{{t.about.momentsLink}}</a>
 </div><div style="display: flex; flex-direction: column; gap: 20px; width: 574px; padding-right: 20px">
 <span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.about.eyebrow}}</span>
 <h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31; width: 587px">{{t.about.title}}</h2>
@@ -151,6 +143,10 @@ a{color:#3E5040}a:hover{color:#26332A}
 <span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.owners.eyebrow}}</span>
 <h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.owners.title}}</h2>
 <p style="margin: 0; color: #4A443D;">{{t.owners.intro}}</p>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<a href="#process" style="font-weight: 500; font-size: 16px;">{{t.owners.processLink}}</a>
+<a href="#resources" style="font-weight: 500; font-size: 16px;">{{t.owners.readLink}}</a>
+</div>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
 <sc-for list="{{t.owners.items}}" as="s" hint-placeholder-count="5">
@@ -328,8 +324,8 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </template>
 <noscript><p style="padding:24px;font-family:sans-serif">請開啟瀏覽器的 JavaScript 以瀏覽本網站。Please enable JavaScript to view this website.</p></noscript>
-<script src="content.js"></script>
-<script src="site.js"></script>
+<script src="content.js?v=7"></script>
+<script src="site.js?v=7"></script>
 <script>
 class Component extends DCLogic {
   constructor(props) {
@@ -351,9 +347,12 @@ class Component extends DCLogic {
     const mailHref = 'mailto:dr.heibelau.work@gmail.com?subject=' + encodeURIComponent(lang === 'zh' ? '輔導服務查詢' : 'Counselling enquiry');
     return {
       t, faqs, mailHref,
-      moments: window.CONTENT.vets[lang].about.moments,
-      momentsLabel: window.CONTENT.vets[lang].about.momentsLabel,
-      momentsHint: window.CONTENT.vets[lang].about.momentsHint,
+      // 中文標題每行保持一行：字體大小按欄寬自動縮放 Chinese heading lines never wrap
+      heroH1Style: "margin: 0; font-family: 'Noto Serif TC', serif; font-weight: 700; line-height: 1.35; color: #2F3D31; " +
+        (lang === 'zh'
+          ? 'font-size: clamp(22px, 7.2vw, 52px); font-size: min(52px, calc(100cqi / 11.3));'
+          : 'font-size: clamp(28px, 3.3vw, 40px); text-wrap: balance;'),
+      heroLineStyle: lang === 'zh' ? 'white-space: nowrap;' : '',
       gmailHref: 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent('dr.heibelau.work@gmail.com') + '&su=' + encodeURIComponent(lang === 'zh' ? '輔導服務查詢' : 'Counselling enquiry'),
       zhStyle: lang === 'zh' ? on : off,
       enStyle: lang === 'en' ? on : off,

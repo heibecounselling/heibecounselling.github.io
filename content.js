@@ -35,17 +35,20 @@ window.CONTENT.home = {
           approachTitle: '我的取向',
           approach: [ { v: '尊重每個人的選擇，珍視人和寵物之間獨特的關係' }, { v: '不批判，以你的需要為先' }, { v: '保密原則，遵守 HKPCA 的守則規範' } ],
           qualTitle: '資歷',
-          qual: [ { v: '香港獸醫管理局註冊獸醫（DVM）' }, { v: '香港大學社會科學輔導學碩士（MSSc Counselling）' } ],
+          qual: [ { v: '香港獸醫管理局註冊獸醫（DVM）' }, { v: '香港大學社會科學輔導學碩士（MSocSc Counselling）' } ],
           methodTitle: '輔導手法',
           method: [ { v: '人本取向（Person-centered Approach）' }, { v: '敘事治療（Narrative Therapy）' }, { v: '接納與承諾治療（ACT）' }, { v: '情緒取向治療（Emotionally Focused Therapy, EFT）' } ],
           expTitle: '輔導經驗',
           exp: [ { v: '超過 250 小時臨床及督導時數' }, { v: '寵物哀傷支持小組' }, { v: 'MARS Veterinary Health 實習輔導員' }, { v: '機構個別輔導' }, { v: '一對一情緒輔導服務' } ],
-          more: '查看完整背景及經歷 →'
+          more: '查看完整背景及經歷 →',
+          momentsLink: '查看活動花絮 →'
         },
         owners: {
           eyebrow: '給寵物主人',
           title: '陪你走過與寵物告別的路',
           intro: '失去寵物，或者照顧一隻長期患病的寵物，都可能令人很累、很沮喪，甚至有時會覺得孤單。身邊的人未必理解你，但這份感受是真實的。',
+          processLink: '了解服務 →',
+          readLink: '預約前，也許你想閱讀… →',
           items: [
             { n: 1, title: '寵物哀傷輔導', sub: 'Pet Bereavement Counselling', body: '寵物離世前後的哀傷、內疚、思念，以及適應生活的轉變。' },
             { n: 2, title: '照顧者情緒支援', sub: 'Caregiver Emotional Support', body: '照顧長期患病或年老寵物時的壓力、疲累和情緒起伏。' },
@@ -112,98 +115,101 @@ window.CONTENT.home = {
         foot: { home: '首頁', vets: '獸醫同業', blog: '隨筆手記' }
       },
       en: {
-        nav: { about: 'About', owners: 'Pet owners', vets: 'Vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Priority registration' },
+        nav: { about: 'About', owners: 'Pet owners', vets: 'Vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Register interest' },
         hero: {
-          eyebrow: 'PET LOSS COUNSELLING · SUPPORT FOR VET PROFESSIONALS',
-          l1: 'Caring for animals as a vet,', l2: 'understanding people as a counsellor',
-          body: 'Whether you are grieving a pet, exhausted from caring for a sick one, or worn down by veterinary work, this is a space to talk at your own pace, without needing to be strong.',
-          cta: 'Priority registration', cta2: 'Meet Dr. Heibe',
-          launch: 'Counselling services are expected to begin in November — register early for priority.',
-          p1: 'I\'m a pet owner', p1d: 'Losing a pet, caring for a senior or sick pet, facing difficult decisions',
+          eyebrow: 'PET BEREAVEMENT COUNSELLING · WELLBEING SUPPORT FOR VET TEAMS',
+          l1: 'Caring for animals as\u00a0a\u00a0vet,', l2: 'understanding people as\u00a0a\u00a0counsellor',
+          body: 'Whether you\'re grieving a pet, worn out from caring for one who is ill, or running on empty from veterinary work, this is a place to talk at your own pace. You don\'t have to be strong here.',
+          cta: 'Register interest', cta2: 'Meet Dr. Heibe',
+          launch: 'Sessions are expected to open in November. Register your interest now for priority booking.',
+          p1: 'I\'m a pet owner', p1d: 'Losing a pet, caring for an older or ill pet, or facing a hard decision',
           p2: 'I work in veterinary care', p2d: 'Support for vets, vet nurses and clinic teams'
         },
         about: {
           eyebrow: 'ABOUT DR. HEIBE',
           title: 'About Dr. Heibe',
           p1: 'I\'m Dr. Heibe — a registered veterinarian in Hong Kong (Lau Wing Chi, DVM) and a professionally trained counsellor.',
-          p2: 'Over my years as a vet, I have seen many owners carry heavy emotional strain when their pets fall ill. In the emergency room I often walk alongside families through sudden goodbyes and difficult decisions, and I see colleagues quietly carrying their emotions under pressure. These experiences made me want to better support people who love their animals just as much — so I trained in counselling.',
-          p3: 'I understand what it is like when a pet is ill and when owners face a loss, and I am professionally trained in counselling. Through my work, I hope to offer owners and caregivers a space to slowly make sense of their feelings and move through grief at their own pace.',
+          p2: 'Over my years as a vet, I\'ve seen how heavily a pet\'s illness weighs on the people who love them. In the emergency room I\'ve stood beside families through sudden goodbyes and impossible decisions, and watched colleagues quietly absorb the strain of the job. Those moments are why I trained as a counsellor: to better support the people who love animals as much as I do.',
+          p3: 'I know what it\'s like when a pet is unwell or nearing the end, and I bring professional counselling training to that understanding. I hope to offer owners and carers a space to make sense of what they feel, and to move through grief in their own time.',
           approachTitle: 'My approach',
-          approach: [ { v: 'Respecting every person\'s choices and the unique bond between people and their pets' }, { v: 'Non-judgemental, putting your needs first' }, { v: 'Confidentiality, following the HKPCA code of ethics' } ],
+          approach: [ { v: 'Respecting your choices and the unique bond you share with your pet' }, { v: 'Non-judgemental, with your needs at the centre' }, { v: 'Confidential, in line with the HKPCA Code of Ethics' } ],
           qualTitle: 'Qualifications',
-          qual: [ { v: 'Registered Veterinarian, Veterinary Surgeons Board of Hong Kong (DVM)' }, { v: 'Master of Social Sciences in Counselling (MSSc Counselling), HKU' } ],
+          qual: [ { v: 'Registered Veterinarian, Veterinary Surgeons Board of Hong Kong (DVM)' }, { v: 'Master of Social Sciences (Counselling), HKU (MSocSc)' } ],
           methodTitle: 'Counselling approaches',
           method: [ { v: 'Person-centred Approach' }, { v: 'Narrative Therapy' }, { v: 'Acceptance and Commitment Therapy (ACT)' }, { v: 'Emotionally Focused Therapy (EFT)' } ],
           expTitle: 'Counselling experience',
-          exp: [ { v: '250+ hours of clinical and supervised practice' }, { v: 'Pet bereavement support groups' }, { v: 'Trainee counsellor, MARS Veterinary Health' }, { v: 'Individual counselling in organisational settings' }, { v: 'One-to-one emotional counselling' } ],
-          more: 'Full background and experience →'
+          exp: [ { v: '250+ hours of supervised clinical practice' }, { v: 'Pet bereavement support groups' }, { v: 'Trainee counsellor at MARS Veterinary Health' }, { v: 'Individual counselling within organisations' }, { v: 'One-to-one emotional counselling' } ],
+          more: 'Full background and experience →',
+          momentsLink: 'See event highlights →'
         },
         owners: {
           eyebrow: 'FOR PET OWNERS',
-          title: 'Walking with you through saying goodbye to your pet',
-          intro: 'Losing a pet, or caring for one with a long-term illness, can leave you exhausted, discouraged, and sometimes deeply alone. The people around you may not fully understand — but what you\'re feeling is real.',
+          title: 'Walking with you as you say goodbye',
+          intro: 'Losing a pet, or caring for one through a long illness, can leave you drained, disheartened and lonelier than you expected. Others may not quite understand, but what you feel is real.',
+          processLink: 'How it works →',
+          readLink: 'Some reading before you book →',
           items: [
-            { n: 1, title: 'Pet Bereavement Counselling', sub: '寵物哀傷輔導', body: 'Grief, guilt and longing before and after a pet\'s death, and adjusting to life\'s changes.' },
-            { n: 2, title: 'Caregiver Emotional Support', sub: '照顧者情緒支援', body: 'The stress, fatigue and emotional ups and downs of caring for a chronically ill or senior pet.' },
-            { n: 3, title: 'Support Group and Activities', sub: '同路人小組和心理健康活動', body: 'Meet others on the same path, keep each other company, and heal together through activities.' },
-            { n: 4, title: 'Adult Mental Health', sub: '成人心理健康輔導', body: 'A safe, confidential and supportive space to explore emotional distress, stress, relationships and life adjustment — including anxiety, low mood, intense emotions, insomnia, and work or study stress.' },
-            { n: 5, title: 'Psychoeducation', sub: '心理教育', body: 'Understand your emotions, the process of loss and grief when a pet is ill or dies, and ways to care for yourself.' }
+            { n: 1, title: 'Pet bereavement counselling', sub: '寵物哀傷輔導', body: 'For the grief, guilt and longing that come before and after a pet dies, and for finding your way in life afterwards.' },
+            { n: 2, title: 'Support for caregivers', sub: '照顧者情緒支援', body: 'For the stress, exhaustion and emotional ups and downs of looking after a chronically ill or ageing pet.' },
+            { n: 3, title: 'Support groups and wellbeing activities', sub: '同路人小組和心理健康活動', body: 'Meet others who understand, keep each other company, and find healing together.' },
+            { n: 4, title: 'Adult mental health counselling', sub: '成人心理健康輔導', body: 'A safe, confidential space to work through emotional difficulties, stress, relationships and life changes, including anxiety, low mood, overwhelming emotions, sleep problems, and pressure at work or school.' },
+            { n: 5, title: 'Psychoeducation', sub: '心理教育', body: 'Learn about your emotions, about grief when a pet is ill or dies, and about ways to look after yourself.' }
           ],
-          blogTitle: 'From the blog: for pet owners', blogMore: 'See more →', blogPosts: [ { title: "The carers of the small hours", excerpt: "Your tiredness is a mark that love leaves behind, not its opposite." }, { title: "On the words “letting go”", excerpt: "Many owners don't let go — they keep holding on, in a different way." } ],
-          note: 'This is a counselling service — not veterinary diagnosis, medical treatment, or psychiatric diagnosis or treatment. Please discuss medical questions with your pet\'s attending vet.'
+          blogTitle: 'From the blog: for pet owners', blogMore: 'Read more →', blogPosts: [ { title: "The carers of the small hours", excerpt: "Your tiredness is a mark that love leaves behind, not its opposite." }, { title: "On the words “letting go”", excerpt: "Many owners don't let go — they keep holding on, in a different way." } ],
+          note: 'This is a counselling service. It does not provide veterinary or medical diagnosis or treatment, or psychiatric diagnosis or treatment. Please discuss medical questions with your pet\'s attending vet.'
         },
         vets: {
           eyebrow: 'FOR VETERINARY PROFESSIONALS',
-          title: 'Vets, you deserve to be cared for too',
-          intro: 'Workplace stress, intense communication and emotional load shouldn\'t be carried alone.',
+          title: 'Vets, you deserve care too',
+          intro: 'Workplace stress, difficult conversations and emotional strain aren\'t yours to carry alone.',
           items: [
-            { tag: 'ORGANISATIONS', title: 'Workshops & talks', body: 'Understanding and preventing burnout, effective clinical communication, managing workplace stress, self-awareness of mental wellbeing.' },
-            { tag: 'INDIVIDUAL', title: '1:1 counselling for vets & nurses', body: 'Emotional support for burnout, stress or personal issues.' },
-            { tag: 'REFERRAL', title: 'Referral partnership', body: 'A referral pathway so clients facing euthanasia or loss can receive support.' },
-            { tag: 'TEAMS', title: 'Team wellbeing activities', body: 'Mindfulness and group support, arranged around your team.' }
+            { tag: 'ORGANISATIONS', title: 'Workshops & talks', body: 'Burnout awareness and prevention, clinical communication, managing workplace stress, and checking in with your own wellbeing.' },
+            { tag: 'INDIVIDUAL', title: '1:1 counselling for vets & nurses', body: 'Confidential support for burnout, stress or personal concerns.' },
+            { tag: 'REFERRAL', title: 'Referral partnership', body: 'A clear pathway for referring clients facing euthanasia or loss for emotional support.' },
+            { tag: 'TEAMS', title: 'Team wellbeing activities', body: 'Mindfulness and group support sessions, built around your team.' }
           ],
-          eap: 'All packages can be tailored to your clinic\'s size and needs — get in touch for a quote.',
-          cta: 'See partnership options →'
+          eap: 'Every package can be tailored to your clinic\'s size and needs. Get in touch for a quote.',
+          cta: 'Explore partnership options →'
         },
         process: {
           eyebrow: 'HOW IT WORKS',
           title: 'Three steps, at your own pace',
           steps: [
-            { n: '01', title: 'Book', body: 'Choose a suitable time through online booking.' },
-            { n: '02', title: 'First conversation', body: 'We explore your needs and goals, and decide together what suits you best.' },
-            { n: '03', title: 'Ongoing support', body: 'Sessions continue at your pace, and everything stays confidential.' }
+            { n: '01', title: 'Book', body: 'Choose a time that suits you online.' },
+            { n: '02', title: 'First conversation', body: 'We talk through what you need and agree on the approach that suits you best.' },
+            { n: '03', title: 'Ongoing support', body: 'We continue at your pace, in complete confidence.' }
           ],
           format: [ { v: 'In-person or online video' }, { v: '50-minute sessions' }, { v: 'Cantonese / Mandarin / English' } ]
         },
         res: {
           eyebrow: 'ARTICLES & STORIES', title: 'A little reading before you book', more: 'Go to Blog →',
           posts: [
-            { tag: 'Blog', title: 'Some thoughts, some stories', body: 'Notes from my path between veterinary medicine and counselling.', go: 'Read', href: 'blog.html', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
-            { tag: 'Share your story', title: 'Tell me about you and your pet', body: 'I read every story personally — you choose whether it\'s shared.', go: 'Share', href: 'blog.html', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
+            { tag: 'Blog', title: 'Thoughts and stories', body: 'Notes from a path that runs between veterinary medicine and counselling.', go: 'Read', href: 'blog.html', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
+            { tag: 'Share your story', title: 'Tell me about you and your pet', body: 'I read every story myself, and you decide whether it\'s shared.', go: 'Share', href: 'blog.html', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
             { tag: 'Vet wellbeing', title: 'Articles for vets and vet nurses', body: 'Burnout, difficult conversations, mental health awareness.', go: 'Read', href: 'vets.html', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
           ]
         },
         faq: { title: 'Frequently asked questions' },
         faqs: [
-          { q: 'How does booking work?', a: '① Fill in the form — use the “Priority registration” button on this page; it only takes a few minutes.\n② Email contact and free initial screening — I\'ll email you to book a free, brief initial screening (about 15 minutes) to understand your needs and current situation. If the screening shows that your needs are beyond the scope of what I can offer, I\'ll do my best to help refer you to other suitable services.\n③ Confirm the service — we confirm the arrangements and you sign the service consent form.\n④ Receive your service confirmation after payment.\n⑤ Book your first session — 50 minutes, at your own pace, with everything kept confidential.' },
-          { q: 'How do I know if I need counselling?', a: 'Counselling isn\'t only for when you can\'t cope any more. It may help to talk to someone if you notice:\n· Ongoing sadness, guilt, anger or numbness\n· Changes in your sleep, appetite, work or relationships\n· Going over the same thing again and again — a decision before your pet died, or a case at work\n· Losing your passion for work, or being unable to switch off after a shift\n· Feeling that the people around you don\'t quite understand\nIf you\'re not sure, you\'re welcome to fill in the registration form first; we can have an initial chat and decide together whether it\'s a good fit.' },
-          { q: 'How is counselling different from seeing a vet?', a: 'Counselling focuses on your emotions and thoughts — no diagnosis or treatment advice. I help you sort through feelings and concerns so you can talk with your vet with more clarity.' },
+          { q: 'How does booking work?', a: '① Fill in the form: use the “Register interest” button on this page. It only takes a few minutes.\n② Email contact and free initial screening: I\'ll email you to arrange a free, brief screening call (about 15 minutes) to understand your needs and current situation. If it turns out your needs are beyond what I can offer, I\'ll do my best to help you find other suitable services.\n③ Confirm the service: we agree on the arrangements and you sign the service consent form.\n④ Pay and receive your service confirmation.\n⑤ Book your first session: 50 minutes, at your own pace, in complete confidence.' },
+          { q: 'How do I know if I need counselling?', a: 'Counselling isn\'t only for when you can no longer cope. It may be worth talking to someone if you notice:\n· Ongoing sadness, guilt, anger or numbness\n· Changes in your sleep, appetite, work or relationships\n· Going over the same thing again and again, such as a decision before your pet died or a case at work\n· Losing your passion for work, or being unable to switch off after a shift\n· Feeling that the people around you don\'t quite understand\nNot sure? You\'re welcome to fill in the registration form first. We can have a short chat and decide together whether counselling is right for you.' },
+          { q: 'How is counselling different from seeing a vet?', a: 'Counselling focuses on your feelings and thoughts; it doesn\'t involve diagnosis or treatment advice. I can help you sort through what you\'re feeling, so you can talk with your vet more clearly.' },
           { q: 'My pet passed away a long time ago. Is counselling still for me?', a: 'Grief has no timetable. Whether it has been days or years, if it still affects your life, it deserves to be heard.' },
-          { q: 'I\'m a vet / vet nurse — will it feel awkward to see a colleague?', a: 'Everything is strictly confidential (apart from legally required exceptions). I will not reveal to anyone that you are receiving counselling, your identity, or anything personal you share in our sessions. Unless you choose to, you don\'t need to name your clinic or colleagues. In the counselling space, our roles are counsellor (me) and client (you), and the content and approach of our work always put your best interests first. Because I know the industry, you won\'t spend time explaining your work and can get to what really matters sooner.' },
+          { q: 'I\'m a vet or vet nurse. Will it feel awkward to see someone from the same field?', a: 'Everything is strictly confidential (apart from legally required exceptions). I will never tell anyone that you are in counselling, who you are, or anything personal you share in our sessions. Unless you choose to, you never need to name your clinic or colleagues. In our sessions, I am your counsellor and you are my client, and everything we do is guided by your best interests. Because I know the industry, you won\'t need to explain how it works, so we can get to what\'s really troubling you sooner.' },
           { q: 'Is what I share confidential?', a: 'Yes. Apart from legally required exceptions such as risk to safety, everything is kept strictly confidential. I explain this clearly in our first conversation, and we sign a confidentiality agreement and a service consent form.' },
-          { q: 'What are the format and fees?', a: 'In-person or online video, 50-minute sessions, in Cantonese, Mandarin or English. Services are expected to begin in November; fees will be shared after priority registration. Please enquire for organisational packages.' },
+          { q: 'What is the format, and how much does it cost?', a: 'Sessions are 50 minutes, in person or by video, in Cantonese, Mandarin or English. Services are expected to open in November, and fees will be shared with everyone who registers their interest. Organisations are welcome to ask for a quote.' },
           { q: 'Should I choose in-person or online counselling?', a: 'Both are equally confidential — choose whichever fits your life and needs:\n· Online video: good if your schedule is tight, you work shifts, or you\'d rather talk somewhere familiar such as home. Please find a quiet, private space where you won\'t be interrupted, with a stable internet connection.\n· In person: good if you\'d like to step away from your everyday surroundings and talk face to face.\nYou can switch between formats at any time; we\'ll decide on the best arrangement together when we first talk.' }
         ],
         contact: {
           title: 'Take your time. I\'m here.',
-          body: 'Counselling services are expected to begin in November. Register early for priority, or reach out by email.',
-          cta: 'Priority registration', mail: 'Email me', emailK: 'Email',
+          body: 'Sessions are expected to open in November. Register your interest for priority booking, or get in touch by email.',
+          cta: 'Register interest', mail: 'Email me', emailK: 'Email',
           rows: [
-            { k: 'Format', v: 'In-person or online video｜50 minutes' },
+            { k: 'Format', v: 'In-person or online video · 50 minutes' },
             { k: 'Languages', v: 'Cantonese / Mandarin / English' },
             { k: 'Instagram / Threads', v: '@dr.heibe_counsellingvet' }
           ],
-          crisis: 'If you or someone near you is in immediate danger, call 999 or go to the nearest emergency room. 24-hour mental health support hotline: 18111.'
+          crisis: 'If you or someone close to you is in immediate danger, call 999 or go to the nearest emergency room. For 24-hour support, call the Mental Health Support Hotline on 18111.'
         },
         foot: { home: 'Home', vets: 'Vet professionals', blog: 'Blog' }
       }
@@ -295,68 +301,68 @@ window.CONTENT.vets = {
         nav: { home: 'Home', owners: 'Pet owners', about: 'About', services: 'Partnerships', articles: 'Articles', blog: 'Blog', contact: 'Enquire' },
         hero: {
           eyebrow: 'VETERINARY × COUNSELLING · FOR VETS AND CLINICS',
-          title: 'Vets, you deserve to be cared for too',
-          sub: 'Workplace stress, intense communication and emotional load shouldn\'t be carried alone.',
-          cta: 'Enquire about partnerships', cta2: 'See services'
+          title: 'Vets, you deserve care too',
+          sub: 'Workplace stress, difficult conversations and emotional strain aren\'t yours to carry alone.',
+          cta: 'Enquire about partnerships', cta2: 'Explore services'
         },
         about: {
           title: 'About Dr. Heibe',
-          p1: 'Dr. Heibe is a registered veterinarian in Hong Kong. She graduated from the School of Veterinary Medicine at National Taiwan University and holds a Master of Social Science (Counselling) from the University of Hong Kong, having completed the programme\'s supervised clinical training.',
-          p2: 'Working on the front line of emergency and critical care animal hospitals has given her a deep understanding of the stress, exhaustion and unspoken emotions that vet and nursing teams carry every day. During her clinical practicum, she joined MARS Veterinary Health to provide counselling for its staff, and designed and delivered confidential individual counselling at a community centre.',
-          p3: 'By the nature of their work, vets routinely put their own needs behind their patients and their work. She believes everyone deserves to be truly understood and valued — and that only someone who knows the weight of veterinary work can help you untangle feelings that are hard to put into words, and walk with you through the hardest parts of the profession.',
+          p1: 'Dr. Heibe is a registered veterinarian in Hong Kong. She graduated from the School of Veterinary Medicine at National Taiwan University and holds a Master of Social Sciences (Counselling) from the University of Hong Kong, having completed the programme\'s supervised clinical training.',
+          p2: 'Years on the front line of emergency and critical care have given her a deep understanding of the stress, exhaustion and unspoken emotions that vets and nurses carry every day. During her clinical practicum she provided counselling for staff at MARS Veterinary Health, and designed and delivered confidential one-to-one counselling at a community centre.',
+          p3: 'Vets routinely put their own needs behind their patients and their work. She believes everyone deserves to be truly understood and valued, and that it takes someone who knows the weight of veterinary work to help you untangle feelings that are hard to put into words and walk beside you through the hardest parts of the profession.',
           talksLabel: 'Invited talks',
-          momentsLabel: 'Event moments',
-          momentsHint: '← Swipe to see more →',
+          momentsLabel: 'Event highlights',
+          momentsHint: '← Swipe for more →',
           moments: [
             { src: 'images/moment-hku-lecture.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #DCD2BF;', caption: 'The University of Hong Kong · SOWK 2126A Lecture: Animal-Related Grief and Bereavement' },
-            { src: 'images/moment-taiwo-talk.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #DCD2BF;', caption: 'Jockey Club Taiwo women\'s centre · Pet Bereavement Talk' },
-            { src: 'images/moment-petloss-group-works.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 45%; display: block; background: #DCD2BF;', caption: 'Pet loss peer support group: participants\' reflections and creations' },
+            { src: 'images/moment-taiwo-talk.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #DCD2BF;', caption: 'Jockey Club Tai Wo Centre · Pet Bereavement Talk' },
+            { src: 'images/moment-petloss-group-works.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 45%; display: block; background: #DCD2BF;', caption: 'Pet bereavement peer support group: participants\' reflections and creations' },
             { src: 'images/moment-talk-slide.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #FFFFFF;', caption: 'Pet bereavement talk slide: facilitating a “good goodbye” · aftercare' },
             { src: 'images/moment-peticare.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #DCD2BF;', caption: 'The Peticare Medical Group · Veterinary Mental Health Series' },
             { src: 'images/moment-candle-poster.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #B7A08E;', caption: 'Candle-making & Mental Health Support Workshop' },
             { src: 'images/moment-candle-photo.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #DCD2BF;', caption: 'Workshop moment: candles made by participants' },
             { src: 'images/moment-vsh-emotional-labor.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #FFF5EA;', caption: 'Veterinary Specialty Hospital · Emotional Labor in Veterinary Medicine' },
-            { src: 'images/moment-petloss-group.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #EDE6DF;', caption: '“Goodbye · Thank you · I love you” pet loss support group: narrative therapy, story sharing, peer connection, memorial ritual' },
-            { src: 'images/moment-taiwo-counselling.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #EFE3DA;', caption: 'HK Federation of Women\'s Centres, Jockey Club Tai Wo Centre · Emotional counselling service (completed)' },
-            { src: 'images/moment-peer-support-group.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #F7EBD1;', caption: 'Peer Support Group for Veterinary Professions: grief, compassion fatigue, stress, self-compassion, mindfulness' }
+            { src: 'images/moment-petloss-group.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #EDE6DF;', caption: '“Goodbye · Thank you · I love you” pet bereavement support group: narrative therapy, story sharing, peer connection, memorial ritual' },
+            { src: 'images/moment-taiwo-counselling.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #EFE3DA;', caption: 'Hong Kong Federation of Women\'s Centres, Jockey Club Tai Wo Centre · Emotional counselling service (completed)' },
+            { src: 'images/moment-peer-support-group.jpg', imgStyle: 'width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #F7EBD1;', caption: 'Peer Support Group for Veterinary Professionals: grief, compassion fatigue, stress, self-compassion, mindfulness' }
           ]
         },
         services: {
           title: 'Partnerships for clinics and organisations',
-          intro: 'All packages can be tailored to your organisation\'s size and needs — get in touch to discuss details and pricing.',
+          intro: 'Every package can be tailored to your organisation\'s size and needs. Get in touch to talk through details and pricing.',
           quote: 'Quote on request',
           items: [
-            { tag: 'ORGANISATIONS', title: 'Wellbeing workshops & talks', body: 'Topics include understanding and preventing burnout, effective clinical communication, managing workplace stress and self-awareness of mental wellbeing, designed around your team.' },
-            { tag: 'INDIVIDUAL', title: '1:1 counselling for vets & nurses', body: 'One-to-one emotional support for individual vets and nurses dealing with burnout, stress or personal issues.' },
-            { tag: 'REFERRAL', title: 'Formal referral partnership', body: 'A formal referral pathway so clients who need support — for example around euthanasia or loss — can be referred to Dr. Heibe.' },
-            { tag: 'TEAMS', title: 'Team wellbeing activities', body: 'Mindfulness, stress relief and group support activities, arranged flexibly around team size and schedules.' }
+            { tag: 'ORGANISATIONS', title: 'Wellbeing workshops & talks', body: 'Topics include burnout awareness and prevention, clinical communication, managing workplace stress and building awareness of your own wellbeing, all designed around your team.' },
+            { tag: 'INDIVIDUAL', title: '1:1 counselling for vets & nurses', body: 'Confidential one-to-one support for vets and nurses facing burnout, stress or personal difficulties.' },
+            { tag: 'REFERRAL', title: 'Formal referral partnership', body: 'A formal pathway for referring clients who need support, for example around euthanasia or loss, to Dr. Heibe.' },
+            { tag: 'TEAMS', title: 'Team wellbeing activities', body: 'Mindfulness, stress relief and group support activities, arranged flexibly around your team\'s size and schedule.' }
           ]
         },
         articlesTitle: 'Wellbeing articles for vets and vet nurses',
-        articlesHint: 'Click a title to read the full article.',
+        articlesHint: 'Tap a title to read the full article.',
         open: 'Close', closed: 'Read more',
         articles: [
-          { title: 'Burnout in veterinary work: it\'s not that you aren\'t strong enough',
-            p1: 'An intense pace, emotional labour and facing life and death every day make burnout common in the veterinary profession. It is not a matter of willpower — it is the body and mind\'s normal response to a long-term high-pressure environment.',
-            p2: 'Common signs include losing enthusiasm for work, feeling easily exhausted or emotionally numb, growing impatient with cases or colleagues, and changes in sleep and appetite. Noticing these signals is the first step in caring for yourself — and a culture teams can build together, rather than waiting until someone can\'t cope.' },
-          { title: 'Beyond bad news: you need to feel understood too',
-            p1: 'Delivering bad news, facing clients\' emotional reactions and explaining clearly in limited time all take a toll on vets. We often focus on “how to say it best for the client”, yet rarely ask “how are you after saying it?”',
-            p2: 'Communication skills matter — but so does allowing yourself time to process your emotions after a difficult conversation, instead of moving straight on to the next case.' },
+          { title: 'Burnout in veterinary work: it\'s not about being strong enough',
+            p1: 'A relentless pace, emotional labour and daily encounters with life and death make burnout common in veterinary work. It isn\'t a failure of willpower; it\'s how body and mind naturally respond to prolonged pressure.',
+            p2: 'Common signs include losing enthusiasm for work, feeling drained or emotionally numb, growing impatient with cases or colleagues, and changes in sleep and appetite. Noticing these signals is the first step in caring for yourself, and something teams can build into their culture rather than waiting until someone reaches breaking point.' },
+          { title: 'Beyond breaking bad news: you deserve to be understood too',
+            p1: 'Breaking bad news, meeting clients\' emotional reactions and explaining things clearly under time pressure all take their toll. We often focus on how best to say it for the client, but rarely ask: how are you after saying it?',
+            p2: 'Communication skills matter, but so does giving yourself time to process a difficult conversation before moving straight on to the next case.' },
           { title: 'Workplace stress and mental health awareness: it starts with noticing',
-            p1: 'Mental health awareness isn\'t something to discuss only when things become serious. It means building everyday awareness of your own and your colleagues\' wellbeing — noticing when stress builds up, and being willing to tell a colleague honestly, “I\'ve been struggling a bit lately.”',
-            p2: 'Team-level support (such as regular wellbeing activities and space to talk openly about stress) and individual help (one-to-one counselling) complement each other, so caring for one another becomes more than a slogan.' }
+            p1: 'Mental health awareness isn\'t only for when things become serious. It means paying everyday attention to how you and your colleagues are doing: noticing when stress builds, and feeling able to tell a colleague honestly, “I\'ve been struggling a bit lately.”',
+            p2: 'Team support (regular wellbeing activities, space to talk openly about stress) and individual help (one-to-one counselling) work best together, so that looking after one another becomes more than a slogan.' }
         ],
-        blogTitle: 'From the blog: for vet professionals', blogMore: 'See more →', blogPosts: [ { title: "The cases we take home", excerpt: "That unease is really our professional ethics speaking." }, { title: "To the nurses beside me", excerpt: "Burnout is not a personal failure." } ],
-        crisis: 'If you are in emotional crisis or having thoughts of harming yourself, please call the 24-hour mental health support hotline 18111 immediately, or go to the nearest emergency room.',
+        blogTitle: 'From the blog: for vet professionals', blogMore: 'Read more →', blogPosts: [ { title: "The cases we take home", excerpt: "That unease is really our professional ethics speaking." }, { title: "To the nurses beside me", excerpt: "Burnout is not a personal failure." } ],
+        crisis: 'If you are in an emotional crisis or having thoughts of harming yourself, please call the 24-hour Mental Health Support Hotline on 18111 immediately, or go to the nearest emergency room.',
         contact: {
           title: 'Partnership enquiry',
-          body: 'The buttons below open a pre-formatted email. Fill in your clinic or organisation, contact person and the package you\'re interested in, then send — we\'ll reply soon to discuss details and pricing.',
+          body: 'The buttons below open a ready-to-fill email. Add your clinic or organisation, a contact person and the package you\'re interested in, then send. We\'ll be in touch soon to discuss details and pricing.',
           gmail: 'Send with Gmail', app: 'Open email app', or: 'Or email directly:', include: 'Please include',
           fields: [ { v: 'Clinic / organisation name' }, { v: 'Contact person' }, { v: 'Job title / role' }, { v: 'Email or phone' }, { v: 'Package of interest' }, { v: 'Notes (team size, timing, budget)' } ],
           subject: 'Partnership enquiry: ',
           lines: ['Clinic / organisation name:', 'Contact person:', 'Job title / role:', 'Email or phone:', 'Package of interest (workshop/talk, 1:1 counselling, referral partnership, team activities, not sure yet):', 'Notes (team size, timing, budget):']
         },
-        picsOpenLabel: 'Hide personal data statement ▲', picsClosedLabel: 'Personal Information Collection Statement ▼',
+        picsOpenLabel: 'Hide Personal Information Collection Statement ▲', picsClosedLabel: 'Personal Information Collection Statement ▼',
         pics: [
           { k: 'Purpose: ', v: 'The information you provide is used only to handle and reply to your partnership, talk or referral enquiry.' },
           { k: 'Transfer: ', v: 'Your information is sent directly to Dr. Heibe\'s own email inbox. It is not stored in any third-party system or database and is not passed to any other person or organisation.' },
@@ -364,8 +370,8 @@ window.CONTENT.vets = {
           { k: 'Access and correction: ', v: 'You may request access to or correction of your personal data by emailing dr.heibelau.work@gmail.com. This statement follows the Hong Kong Personal Data (Privacy) Ordinance (Cap. 486).' }
         ],
         slogan: 'Caring for animals as a vet, understanding people as a counsellor',
-        footTag: 'Caring for each other, together with colleagues',
-        talkOrgs: { taiwo: 'Jockey Club Taiwo women\'s centre', hku: 'The University of Hong Kong', hrTitle: 'Human-and-Animal Relation Talk: Pet Bereavement' }
+        footTag: 'Looking after one another, together',
+        talkOrgs: { taiwo: 'Jockey Club Tai Wo Centre, Hong Kong Federation of Women\'s Centres', hku: 'The University of Hong Kong', hrTitle: 'Human-and-Animal Relation Talk: Pet Bereavement' }
       }
     };
 
@@ -463,14 +469,14 @@ window.CONTENT.blog = {
       },
       en: {
         sub: 'Blog',
-        nav: { home: 'Home', owners: 'Pet owners', vets: 'Vet professionals', share: 'Share your story', book: 'Priority registration' },
-        hero: { eyebrow: 'Blog', title: 'Some thoughts, some stories', sub: 'Notes and stories from my path between veterinary medicine and counselling — for anyone willing to pause and read for a while.', tag: '' },
+        nav: { home: 'Home', owners: 'Pet owners', vets: 'Vet professionals', share: 'Share your story', book: 'Register interest' },
+        hero: { eyebrow: 'Blog', title: 'Thoughts and stories', sub: 'Reflections from my path between veterinary medicine and counselling, for anyone who\'d like to pause and read for a while.', tag: '' },
         postsTitle: 'Latest posts', ownersPostsTitle: 'For pet owners', vetsPostsTitle: 'For vet professionals', readMore: 'Read more', collapse: 'Close', sourceLabel: 'Source: ', sourceLink: 'Read the original',
         posts: [
           { group: "owners", tag: "Pet owners", date: "October 2026", title: "The carers of the small hours",
             excerpt: "Your tiredness is a mark that love leaves behind, not its opposite.",
             paras: [
-              "On ER night shifts, the waiting area in the middle of the night often holds a few very quiet people. It isn't their first visit — they carry bags of medication and recite their pet's history and doses from memory. I always notice their eyes.",
+              "On night shifts in the ER, the waiting area in the small hours often holds a few very quiet people. It isn't their first visit: they carry bags of medication and can recite their pet's history and doses from memory. I always notice their eyes.",
               "As a vet, my attention used to rest mostly on the animal on the table. Since training as a counsellor, I've started to see the person standing beside it. They rarely talk about themselves, as if saying “I'm exhausted” would mean admitting they don't love enough.",
               "What I'd like to tell these carers is this: your tiredness is a mark that love leaves behind, not its opposite. And if one night all you want is to sit down and do nothing at all, that's okay too."
             ] },
@@ -498,7 +504,7 @@ window.CONTENT.blog = {
           { group: "vets", tag: "Vet professionals", date: "October 2026", title: "The cases we take home",
             excerpt: "That unease is really our professional ethics speaking.",
             paras: [
-              "Some cases follow you home — after you've changed, after you've got in the car. Not always the most serious one, but the one that “could have been saved, and wasn't”.",
+              "Some cases follow you home — after you've changed out of your scrubs, after you've got in the car. Not always the most serious one, but the one that “could have been saved, and wasn't”.",
               "When I first started, I thought that heaviness meant I wasn't strong enough and needed to learn to “let it go”. It was only when I came across the idea of moral distress that I understood: it came from knowing what was best for the animal, yet being unable to do it because of cost, an owner's decision or the system. That unease is really our professional ethics speaking.",
               "I no longer tell myself “don't think about it”. Instead I let myself admit: this made me sad. Sometimes, admitting it is already a form of care."
             ] },
@@ -509,7 +515,7 @@ window.CONTENT.blog = {
               "I've also watched many wonderful nurses leave the profession — not because they stopped loving animals, but because they were too tired and too rarely seen. Every time I hear, “I really love this job, but I can't keep going,” it breaks my heart.",
               "Burnout is not a personal failure. I hope our profession can say a little less “it's supposed to be hard” and a little more “you've worked so hard — let's figure this out together.”"
             ] },
-          { group: "vets", tag: "Vet professionals", date: "October 2026", title: "What is the hardest part of being a vet?",
+          { group: "vets", tag: "Vet professionals", date: "October 2026", title: "What's the hardest part of being a vet?",
             excerpt: "Each thing on its own is small; together they weigh a lot.",
             paras: [
               "Friends often ask me, “Is the hardest part of being a vet seeing animals die?” I usually just smile; it's hard to explain.",
@@ -527,8 +533,8 @@ window.CONTENT.blog = {
         empty: { title: 'No posts yet — stay tuned.', sub: 'New reflections and stories will be shared here.', link: 'Meanwhile, read the wellbeing articles for vets and vet nurses →' },
         share: {
           title: 'Share your story',
-          p1: 'If you\'d like to tell me about you and your pet, or share some thoughts, I\'d love to hear from you. I read every story personally; if you agree to share it publicly, it may be edited and published on this blog (without your real name or email).',
-          p2: 'The buttons below open a pre-formatted email. Write as much or as little as you like — it doesn\'t need to be complete or formal. You can attach photos to the email too.',
+          p1: 'If you\'d like to tell me about you and your pet, or share a few thoughts, I\'d love to hear from you. I read every story myself. If you agree, it may be lightly edited and published here (without your real name or email).',
+          p2: 'The buttons below open a ready-to-fill email. Write as much or as little as you like; it doesn\'t need to be polished or complete. You\'re welcome to attach photos too.',
           gmail: 'Send with Gmail', app: 'Open email app', or: 'Or email directly:', include: 'Please include',
           fields: [
             { k: 'Nickname', v: 'Only your nickname is shown if published' },
@@ -539,7 +545,7 @@ window.CONTENT.blog = {
           subject: 'Blog story submission: ',
           lines: ['Nickname:', 'Consent to publish (yes, share publicly / no, only for Dr. Heibe):', 'Preferred reply (private email / public reply on the blog / no reply needed):', '', 'My story or thoughts:', '']
         },
-        picsOpenLabel: 'Hide personal data statement ▲', picsClosedLabel: 'Personal Information Collection Statement ▼',
+        picsOpenLabel: 'Hide Personal Information Collection Statement ▲', picsClosedLabel: 'Personal Information Collection Statement ▼',
         pics: [
           { k: 'Purpose: ', v: 'The information you provide is used only to review the story you wish to share, decide whether to publish it on this blog, and contact you if you would like a reply.' },
           { k: 'Data collected: ', v: 'Nickname, email, your story, and your choices about publication and replies (including any photos you attach).' },
