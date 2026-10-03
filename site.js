@@ -107,9 +107,24 @@
       document.documentElement.lang = lang === 'en' ? 'en' : 'zh-Hant-HK';
     }
     draw();
+    // Jump to #section links. Images and fonts load after the first draw and
+    // push content down, so jump again once they finish (unless the visitor
+    // has already started scrolling).
     if (location.hash) {
-      var target = document.getElementById(location.hash.slice(1));
-      if (target) target.scrollIntoView();
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      var userMoved = false;
+      ['wheel', 'touchstart', 'keydown'].forEach(function (ev) {
+        window.addEventListener(ev, function () { userMoved = true; }, { once: true, passive: true });
+      });
+      var goHash = function () {
+        if (userMoved) return;
+        var target = document.getElementById(location.hash.slice(1));
+        if (target) target.scrollIntoView({ block: 'start' });
+      };
+      goHash();
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(goHash);
+      if (document.readyState === 'complete') setTimeout(goHash, 0);
+      else window.addEventListener('load', function () { goHash(); setTimeout(goHash, 300); });
     }
   };
 

@@ -40,8 +40,7 @@ window.CONTENT.home = {
           method: [ { v: '人本取向（Person-centered Approach）' }, { v: '敘事治療（Narrative Therapy）' }, { v: '接納與承諾治療（ACT）' }, { v: '情緒取向治療（Emotionally Focused Therapy, EFT）' } ],
           expTitle: '輔導經驗',
           exp: [ { v: '超過 250 小時臨床及督導時數' }, { v: '寵物哀傷支持小組' }, { v: 'MARS Veterinary Health 實習輔導員' }, { v: '機構個別輔導' }, { v: '一對一情緒輔導服務' } ],
-          more: '查看完整背景及講座經歷 →',
-          momentsLink: '查看更多活動花絮 →'
+          more: '查看完整背景及經歷 →'
         },
         owners: {
           eyebrow: '給寵物主人',
@@ -137,8 +136,7 @@ window.CONTENT.home = {
           method: [ { v: 'Person-centred Approach' }, { v: 'Narrative Therapy' }, { v: 'Acceptance and Commitment Therapy (ACT)' }, { v: 'Emotionally Focused Therapy (EFT)' } ],
           expTitle: 'Counselling experience',
           exp: [ { v: '250+ hours of clinical and supervised practice' }, { v: 'Pet bereavement support groups' }, { v: 'Trainee counsellor, MARS Veterinary Health' }, { v: 'Individual counselling in organisational settings' }, { v: 'One-to-one emotional counselling' } ],
-          more: 'Full background and talks →',
-          momentsLink: 'See more event moments →'
+          more: 'Full background and experience →'
         },
         owners: {
           eyebrow: 'FOR PET OWNERS',
