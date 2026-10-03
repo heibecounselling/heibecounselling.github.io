@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Heibe｜獸醫身心支援</title>
+<meta name="description" content="Dr. Heibe｜輔導空間：寵物哀傷輔導及獸醫業界心理支援。Pet loss counselling and wellbeing support for veterinary professionals in Hong Kong.">
+<link rel="icon" href="images/logo.png">
+<style>
+/* 手機版：避免固定寬度的元素超出螢幕 Mobile: keep fixed-width blocks inside the screen */
+#page-root section { scroll-margin-top: 90px; }
+@media (max-width: 760px) {
+  #page-root h1, #page-root h2, #page-root section div, #page-root section img, #page-root footer a, #page-root footer img { max-width: 100% !important; }
+  #page-root section img[style*="aspect-ratio: 4 / 5"] { height: auto !important; width: 100% !important; }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F2E9}
+html{scroll-behavior:smooth}
+a{color:#3E5040}a:hover{color:#26332A}
+</style>
+</head>
+<body>
+<div id="page-root"></div>
+<template id="page-template">
+<div style="background: #F7F2E9; color: #2E2A26; font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; font-size: 17px; line-height: 1.75;">
+
+<header style="position: sticky; top: 0; z-index: 10; background: #F7F2E9; border-bottom: 1px solid #E2D8C6;">
+<div style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+<a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px; line-height: 1.25; color: #2E2A26;">
+<img src="images/logo.png" alt="Dr. Heibe｜輔導空間 標誌" style="width: 56px; height: 48px; object-fit: contain; mix-blend-mode: multiply; display: block;">
+<span style="display: flex; flex-direction: column;">
+<span style="font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 20px; color: #3E5040;">Dr. Heibe｜輔導空間</span>
+<span style="font-size: 12px; letter-spacing: 0.08em; color: #5E574F;">{{t.sub}}</span>
+</span>
+</a>
+<nav style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
+<a href="index.html" style="text-decoration: none; color: #4A443D;">{{t.nav.home}}</a>
+<a href="index.html" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
+<a href="#about" style="text-decoration: none; color: #4A443D;">{{t.nav.about}}</a>
+<a href="#services" style="text-decoration: none; color: #4A443D;">{{t.nav.services}}</a>
+<a href="#articles" style="text-decoration: none; color: #4A443D;">{{t.nav.articles}}</a>
+<a href="blog.html" style="text-decoration: none; color: #4A443D;">{{t.nav.blog}}</a>
+<div style="display: flex; border: 1px solid #C9BEA9; border-radius: 999px; overflow: hidden;" role="group" aria-label="Language">
+<button type="button" onClick="{{setZh}}" style="{{zhStyle}}">中</button>
+<button type="button" onClick="{{setEn}}" style="{{enStyle}}">EN</button>
+</div>
+<a href="#contact" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 10px 20px; border-radius: 999px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">{{t.nav.contact}}</a>
+</nav>
+</div>
+</header>
+
+<section style="background: #3E5040; color: #F7F2E9; padding: 104px 24px 96px;">
+<div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #CFDCC6; font-weight: 500;">{{t.hero.eyebrow}}</span>
+<h1 style="margin: 0; font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.35; color: #FFFDF8;">{{t.hero.title}}</h1>
+<p style="margin: 0; font-size: 18px; color: #E8E1D3; max-width: 32em;">{{t.hero.sub}}</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 8px;">
+<a href="#contact" style="text-decoration: none; background: #F7F2E9; color: #2F3D31; padding: 14px 28px; border-radius: 999px; font-weight: 500;">{{t.hero.cta}}</a>
+<a href="#services" style="text-decoration: none; border: 1px solid #CFDCC6; color: #FFFDF8; padding: 13px 26px; border-radius: 999px; font-weight: 500;">{{t.hero.cta2}}</a>
+</div>
+</div>
+</section>
+
+<section id="about" style="padding: 96px 24px;">
+<div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: start;">
+<div style="display: flex; flex-direction: column; gap: 20px;">
+<img src="images/profile.jpg" alt="Dr. Heibe 個人照" style="width: 160px; height: 160px; object-fit: cover; object-position: center 22%; border-radius: 50%; display: block; background: #DCD2BF;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">ABOUT</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.about.title}}</h2>
+<p style="margin: 0; color: #4A443D;">{{t.about.p1}}</p>
+<p style="margin: 0; color: #4A443D;">{{t.about.p2}}</p>
+<p style="margin: 0; color: #4A443D;">{{t.about.p3}}</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #8A4F35; font-weight: 500;">{{t.about.talksLabel}}</span>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+<sc-for list="{{talks}}" as="k" hint-placeholder-count="6">
+<div style="background: #EFE7D8; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 15px; font-weight: 500; color: #2E2A26; line-height: 1.5;">{{k.title}}</span>
+<span style="font-size: 13px; color: #5E574F; line-height: 1.5;">{{k.org}}</span>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+<div style="max-width: 1160px; margin: 56px auto 0; display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #8A4F35; font-weight: 500;">{{t.about.momentsLabel}}</span>
+<span style="font-size: 13px; color: #5E574F;">{{t.about.momentsHint}}</span>
+</div>
+<div style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; -webkit-overflow-scrolling: touch;">
+<sc-for list="{{t.about.moments}}" as="m" hint-placeholder-count="2">
+<figure style="margin: 0; flex: 0 0 min(420px, 80%); scroll-snap-align: start; background: #EFE7D8; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column;">
+<img src="{{m.src}}" alt="{{m.caption}}" style="{{m.imgStyle}}">
+<figcaption style="padding: 14px 18px 18px; font-size: 14px; line-height: 1.6; color: #2E2A26;">{{m.caption}}</figcaption>
+</figure>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="services" style="background: #EFE7D8; padding: 96px 24px;">
+<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px;">
+<div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">SERVICES</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.services.title}}</h2>
+<p style="margin: 0; color: #4A443D;">{{t.services.intro}}</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+<sc-for list="{{t.services.items}}" as="s" hint-placeholder-count="4">
+<div style="background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 30px 26px; display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 13px; letter-spacing: 0.08em; color: #5B6E55;">{{s.tag}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 21px; color: #2F3D31; line-height: 1.4;">{{s.title}}</h3>
+<p style="margin: 0; font-size: 15px; color: #4A443D; flex-grow: 1;">{{s.body}}</p>
+<span style="font-size: 14px; color: #8A4F35; font-weight: 500;">{{t.services.quote}}</span>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; justify-content: flex-start;">
+<a href="#contact" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 28px; border-radius: 999px; font-weight: 500;">{{t.hero.cta}}</a>
+</div>
+</div>
+</section>
+
+<section id="articles" style="padding: 96px 24px;">
+<div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">ARTICLES</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.articlesTitle}}</h2>
+<p style="margin: 0; color: #4A443D;">{{t.articlesHint}}</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<sc-for list="{{articles}}" as="a" hint-placeholder-count="3">
+<div style="background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 18px; padding: 4px 26px;">
+<button type="button" onClick="{{a.toggle}}" aria-expanded="{{a.open}}" style="width: 100%; background: none; border: 0; padding: 20px 0; min-height: 44px; display: flex; justify-content: space-between; align-items: center; gap: 16px; text-align: left; cursor: pointer; font-family: 'Noto Serif TC', serif; font-size: 19px; color: #2F3D31;">
+<span>{{a.title}}</span>
+<span style="font-family: 'Noto Sans TC', sans-serif; font-size: 14px; color: #3E5040; white-space: nowrap; font-weight: 500;">{{a.label}}</span>
+</button>
+<sc-if value="{{a.open}}" hint-placeholder-val="{{false}}">
+<div style="border-top: 1px solid #E2D8C6; padding: 18px 0 24px; display: flex; flex-direction: column; gap: 14px;">
+<p style="margin: 0; font-size: 16px; color: #4A443D;">{{a.p1}}</p>
+<p style="margin: 0; font-size: 16px; color: #4A443D;">{{a.p2}}</p>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+<p style="margin: 0; padding: 18px 22px; border: 1.5px solid #B5826B; background: #F6E9DF; border-radius: 14px; font-size: 15px; color: #5A2F1E; line-height: 1.7;">{{t.crisis}}</p>
+<div style="background: #EFE7D8; border-radius: 20px; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; color: #2F3D31;">{{t.blogTitle}}</span>
+<a href="blog.html" style="font-size: 15px; font-weight: 500;">{{t.blogMore}}</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+<sc-for list="{{t.blogPosts}}" as="b" hint-placeholder-count="2">
+<a href="blog.html" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; line-height: 1.5; color: #2F3D31;">{{b.title}}</span>
+<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{t.blogMore}}</span>
+</a>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" style="padding: 0 24px 96px;">
+<div style="max-width: 1160px; margin: 0 auto; background: #E4EBDD; border-radius: 32px; padding: clamp(36px, 6vw, 72px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start;">
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">CONTACT</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.4; color: #2F3D31;">{{t.contact.title}}</h2>
+<p style="margin: 0; color: #33402F;">{{t.contact.body}}</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
+<a href="{{gmailHref}}" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 26px; border-radius: 999px; font-weight: 500;">{{t.contact.gmail}}</a>
+<a href="{{mailHref}}" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">{{t.contact.app}}</a>
+</div>
+<p style="margin: 0; font-size: 15px; color: #33402F;">{{t.contact.or}} <a href="{{mailHref}}">dr.heibelau.work@gmail.com</a></p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; background: #F7F2E9; border-radius: 20px; padding: 28px;">
+<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{t.contact.include}}</span>
+<sc-for list="{{t.contact.fields}}" as="f" hint-placeholder-count="6">
+<div style="display: flex; gap: 10px; align-items: baseline; padding-bottom: 10px; border-bottom: 1px solid #E2D8C6; font-size: 15px; color: #2E2A26;">
+<span style="color: #8A4F35;">·</span><span>{{f.v}}</span>
+</div>
+</sc-for>
+<button type="button" onClick="{{togglePics}}" aria-expanded="{{picsOpen}}" style="background: none; border: 0; padding: 8px 0; min-height: 44px; text-align: left; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 500; color: #3E5040;">{{picsLabel}}</button>
+<sc-if value="{{picsOpen}}" hint-placeholder-val="{{false}}">
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #4A443D; line-height: 1.7;">
+<sc-for list="{{t.pics}}" as="p" hint-placeholder-count="4">
+<p style="margin: 0;"><b>{{p.k}}</b>{{p.v}}</p>
+</sc-for>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #E2D8C6; padding: 56px 24px 32px;">
+<div style="max-width: 1160px; margin: 0 auto 32px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center;">
+<a href="index.html" style="display: block;"><img src="images/logo.png" alt="Dr. Heibe｜輔導空間 Dr. Heibe Counselling 標誌" style="width: 220px; max-width: 60vw; height: auto; mix-blend-mode: multiply; display: block;"></a>
+<span style="font-family: 'Noto Serif TC', serif; font-size: 16px; color: #5B6E55;">{{t.slogan}}</span>
+</div>
+<div style="max-width: 1160px; margin: 0 auto; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: #5E574F; border-top: 1px solid #E2D8C6; padding-top: 20px;">
+<span>© 2026 Dr. Heibe｜輔導空間 · {{t.footTag}}</span>
+<span style="display: flex; gap: 18px; flex-wrap: wrap;">
+<a href="index.html">{{t.nav.home}}</a>
+<a href="index.html">{{t.nav.owners}}</a>
+<a href="blog.html">{{t.nav.blog}}</a>
+<a href="#contact">{{t.nav.contact}}</a>
+</span>
+</div>
+</footer>
+
+</div>
+</template>
+<noscript><p style="padding:24px;font-family:sans-serif">請開啟瀏覽器的 JavaScript 以瀏覽本網站。Please enable JavaScript to view this website.</p></noscript>
+<script src="content.js"></script>
+<script src="site.js"></script>
+<script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { lang: null, open: {}, pics: false };
+  }
+  renderVals() {
+    const lang = this.state.lang || this.props.startLang || 'zh';
+    const T = window.CONTENT.vets;
+    const t = T[lang];
+    const open = this.state.open;
+    const articles = t.articles.map((a, i) => ({
+      ...a, open: !!open[i], label: open[i] ? t.open : t.closed,
+      toggle: () => this.setState({ open: { ...this.state.open, [i]: !this.state.open[i] } })
+    }));
+    const to = 'dr.heibelau.work@gmail.com';
+    const body = t.contact.lines.join('\n');
+    const subject = t.contact.subject;
+    const base = 'border: 0; min-width: 44px; min-height: 36px; padding: 6px 12px; font-size: 14px; cursor: pointer; font-family: inherit;';
+    const on = base + ' background: #3E5040; color: #FFFDF8;';
+    const off = base + ' background: transparent; color: #4A443D;';
+    return {
+      t, articles,
+      talks: [
+        { title: 'Emotional Labor in Veterinary Medicine', org: 'Veterinary Specialty Hospital' },
+        { title: 'Mental Health Challenges in the Veterinary Field (Local Context)', org: 'The Peticare Medical Group · Veterinary Mental Health Series' },
+        { title: 'Communication: From Difficult Conversations to Day-to-Day Communication', org: 'The Peticare Medical Group · Veterinary Mental Health Series' },
+        { title: 'Pet First-aid Workshop', org: 'The Lap Organization × Veterinary Specialty Hospital' },
+        { title: 'Pet Bereavement Talk', org: t.talkOrgs.taiwo },
+        { title: t.talkOrgs.hrTitle, org: t.talkOrgs.hku }
+      ],
+      mailHref: 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body),
+      gmailHref: 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body),
+      picsOpen: this.state.pics,
+      picsLabel: this.state.pics ? t.picsOpenLabel : t.picsClosedLabel,
+      togglePics: () => this.setState({ pics: !this.state.pics }),
+      zhStyle: lang === 'zh' ? on : off,
+      enStyle: lang === 'en' ? on : off,
+      setZh: () => this.setState({ lang: 'zh' }),
+      setEn: () => this.setState({ lang: 'en' })
+    };
+  }
+}
+mountPage(Component);
+</script>
+</body>
+</html>
