@@ -119,7 +119,7 @@ window.CONTENT.home = {
         hero: {
           eyebrow: 'PET BEREAVEMENT COUNSELLING · WELLBEING SUPPORT FOR VET TEAMS',
           l1: 'Caring for animals as\u00a0a\u00a0vet,', l2: 'understanding people as\u00a0a\u00a0counsellor',
-          body: 'Whether you\'re grieving a pet, worn out from caring for one who is ill, or running on empty from veterinary work, this is a place to talk at your own pace. You don\'t have to be strong here.',
+          body: 'Whether you\'re grieving a pet, worn down by caring for one who is ill, or exhausted by the demands of veterinary work, this is a space to talk at your own pace, with no rush to be strong.',
           cta: 'Register interest', cta2: 'Meet Dr. Heibe',
           launch: 'Sessions are expected to open in November. Register your interest now for priority booking.',
           p1: 'I\'m a pet owner', p1d: 'Losing a pet, caring for an older or ill pet, or facing a hard decision',
