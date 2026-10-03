@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<title>Dr. Heibe｜輔導空間</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F2E9}
+html{scroll-behavior:smooth}
+a{color:#3E5040}a:hover{color:#26332A}
+</style>
+</helmet>
+<div style="background: #F7F2E9; color: #2E2A26; font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; font-size: 17px; line-height: 1.75;">
+
+<header style="position: sticky; top: 0; z-index: 10; background: #F7F2E9; border-bottom: 1px solid #E2D8C6;">
+<div style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+<a href="Main.dc.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px; line-height: 1.25; color: #2E2A26;">
+<img src="./assets/c7e0d58e61cf2b3d4ef87b689b46a010.png" alt="Dr. Heibe｜輔導空間 標誌" style="width: 56px; height: 48px; object-fit: contain; mix-blend-mode: multiply; display: block;">
+<span style="display: flex; flex-direction: column;">
+<span style="font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 20px; color: #3E5040;">Dr. Heibe｜輔導空間</span>
+<span style="font-size: 12px; letter-spacing: 0.08em; color: #5E574F;">DR. HEIBE COUNSELLING</span>
+</span>
+</a>
+<nav style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
+<a href="#about" style="text-decoration: none; color: #4A443D;">{{t.nav.about}}</a>
+<a href="#owners" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
+<a href="Vets.dc.html" style="text-decoration: none; color: #4A443D;">{{t.nav.vets}}</a>
+<a href="Blog.dc.html" style="text-decoration: none; color: #4A443D;">{{t.nav.blog}}</a>
+<a href="#faq" style="text-decoration: none; color: #4A443D;">{{t.nav.faq}}</a>
+<div style="display: flex; border: 1px solid #C9BEA9; border-radius: 999px; overflow: hidden;" role="group" aria-label="Language">
+<button type="button" onClick="{{setZh}}" style="{{zhStyle}}">中</button>
+<button type="button" onClick="{{setEn}}" style="{{enStyle}}">EN</button>
+</div>
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 10px 20px; border-radius: 999px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">{{t.nav.book}}</a>
+</nav>
+</div>
+</header>
+
+<section id="top" style="position: relative; overflow: hidden; padding: 96px 24px 88px;">
+<img src="./assets/2915d4fcc56701a1be4822a3d29cccec.jpg" alt="" aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 42%; opacity: 0.3; mix-blend-mode: multiply; display: block; pointer-events: none;">
+<div style="position: relative; max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 24px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.hero.eyebrow}}</span>
+<h1 style="margin: 0; font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.35; color: #2F3D31; max-width: 586px; width: 637px">{{t.hero.l1}}<br>{{t.hero.l2}}</h1>
+<p style="margin: 0; font-size: 18px; color: #4A443D; max-width: 34em;">{{t.hero.body}}</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap;">
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 28px; border-radius: 999px; font-weight: 500;">{{t.hero.cta}}</a>
+<a href="#about" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 26px; border-radius: 999px; font-weight: 500;">{{t.hero.cta2}}</a>
+</div>
+<span style="font-size: 14px; color: #5E574F;">{{t.hero.launch}}</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<a href="#owners" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 28px; display: flex; gap: 20px; align-items: flex-start;">
+<span style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%; background: #E4EBDD; display: flex; align-items: center; justify-content: center;">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3E5040" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+</span>
+<span style="display: flex; flex-direction: column; gap: 4px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 700; color: #2F3D31;">{{t.hero.p1}} →</span>
+<span style="font-size: 15px; color: #5E574F;">{{t.hero.p1d}}</span>
+</span>
+</a>
+<a href="Vets.dc.html" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 28px; display: flex; gap: 20px; align-items: flex-start;">
+<span style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%; background: #F1E3D6; display: flex; align-items: center; justify-content: center;">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A4F35" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"></path><path d="M12 15v2a4 4 0 0 0 8 0v-1"></path><circle cx="20" cy="14" r="2"></circle></svg>
+</span>
+<span style="display: flex; flex-direction: column; gap: 4px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 22px; font-weight: 700; color: #2F3D31;">{{t.hero.p2}} →</span>
+<span style="font-size: 15px; color: #5E574F;">{{t.hero.p2d}}</span>
+</span>
+</a>
+</div>
+</div>
+</section>
+
+<section id="about" style="background: #EFE7D8; padding: 88px 24px; position: relative">
+<div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: start;">
+<div style="display: flex; flex-direction: column; gap: 20px; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-bottom: 0px; width: 329px">
+<img src="./assets/c17c504bf1015ccdf0f30420deef06f5.jpg" alt="Dr. Heibe 個人照" style="width: 382px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 24px; display: block; background: #DCD2BF; height: 429px">
+</div><div style="display: flex; flex-direction: column; gap: 20px; width: 574px; padding-right: 20px">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.about.eyebrow}}</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31; width: 587px">{{t.about.title}}</h2>
+<p style="margin: 0; color: #4A443D;">{{t.about.p1}}</p>
+<p style="margin: 0; color: #4A443D;">{{t.about.p2}}</p>
+<p style="margin: 0; color: #4A443D;">{{t.about.p3}}</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 4px;">
+<div style="background: #F7F2E9; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 17px; font-weight: 700; color: #2F3D31;">{{t.about.approachTitle}}</span>
+<sc-for list="{{t.about.approach}}" as="a" hint-placeholder-count="3">
+<div style="display: flex; gap: 10px; align-items: baseline; font-size: 15px; line-height: 1.6; color: #2E2A26;"><span style="color: #8A4F35;">·</span><span>{{a.v}}</span></div>
+</sc-for>
+</div>
+<div style="background: #F7F2E9; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 17px; font-weight: 700; color: #2F3D31;">{{t.about.qualTitle}}</span>
+<sc-for list="{{t.about.qual}}" as="q" hint-placeholder-count="2">
+<div style="display: flex; gap: 10px; align-items: baseline; font-size: 15px; line-height: 1.6; color: #2E2A26;"><span style="color: #8A4F35;">·</span><span>{{q.v}}</span></div>
+</sc-for>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+<div style="background: #F7F2E9; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 17px; font-weight: 700; color: #2F3D31;">{{t.about.methodTitle}}</span>
+<sc-for list="{{t.about.method}}" as="m" hint-placeholder-count="3">
+<div style="display: flex; gap: 10px; align-items: baseline; font-size: 15px; line-height: 1.6; color: #2E2A26;"><span style="color: #8A4F35;">·</span><span>{{m.v}}</span></div>
+</sc-for>
+</div>
+<div style="background: #F7F2E9; border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 17px; font-weight: 700; color: #2F3D31;">{{t.about.expTitle}}</span>
+<sc-for list="{{t.about.exp}}" as="x" hint-placeholder-count="3">
+<div style="display: flex; gap: 10px; align-items: baseline; font-size: 15px; line-height: 1.6; color: #2E2A26;"><span style="color: #8A4F35;">·</span><span>{{x.v}}</span></div>
+</sc-for>
+</div>
+</div>
+<a href="Vets.dc.html" style="font-weight: 500; font-size: 16px;">{{t.about.more}}</a>
+</div>
+
+</div>
+</section>
+
+<section id="owners" style="padding: 96px 24px;">
+<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.owners.eyebrow}}</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.owners.title}}</h2>
+<p style="margin: 0; color: #4A443D;">{{t.owners.intro}}</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+<sc-for list="{{t.owners.items}}" as="s" hint-placeholder-count="5">
+<div style="background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 10px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 15px; color: #5B6E55;">0{{s.n}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 22px; color: #2F3D31; line-height: 1.4;">{{s.title}}</h3>
+<span style="font-size: 14px; color: #5E574F; letter-spacing: 0.02em;"><br></span>
+<p style="margin: 0; font-size: 16px; color: #4A443D;">{{s.body}}</p>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; padding: 18px 22px; background: #E4EBDD; border-radius: 14px;">
+<p style="margin: 0; font-size: 15px; color: #33402F; max-width: 760px;">{{t.owners.note}}</p>
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 12px 24px; border-radius: 999px; font-weight: 500; font-size: 15px;">{{t.nav.book}}</a>
+</div>
+<div style="background: #EFE7D8; border-radius: 20px; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; color: #2F3D31;">{{t.owners.blogTitle}}</span>
+<a href="Blog.dc.html" style="font-size: 15px; font-weight: 500;">{{t.owners.blogMore}}</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+<sc-for list="{{t.owners.blogPosts}}" as="b" hint-placeholder-count="2">
+<a href="Blog.dc.html" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; line-height: 1.5; color: #2F3D31;">{{b.title}}</span>
+<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{t.owners.blogMore}}</span>
+</a>
+</sc-for>
+</div>
+</div>
+</div>
+</section>
+
+<section id="vets" style="background: #3E5040; color: #F7F2E9; padding: 96px 24px;">
+<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #CFDCC6; font-weight: 500;">{{t.vets.eyebrow}}</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #FFFDF8;">{{t.vets.title}}</h2>
+<p style="margin: 0; color: #E8E1D3;">{{t.vets.intro}}</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+<sc-for list="{{t.vets.items}}" as="s" hint-placeholder-count="4">
+<div style="background: #4A5D4B; border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px;">
+<span style="font-size: 13px; letter-spacing: 0.08em; color: #CFDCC6;">{{s.tag}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 21px; color: #FFFDF8; line-height: 1.4;">{{s.title}}</h3>
+<p style="margin: 0; font-size: 15px; color: #E8E1D3;">{{s.body}}</p>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; border-top: 1px solid #5F735F; padding-top: 28px;">
+<p style="margin: 0; color: #E8E1D3; max-width: 640px;">{{t.vets.eap}}</p>
+<a href="Vets.dc.html" style="text-decoration: none; background: #F7F2E9; color: #2F3D31; padding: 14px 26px; border-radius: 999px; font-weight: 500;">{{t.vets.cta}}</a>
+</div>
+</div>
+</section>
+
+<section id="process" style="padding: 96px 24px;">
+<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.process.eyebrow}}</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.process.title}}</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px;">
+<sc-for list="{{t.process.steps}}" as="p" hint-placeholder-count="3">
+<div style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid #3E5040; padding-top: 20px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 40px; line-height: 1; color: #8A4F35;">{{p.n}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 22px; color: #2F3D31;">{{p.title}}</h3>
+<p style="margin: 0; font-size: 16px; color: #4A443D;">{{p.body}}</p>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<sc-for list="{{t.process.format}}" as="f" hint-placeholder-count="3">
+<span style="background: #EFE7D8; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #33402F;">{{f.v}}</span>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="resources" style="background: #EFE7D8; padding: 88px 24px;">
+<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.res.eyebrow}}</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.res.title}}</h2>
+</div>
+<a href="Blog.dc.html" style="font-weight: 500;">{{t.res.more}}</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+<sc-for list="{{t.res.posts}}" as="b" hint-placeholder-count="3">
+<a href="{{b.href}}" style="text-decoration: none; color: #2E2A26; background: #F7F2E9; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
+<sc-if value="{{b.hasImg}}" hint-placeholder-val="{{true}}">
+<img src="{{b.img}}" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #E4DCCD;">
+</sc-if>
+<sc-if value="{{b.noImg}}" hint-placeholder-val="{{false}}">
+<div style="aspect-ratio: 16 / 9; background: {{b.tint}};"></div>
+</sc-if>
+<div style="padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{b.tag}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 19px; line-height: 1.5; color: #2F3D31;">{{b.title}}</h3>
+<span style="font-size: 14px; color: #4A443D;">{{b.body}}</span>
+<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{b.go}} →</span>
+</div>
+</a>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="faq" style="padding: 96px 24px;">
+<div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">FAQ</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.faq.title}}</h2>
+</div>
+<div style="display: flex; flex-direction: column;">
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="5">
+<div style="border-bottom: 1px solid #E2D8C6;">
+<button type="button" onClick="{{f.toggle}}" aria-expanded="{{f.open}}" style="width: 100%; background: none; border: 0; padding: 22px 0; min-height: 44px; display: flex; justify-content: space-between; align-items: center; gap: 16px; text-align: left; cursor: pointer; font-family: 'Noto Serif TC', serif; font-size: 19px; color: #2F3D31;">
+<span>{{f.q}}</span>
+<span style="font-family: 'Noto Sans TC', sans-serif; font-size: 22px; color: #3E5040;">{{f.sign}}</span>
+</button>
+<sc-if value="{{f.open}}" hint-placeholder-val="{{false}}">
+<p style="margin: 0 0 22px; font-size: 16px; color: #4A443D; max-width: 44em; white-space: pre-line;">{{f.a}}</p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+<p style="margin: 0; padding: 18px 22px; border: 1.5px solid #B5826B; background: #F6E9DF; border-radius: 14px; font-size: 15px; color: #5A2F1E; line-height: 1.7;">{{t.contact.crisis}}</p>
+</div>
+</section>
+
+<section id="contact" style="padding: 0 24px 96px;">
+<div style="max-width: 1160px; margin: 0 auto; background: #E4EBDD; border-radius: 32px; padding: clamp(36px, 6vw, 72px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.4; color: #2F3D31;">{{t.contact.title}}</h2>
+<p style="margin: 0; color: #33402F;">{{t.contact.body}}</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 28px; border-radius: 999px; font-weight: 500;">{{t.contact.cta}}</a>
+<a href="{{gmailHref}}" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">{{t.contact.mail}}</a>
+<a href="https://www.instagram.com/dr.heibe_counsellingvet" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">Instagram</a>
+<a href="https://www.threads.net/@dr.heibe_counsellingvet" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">Threads</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; background: #F7F2E9; border-radius: 20px; padding: 28px;">
+<div style="display: flex; flex-direction: column; gap: 2px; padding-bottom: 12px; border-bottom: 1px solid #E2D8C6;">
+<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{t.contact.emailK}}</span>
+<a href="{{gmailHref}}" target="_blank" rel="noopener" style="font-size: 16px;">dr.heibelau.work@gmail.com</a>
+</div>
+<sc-for list="{{t.contact.rows}}" as="r" hint-placeholder-count="3">
+<div style="display: flex; flex-direction: column; gap: 2px; padding-bottom: 12px; border-bottom: 1px solid #E2D8C6;">
+<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{r.k}}</span>
+<span style="font-size: 16px; color: #2E2A26;">{{r.v}}</span>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #E2D8C6; padding: 56px 24px 32px;">
+<div style="max-width: 1160px; margin: 0 auto 32px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; height: 252px">
+<a href="Main.dc.html" style="display: block; width: 299px; height: 204px"><img src="./assets/c7e0d58e61cf2b3d4ef87b689b46a010.png" alt="Dr. Heibe｜輔導空間 Dr. Heibe Counselling 標誌" style="width: 299px; max-width: 60vw; height: 252px; mix-blend-mode: multiply; display: block"></a>
+
+</div>
+<div style="max-width: 1160px; margin: 0 auto; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: #5E574F; border-top: 1px solid #E2D8C6; padding-top: 20px;">
+<span>© 2026 Dr. Heibe｜輔導空間 · Dr. Heibe Counselling</span>
+<span style="display: flex; gap: 18px; flex-wrap: wrap;">
+<a href="Main.dc.html">{{t.foot.home}}</a>
+<a href="Vets.dc.html">{{t.foot.vets}}</a>
+<a href="Blog.dc.html">{{t.foot.blog}}</a>
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener">{{t.nav.book}}</a>
+</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"startLang":{"editor":"enum","options":["zh","en"],"default":"zh"},"$preview":{"width":1280,"height":7600}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { lang: null, open: { 0: true } };
+  }
+  renderVals() {
+    const lang = this.state.lang || this.props.startLang || 'zh';
+    const T = {
+      zh: {
+        nav: { about: '關於我', owners: '寵物主人', vets: '獸醫同業', blog: '隨筆手記', faq: '常見問題', book: '優先登記' },
+        hero: {
+          eyebrow: '寵物哀傷輔導 · 獸醫業界心理支援',
+          l1: '用獸醫的角度照顧動物，', l2: '用輔導的視角理解人',
+          body: '無論你正面對毛孩離世、照顧患病毛孩的疲累，還是在獸醫工作中感到身心疲憊，這裡是一個可以慢慢說、不必急著堅強的空間。',
+          cta: '優先登記', cta2: '認識 Dr. Heibe',
+          launch: '輔導服務預計於 11 月正式開始，歡迎先優先登記。',
+          p1: '我是寵物主人', p1d: '失去毛孩、照顧年老或患病的毛孩、面對艱難的醫療抉擇',
+          p2: '我是獸醫同業', p2d: '為獸醫、獸醫護士及診所團隊而設的心理支援'
+        },
+        about: {
+          eyebrow: '關於 DR. HEIBE',
+          title: '關於 Dr. Heibe',
+          p1: '我是 Dr. Heibe，香港註冊獸醫（Lau Wing Chi, DVM），亦是受專業訓練的輔導員。',
+          p2: '做獸醫的這些年，我見過很多主人在寵物生病的時候，承受著很大的情緒壓力。在急症室裡，我經常陪伴家庭面對突如其來的離別與艱難抉擇，也看見同事們在高壓下默默承受的情緒。這些經歷令我想更好地支援這些同樣愛寵物的人，於是我修讀了輔導。',
+          p3: '我明白寵物生病和主人面對離世是怎樣的過程，也受過輔導學的專業訓練。因此，我希望透過我的專業，為主人和照顧者提供一個空間，讓你慢慢整理自己的感受，用自己的步伐走過哀傷。',
+          approachTitle: '我的取向',
+          approach: [ { v: '尊重每個人的選擇，珍視人和寵物之間獨特的關係' }, { v: '不批判，以你的需要為先' }, { v: '保密原則，遵守 HKPCA 的守則規範' } ],
+          qualTitle: '資歷',
+          qual: [ { v: '香港獸醫管理局註冊獸醫（DVM）' }, { v: '香港大學社會科學輔導學碩士（MSSc Counselling）' } ],
+          methodTitle: '輔導手法',
+          method: [ { v: '人本取向（Person-centered Approach）' }, { v: '敘事治療（Narrative Therapy）' }, { v: '接納與承諾治療（ACT）' }, { v: '情緒取向治療（Emotionally Focused Therapy, EFT）' } ],
+          expTitle: '輔導經驗',
+          exp: [ { v: '超過 250 小時臨床及督導時數' }, { v: '寵物哀傷支持小組' }, { v: 'MARS Veterinary Health 實習輔導員' }, { v: '機構個別輔導' }, { v: '一對一情緒輔導服務' } ],
+          more: '查看完整背景及講座經歷 →'
+        },
+        owners: {
+          eyebrow: '給寵物主人',
+          title: '陪你走過與寵物告別的路',
+          intro: '失去寵物，或者照顧一隻長期患病的寵物，都可能令人很累、很沮喪，甚至有時會覺得孤單。身邊的人未必理解你，但這份感受是真實的。',
+          items: [
+            { n: 1, title: '寵物哀傷輔導', sub: 'Pet Bereavement Counselling', body: '寵物離世前後的哀傷、內疚、思念，以及適應生活的轉變。' },
+            { n: 2, title: '照顧者情緒支援', sub: 'Caregiver Emotional Support', body: '照顧長期患病或年老寵物時的壓力、疲累和情緒起伏。' },
+            { n: 3, title: '同路人小組和心理健康活動', sub: 'Support Group and Activities', body: '認識其他同路人，成為彼此的陪伴者，從活動中感受彼此療癒的過程。' },
+            { n: 4, title: '成人心理健康輔導', sub: 'Adult Mental Health', body: '在安全、保密且具支持性的環境中，探索與處理情緒困擾、壓力、人際關係及生活適應等問題，包括焦慮、抑鬱、強烈情緒波動、失眠、職場或學業壓力。' },
+            { n: 5, title: '心理教育', sub: 'Psychoeducation', body: '認識自己的情緒狀況、寵物罹患疾病或離世的失落及哀傷過程，學習照顧自己的方法。' }
+          ],
+          blogTitle: '隨筆手記：寫給寵物主人', blogMore: '看更多 →', blogPosts: [ { title: "那些深夜裡的照顧者", excerpt: "你的累，是愛留下的痕跡，不是愛的反面。" }, { title: "關於「放手」這個詞", excerpt: "很多主人不是放手，而是用另一種方式繼續握著。" } ],
+          note: '本服務屬輔導服務，不提供獸醫診症、醫療或精神科診斷及治療。有關毛孩的醫療問題，請與你的主診獸醫商討。'
+        },
+        vets: {
+          eyebrow: '給獸醫同業',
+          title: '獸醫，你也值得被好好照顧',
+          intro: '職場壓力、高強度溝通與情緒負荷，不該只靠自己撐過去。',
+          items: [
+            { tag: '機構', title: '機構身心工作坊／講座', body: '職業倦怠的認識與預防、臨床有效溝通、職場壓力調適、身心健康自我覺察等。' },
+            { tag: '個人', title: '獸醫／醫護一對一輔導', body: '處理職業倦怠、壓力或個人議題的一對一情緒支援。' },
+            { tag: '轉介', title: '正式轉介合作方案', body: '與診所建立轉介流程，讓面對安樂死、離世的寵物主人得到支援。' },
+            { tag: '團隊', title: '團隊身心健康活動', body: '正念紓壓、團體支持活動，依團隊人數與時間彈性安排。' }
+          ],
+          eap: '方案可依診所或機構的規模與需求客製，歡迎洽談報價。',
+          cta: '了解合作方案 →'
+        },
+        process: {
+          eyebrow: '輔導流程',
+          title: '三個步驟，按你的步伐開始',
+          steps: [
+            { n: '01', title: '預約', body: '透過網上預約，選擇合適的時間。' },
+            { n: '02', title: '初次傾談', body: '了解你的需要與目標，一起決定最適合你的輔導方式。' },
+            { n: '03', title: '持續陪伴', body: '按你的步伐進行輔導，所有內容均嚴格保密。' }
+          ],
+          format: [ { v: '面談或網上視像' }, { v: '每節 50 分鐘' }, { v: '粵語／國語／英語' } ]
+        },
+        res: {
+          eyebrow: '文章與故事', title: '在預約之前，先讀一點', more: '前往隨筆手記 →',
+          posts: [
+            { tag: '隨筆手記', title: '一些想法，一些故事', body: '記錄我在獸醫與輔導這條路上的感想與故事。', go: '閱讀隨筆', href: 'Blog.dc.html', tint: '#DDE5D5', img: './assets/1f2283244ac0cc22438bfccfc19fed89.jpg', hasImg: true, noImg: false },
+            { tag: '分享你的故事', title: '說說你與寵物的故事', body: '每一則投稿我都會親自閱讀，你可選擇是否公開。', go: '分享故事', href: 'Blog.dc.html', tint: '#EAD9C8', img: './assets/cc5f3be9a153a2505480476296a2990e.jpg', hasImg: true, noImg: false },
+            { tag: '獸醫身心健康', title: '給獸醫與醫護的職場身心文章', body: 'Burnout、困難對話、Mental Health Awareness。', go: '閱讀文章', href: 'Vets.dc.html', tint: '#D9DCCB', img: './assets/805bddc93dde813e69d1a7b5986e81c4.jpg', hasImg: true, noImg: false }
+          ]
+        },
+        faq: { title: '常見問題' },
+        faqs: [
+          { q: '預約流程是怎樣的？', a: '① 填寫表單：按本頁「優先登記」按鈕填寫，數分鐘即可完成。\n② 電郵聯繫及免費初步評估：我會以電郵與你聯繫，預約一次免費的簡短初步評估（約 15 分鐘），了解你的需要和目前狀況。如評估後發現你的需要超出我能提供的服務範圍，我會盡力協助你轉介至其他合適的服務。\n③ 確認服務：確認輔導安排，並簽署服務同意書。\n④ 付款後取得服務確認書。\n⑤ 預約第一次輔導：每節 50 分鐘，按你的步伐進行，所有內容保密。' },
+          { q: '我怎樣知道自己是否需要輔導？', a: '輔導不只是在「撐不住」時才需要。如果你發現自己有以下情況，都可以考慮找人談談：\n· 持續感到悲傷、內疚、憤怒或麻木\n· 睡眠、胃口、工作或人際關係受到影響\n· 反覆想著同一件事，例如毛孩離世前的決定或某個工作個案\n· 對工作失去熱情，下班後仍放不下\n· 覺得身邊的人不太明白你的感受\n如果不確定，也歡迎先填寫登記表格，我們可以先初步傾談，再一起決定是否適合。' },
+          { q: '輔導和看獸醫有甚麼不同？', a: '輔導專注於你的情緒與想法，不涉及診斷或治療建議。我會陪你整理感受與顧慮，讓你更有力量與主診獸醫溝通。' },
+          { q: '毛孩離開很久了，還適合尋求輔導嗎？', a: '哀傷沒有時間表。無論是數天還是數年，只要它仍影響你的生活，都值得被聆聽。' },
+          { q: '我是獸醫／獸醫護士，同行身份會令我尷尬嗎？', a: '所有輔導內容均嚴格保密（法律規定的例外情況除外），我不會向任何人揭示你正在接受輔導、你的個人身分，以及輔導期間分享的私人內容。除非你願意，否則無需公開你所在診所和同事的真實姓名。在輔導空間內，我們的身分是輔導員（我）和客戶（你），輔導的內容及方式以你的最大利益為優先。正因為我了解這個行業，你不必花時間解釋工作背景，可以更快談到真正困擾你的事。' },
+          { q: '輔導內容會保密嗎？', a: '會。除涉及人身安全等法律規定的例外情況外，所有內容均嚴格保密，並會在初次傾談時清楚說明及簽署保密協議書和服務同意書。' },
+          { q: '輔導形式和收費是怎樣的？', a: '可選擇面談或網上視像，每節 50 分鐘，以粵語、國語或英語進行。服務預計於 11 月正式開始，收費將於優先登記後通知。機構方案請洽談報價。' },
+          { q: '面談和網上視像輔導，應該怎樣選擇？', a: '兩種形式同樣保密，可按你的生活節奏和需要選擇：\n· 網上視像：適合時間緊湊、需要輪班，或想在熟悉環境（例如家中）傾談的人。請預備一個安靜、不會被打擾的私人空間及穩定的網絡。\n· 面談：適合希望暫時離開日常環境、專心面對面傾談的人。\n你可以隨時轉換形式，我們會在初次聯絡時一起決定最合適的安排。' }
+        ],
+        contact: {
+          title: '慢慢來，我在這裡。',
+          body: '輔導服務預計於 11 月正式開始。歡迎先填寫優先登記表格，或以電郵查詢。',
+          cta: '優先登記', mail: '電郵查詢', emailK: '電郵',
+          rows: [
+            { k: '形式', v: '面談或網上視像｜每節 50 分鐘' },
+            { k: '語言', v: '粵語／國語／英語' },
+            { k: 'Instagram / Threads', v: '@dr.heibe_counsellingvet' }
+          ],
+          crisis: '如你或身邊的人有即時危險，請致電 999 或前往最近的急症室。24 小時精神健康支援熱線「情緒通」18111。'
+        },
+        foot: { home: '首頁', vets: '獸醫同業', blog: '隨筆手記' }
+      },
+      en: {
+        nav: { about: 'About', owners: 'Pet owners', vets: 'Vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Priority registration' },
+        hero: {
+          eyebrow: 'PET LOSS COUNSELLING · SUPPORT FOR VET PROFESSIONALS',
+          l1: 'Caring for animals as a vet,', l2: 'understanding people as a counsellor',
+          body: 'Whether you are grieving a pet, exhausted from caring for a sick one, or worn down by veterinary work, this is a space to talk at your own pace, without needing to be strong.',
+          cta: 'Priority registration', cta2: 'Meet Dr. Heibe',
+          launch: 'Counselling services are expected to begin in November — register early for priority.',
+          p1: 'I\'m a pet owner', p1d: 'Losing a pet, caring for a senior or sick pet, facing difficult decisions',
+          p2: 'I work in veterinary care', p2d: 'Support for vets, vet nurses and clinic teams'
+        },
+        about: {
+          eyebrow: 'ABOUT DR. HEIBE',
+          title: 'About Dr. Heibe',
+          p1: 'I\'m Dr. Heibe — a registered veterinarian in Hong Kong (Lau Wing Chi, DVM) and a professionally trained counsellor.',
+          p2: 'Over my years as a vet, I have seen many owners carry heavy emotional strain when their pets fall ill. In the emergency room I often walk alongside families through sudden goodbyes and difficult decisions, and I see colleagues quietly carrying their emotions under pressure. These experiences made me want to better support people who love their animals just as much — so I trained in counselling.',
+          p3: 'I understand what it is like when a pet is ill and when owners face a loss, and I am professionally trained in counselling. Through my work, I hope to offer owners and caregivers a space to slowly make sense of their feelings and move through grief at their own pace.',
+          approachTitle: 'My approach',
+          approach: [ { v: 'Respecting every person\'s choices and the unique bond between people and their pets' }, { v: 'Non-judgemental, putting your needs first' }, { v: 'Confidentiality, following the HKPCA code of ethics' } ],
+          qualTitle: 'Qualifications',
+          qual: [ { v: 'Registered Veterinarian, Veterinary Surgeons Board of Hong Kong (DVM)' }, { v: 'Master of Social Sciences in Counselling (MSSc Counselling), HKU' } ],
+          methodTitle: 'Counselling approaches',
+          method: [ { v: 'Person-centred Approach' }, { v: 'Narrative Therapy' }, { v: 'Acceptance and Commitment Therapy (ACT)' }, { v: 'Emotionally Focused Therapy (EFT)' } ],
+          expTitle: 'Counselling experience',
+          exp: [ { v: '250+ hours of clinical and supervised practice' }, { v: 'Pet bereavement support groups' }, { v: 'Trainee counsellor, MARS Veterinary Health' }, { v: 'Individual counselling in organisational settings' }, { v: 'One-to-one emotional counselling' } ],
+          more: 'Full background and talks →'
+        },
+        owners: {
+          eyebrow: 'FOR PET OWNERS',
+          title: 'Walking with you through saying goodbye to your pet',
+          intro: 'Losing a pet, or caring for one with a long-term illness, can leave you exhausted, discouraged, and sometimes deeply alone. The people around you may not fully understand — but what you\'re feeling is real.',
+          items: [
+            { n: 1, title: 'Pet Bereavement Counselling', sub: '寵物哀傷輔導', body: 'Grief, guilt and longing before and after a pet\'s death, and adjusting to life\'s changes.' },
+            { n: 2, title: 'Caregiver Emotional Support', sub: '照顧者情緒支援', body: 'The stress, fatigue and emotional ups and downs of caring for a chronically ill or senior pet.' },
+            { n: 3, title: 'Support Group and Activities', sub: '同路人小組和心理健康活動', body: 'Meet others on the same path, keep each other company, and heal together through activities.' },
+            { n: 4, title: 'Adult Mental Health', sub: '成人心理健康輔導', body: 'A safe, confidential and supportive space to explore emotional distress, stress, relationships and life adjustment — including anxiety, low mood, intense emotions, insomnia, and work or study stress.' },
+            { n: 5, title: 'Psychoeducation', sub: '心理教育', body: 'Understand your emotions, the process of loss and grief when a pet is ill or dies, and ways to care for yourself.' }
+          ],
+          blogTitle: 'From the blog: for pet owners', blogMore: 'See more →', blogPosts: [ { title: "The carers of the small hours", excerpt: "Your tiredness is a mark that love leaves behind, not its opposite." }, { title: "On the words “letting go”", excerpt: "Many owners don't let go — they keep holding on, in a different way." } ],
+          note: 'This is a counselling service — not veterinary diagnosis, medical treatment, or psychiatric diagnosis or treatment. Please discuss medical questions with your pet\'s attending vet.'
+        },
+        vets: {
+          eyebrow: 'FOR VETERINARY PROFESSIONALS',
+          title: 'Vets, you deserve to be cared for too',
+          intro: 'Workplace stress, intense communication and emotional load shouldn\'t be carried alone.',
+          items: [
+            { tag: 'ORGANISATIONS', title: 'Workshops & talks', body: 'Understanding and preventing burnout, effective clinical communication, managing workplace stress, self-awareness of mental wellbeing.' },
+            { tag: 'INDIVIDUAL', title: '1:1 counselling for vets & nurses', body: 'Emotional support for burnout, stress or personal issues.' },
+            { tag: 'REFERRAL', title: 'Referral partnership', body: 'A referral pathway so clients facing euthanasia or loss can receive support.' },
+            { tag: 'TEAMS', title: 'Team wellbeing activities', body: 'Mindfulness and group support, arranged around your team.' }
+          ],
+          eap: 'All packages can be tailored to your clinic\'s size and needs — get in touch for a quote.',
+          cta: 'See partnership options →'
+        },
+        process: {
+          eyebrow: 'HOW IT WORKS',
+          title: 'Three steps, at your own pace',
+          steps: [
+            { n: '01', title: 'Book', body: 'Choose a suitable time through online booking.' },
+            { n: '02', title: 'First conversation', body: 'We explore your needs and goals, and decide together what suits you best.' },
+            { n: '03', title: 'Ongoing support', body: 'Sessions continue at your pace, and everything stays confidential.' }
+          ],
+          format: [ { v: 'In-person or online video' }, { v: '50-minute sessions' }, { v: 'Cantonese / Mandarin / English' } ]
+        },
+        res: {
+          eyebrow: 'ARTICLES & STORIES', title: 'A little reading before you book', more: 'Go to Blog →',
+          posts: [
+            { tag: 'Blog', title: 'Some thoughts, some stories', body: 'Notes from my path between veterinary medicine and counselling.', go: 'Read', href: 'Blog.dc.html', tint: '#DDE5D5', img: './assets/1f2283244ac0cc22438bfccfc19fed89.jpg', hasImg: true, noImg: false },
+            { tag: 'Share your story', title: 'Tell me about you and your pet', body: 'I read every story personally — you choose whether it\'s shared.', go: 'Share', href: 'Blog.dc.html', tint: '#EAD9C8', img: './assets/cc5f3be9a153a2505480476296a2990e.jpg', hasImg: true, noImg: false },
+            { tag: 'Vet wellbeing', title: 'Articles for vets and vet nurses', body: 'Burnout, difficult conversations, mental health awareness.', go: 'Read', href: 'Vets.dc.html', tint: '#D9DCCB', img: './assets/805bddc93dde813e69d1a7b5986e81c4.jpg', hasImg: true, noImg: false }
+          ]
+        },
+        faq: { title: 'Frequently asked questions' },
+        faqs: [
+          { q: 'How does booking work?', a: '① Fill in the form — use the “Priority registration” button on this page; it only takes a few minutes.\n② Email contact and free initial screening — I\'ll email you to book a free, brief initial screening (about 15 minutes) to understand your needs and current situation. If the screening shows that your needs are beyond the scope of what I can offer, I\'ll do my best to help refer you to other suitable services.\n③ Confirm the service — we confirm the arrangements and you sign the service consent form.\n④ Receive your service confirmation after payment.\n⑤ Book your first session — 50 minutes, at your own pace, with everything kept confidential.' },
+          { q: 'How do I know if I need counselling?', a: 'Counselling isn\'t only for when you can\'t cope any more. It may help to talk to someone if you notice:\n· Ongoing sadness, guilt, anger or numbness\n· Changes in your sleep, appetite, work or relationships\n· Going over the same thing again and again — a decision before your pet died, or a case at work\n· Losing your passion for work, or being unable to switch off after a shift\n· Feeling that the people around you don\'t quite understand\nIf you\'re not sure, you\'re welcome to fill in the registration form first; we can have an initial chat and decide together whether it\'s a good fit.' },
+          { q: 'How is counselling different from seeing a vet?', a: 'Counselling focuses on your emotions and thoughts — no diagnosis or treatment advice. I help you sort through feelings and concerns so you can talk with your vet with more clarity.' },
+          { q: 'My pet passed away a long time ago. Is counselling still for me?', a: 'Grief has no timetable. Whether it has been days or years, if it still affects your life, it deserves to be heard.' },
+          { q: 'I\'m a vet / vet nurse — will it feel awkward to see a colleague?', a: 'Everything is strictly confidential (apart from legally required exceptions). I will not reveal to anyone that you are receiving counselling, your identity, or anything personal you share in our sessions. Unless you choose to, you don\'t need to name your clinic or colleagues. In the counselling space, our roles are counsellor (me) and client (you), and the content and approach of our work always put your best interests first. Because I know the industry, you won\'t spend time explaining your work and can get to what really matters sooner.' },
+          { q: 'Is what I share confidential?', a: 'Yes. Apart from legally required exceptions such as risk to safety, everything is kept strictly confidential. I explain this clearly in our first conversation, and we sign a confidentiality agreement and a service consent form.' },
+          { q: 'What are the format and fees?', a: 'In-person or online video, 50-minute sessions, in Cantonese, Mandarin or English. Services are expected to begin in November; fees will be shared after priority registration. Please enquire for organisational packages.' },
+          { q: 'Should I choose in-person or online counselling?', a: 'Both are equally confidential — choose whichever fits your life and needs:\n· Online video: good if your schedule is tight, you work shifts, or you\'d rather talk somewhere familiar such as home. Please find a quiet, private space where you won\'t be interrupted, with a stable internet connection.\n· In person: good if you\'d like to step away from your everyday surroundings and talk face to face.\nYou can switch between formats at any time; we\'ll decide on the best arrangement together when we first talk.' }
+        ],
+        contact: {
+          title: 'Take your time. I\'m here.',
+          body: 'Counselling services are expected to begin in November. Register early for priority, or reach out by email.',
+          cta: 'Priority registration', mail: 'Email me', emailK: 'Email',
+          rows: [
+            { k: 'Format', v: 'In-person or online video｜50 minutes' },
+            { k: 'Languages', v: 'Cantonese / Mandarin / English' },
+            { k: 'Instagram / Threads', v: '@dr.heibe_counsellingvet' }
+          ],
+          crisis: 'If you or someone near you is in immediate danger, call 999 or go to the nearest emergency room. 24-hour mental health support hotline: 18111.'
+        },
+        foot: { home: 'Home', vets: 'Vet professionals', blog: 'Blog' }
+      }
+    };
+    const t = T[lang];
+    const open = this.state.open;
+    const faqs = t.faqs.map((f, i) => ({
+      q: f.q, a: f.a, open: !!open[i], sign: open[i] ? '−' : '+',
+      toggle: () => this.setState({ open: { ...this.state.open, [i]: !this.state.open[i] } })
+    }));
+    const base = 'border: 0; min-width: 44px; min-height: 36px; padding: 6px 12px; font-size: 14px; cursor: pointer; font-family: inherit;';
+    const on = base + ' background: #3E5040; color: #FFFDF8;';
+    const off = base + ' background: transparent; color: #4A443D;';
+    const mailHref = 'mailto:dr.heibelau.work@gmail.com?subject=' + encodeURIComponent(lang === 'zh' ? '輔導服務查詢' : 'Counselling enquiry');
+    return {
+      t, faqs, mailHref,
+      gmailHref: 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent('dr.heibelau.work@gmail.com') + '&su=' + encodeURIComponent(lang === 'zh' ? '輔導服務查詢' : 'Counselling enquiry'),
+      zhStyle: lang === 'zh' ? on : off,
+      enStyle: lang === 'en' ? on : off,
+      setZh: () => this.setState({ lang: 'zh' }),
+      setEn: () => this.setState({ lang: 'en' })
+    };
+  }
+}
+</script>
+</body>
+</html>
