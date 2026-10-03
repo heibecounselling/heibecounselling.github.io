@@ -85,9 +85,9 @@ window.CONTENT.home = {
         res: {
           eyebrow: '文章與故事', title: '在預約之前，先讀一點', more: '前往隨筆手記 →',
           posts: [
-            { tag: '隨筆手記', title: '一些想法，一些故事', body: '記錄我在獸醫與輔導這條路上的感想與故事。', go: '閱讀隨筆', href: 'blog.html', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
-            { tag: '分享你的故事', title: '說說你與寵物的故事', body: '每一則投稿我都會親自閱讀，你可選擇是否公開。', go: '分享故事', href: 'blog.html', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
-            { tag: '獸醫身心健康', title: '給獸醫與醫護的職場身心文章', body: 'Burnout、困難對話、Mental Health Awareness。', go: '閱讀文章', href: 'vets.html', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
+            { tag: '隨筆手記', title: '一些想法，一些故事', body: '記錄我在獸醫與輔導這條路上的感想與故事。', go: '閱讀隨筆', href: '/blog', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
+            { tag: '分享你的故事', title: '說說你與寵物的故事', body: '每一則投稿我都會親自閱讀，你可選擇是否公開。', go: '分享故事', href: '/blog', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
+            { tag: '獸醫身心健康', title: '給獸醫與醫護的職場身心文章', body: 'Burnout、困難對話、Mental Health Awareness。', go: '閱讀文章', href: '/vets', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
           ]
         },
         faq: { title: '常見問題' },
@@ -184,9 +184,9 @@ window.CONTENT.home = {
         res: {
           eyebrow: 'ARTICLES & STORIES', title: 'A little reading before you book', more: 'Go to Blog →',
           posts: [
-            { tag: 'Blog', title: 'Thoughts and stories', body: 'Notes from a path that runs between veterinary medicine and counselling.', go: 'Read', href: 'blog.html', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
-            { tag: 'Share your story', title: 'Tell me about you and your pet', body: 'I read every story myself, and you decide whether it\'s shared.', go: 'Share', href: 'blog.html', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
-            { tag: 'Vet wellbeing', title: 'Articles for vets and vet nurses', body: 'Burnout, difficult conversations, mental health awareness.', go: 'Read', href: 'vets.html', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
+            { tag: 'Blog', title: 'Thoughts and stories', body: 'Notes from a path that runs between veterinary medicine and counselling.', go: 'Read', href: '/blog', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
+            { tag: 'Share your story', title: 'Tell me about you and your pet', body: 'I read every story myself, and you decide whether it\'s shared.', go: 'Share', href: '/blog', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
+            { tag: 'Vet wellbeing', title: 'Articles for vets and vet nurses', body: 'Burnout, difficult conversations, mental health awareness.', go: 'Read', href: '/vets', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
           ]
         },
         faq: { title: 'Frequently asked questions' },

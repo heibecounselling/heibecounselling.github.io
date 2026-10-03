@@ -34,7 +34,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 
 <header style="position: sticky; top: 0; z-index: 10; background: #F7F2E9; border-bottom: 1px solid #E2D8C6;">
 <div style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
-<a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px; line-height: 1.25; color: #2E2A26;">
+<a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 12px; line-height: 1.25; color: #2E2A26;">
 <img src="images/logo.png" alt="Dr. Heibe｜輔導空間 標誌" style="width: 56px; height: 48px; object-fit: contain; mix-blend-mode: multiply; display: block;">
 <span style="display: flex; flex-direction: column;">
 <span style="font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 20px; color: #3E5040;">Dr. Heibe｜輔導空間</span>
@@ -44,8 +44,8 @@ a{color:#3E5040}a:hover{color:#26332A}
 <nav style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
 <a href="#about" style="text-decoration: none; color: #4A443D;">{{t.nav.about}}</a>
 <a href="#owners" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
-<a href="vets.html" style="text-decoration: none; color: #4A443D;">{{t.nav.vets}}</a>
-<a href="blog.html" style="text-decoration: none; color: #4A443D;">{{t.nav.blog}}</a>
+<a href="/vets" style="text-decoration: none; color: #4A443D;">{{t.nav.vets}}</a>
+<a href="/blog" style="text-decoration: none; color: #4A443D;">{{t.nav.blog}}</a>
 <a href="#faq" style="text-decoration: none; color: #4A443D;">{{t.nav.faq}}</a>
 <div style="display: flex; border: 1px solid #C9BEA9; border-radius: 999px; overflow: hidden;" role="group" aria-label="Language">
 <button type="button" onClick="{{setZh}}" style="{{zhStyle}}">中</button>
@@ -79,7 +79,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <span style="font-size: 15px; color: #5E574F;">{{t.hero.p1d}}</span>
 </span>
 </a>
-<a href="vets.html" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 28px; display: flex; gap: 20px; align-items: flex-start;">
+<a href="/vets" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 28px; display: flex; gap: 20px; align-items: flex-start;">
 <span style="flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%; background: #F1E3D6; display: flex; align-items: center; justify-content: center;">
 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A4F35" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"></path><path d="M12 15v2a4 4 0 0 0 8 0v-1"></path><circle cx="20" cy="14" r="2"></circle></svg>
 </span>
@@ -96,7 +96,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <div style="max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: start;">
 <div style="display: flex; flex-direction: column; gap: 20px; padding-right: 0px; padding-left: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-bottom: 0px; width: 329px">
 <img src="images/profile.jpg" alt="Dr. Heibe 個人照" style="width: 382px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 24px; display: block; background: #DCD2BF; height: 429px">
-<a href="vets.html#moments" style="margin-top: 40px; font-family: 'Noto Serif TC', serif; font-size: 21px; font-weight: 700; line-height: 1.5;">{{t.about.momentsLink}}</a>
+<a href="/vets#moments" style="margin-top: 40px; font-family: 'Noto Serif TC', serif; font-size: 21px; font-weight: 700; line-height: 1.5;">{{t.about.momentsLink}}</a>
 </div><div style="display: flex; flex-direction: column; gap: 20px; width: 574px; padding-right: 20px">
 <span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.about.eyebrow}}</span>
 <h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31; width: 587px">{{t.about.title}}</h2>
@@ -131,7 +131,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 </sc-for>
 </div>
 </div>
-<a href="vets.html#about" style="font-weight: 500; font-size: 16px;">{{t.about.more}}</a>
+<a href="/vets#about" style="font-weight: 500; font-size: 16px;">{{t.about.more}}</a>
 </div>
 
 </div>
@@ -165,11 +165,11 @@ a{color:#3E5040}a:hover{color:#26332A}
 <div style="background: #EFE7D8; border-radius: 20px; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px;">
 <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
 <span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; color: #2F3D31;">{{t.owners.blogTitle}}</span>
-<a href="blog.html" style="font-size: 15px; font-weight: 500;">{{t.owners.blogMore}}</a>
+<a href="/blog" style="font-size: 15px; font-weight: 500;">{{t.owners.blogMore}}</a>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
 <sc-for list="{{t.owners.blogPosts}}" as="b" hint-placeholder-count="2">
-<a href="blog.html" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px;">
+<a href="/blog" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px;">
 <span style="font-family: 'Noto Serif TC', serif; font-size: 18px; line-height: 1.5; color: #2F3D31;">{{b.title}}</span>
 <span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{t.owners.blogMore}}</span>
 </a>
@@ -197,7 +197,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; border-top: 1px solid #5F735F; padding-top: 28px;">
 <p style="margin: 0; color: #E8E1D3; max-width: 640px;">{{t.vets.eap}}</p>
-<a href="vets.html" style="text-decoration: none; background: #F7F2E9; color: #2F3D31; padding: 14px 26px; border-radius: 999px; font-weight: 500;">{{t.vets.cta}}</a>
+<a href="/vets" style="text-decoration: none; background: #F7F2E9; color: #2F3D31; padding: 14px 26px; border-radius: 999px; font-weight: 500;">{{t.vets.cta}}</a>
 </div>
 </div>
 </section>
@@ -232,7 +232,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.res.eyebrow}}</span>
 <h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #2F3D31;">{{t.res.title}}</h2>
 </div>
-<a href="blog.html" style="font-weight: 500;">{{t.res.more}}</a>
+<a href="/blog" style="font-weight: 500;">{{t.res.more}}</a>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
 <sc-for list="{{t.res.posts}}" as="b" hint-placeholder-count="3">
@@ -307,15 +307,15 @@ a{color:#3E5040}a:hover{color:#26332A}
 
 <footer style="border-top: 1px solid #E2D8C6; padding: 56px 24px 32px;">
 <div style="max-width: 1160px; margin: 0 auto 32px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; height: 252px">
-<a href="index.html" style="display: block; width: 299px; height: 204px"><img src="images/logo.png" alt="Dr. Heibe｜輔導空間 Dr. Heibe Counselling 標誌" style="width: 299px; max-width: 60vw; height: 252px; mix-blend-mode: multiply; display: block"></a>
+<a href="/" style="display: block; width: 299px; height: 204px"><img src="images/logo.png" alt="Dr. Heibe｜輔導空間 Dr. Heibe Counselling 標誌" style="width: 299px; max-width: 60vw; height: 252px; mix-blend-mode: multiply; display: block"></a>
 
 </div>
 <div style="max-width: 1160px; margin: 0 auto; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: #5E574F; border-top: 1px solid #E2D8C6; padding-top: 20px;">
 <span>© 2026 Dr. Heibe｜輔導空間 · Dr. Heibe Counselling</span>
 <span style="display: flex; gap: 18px; flex-wrap: wrap;">
-<a href="index.html">{{t.foot.home}}</a>
-<a href="vets.html">{{t.foot.vets}}</a>
-<a href="blog.html">{{t.foot.blog}}</a>
+<a href="/">{{t.foot.home}}</a>
+<a href="/vets">{{t.foot.vets}}</a>
+<a href="/blog">{{t.foot.blog}}</a>
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener">{{t.nav.book}}</a>
 </span>
 </div>
@@ -324,8 +324,8 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </template>
 <noscript><p style="padding:24px;font-family:sans-serif">請開啟瀏覽器的 JavaScript 以瀏覽本網站。Please enable JavaScript to view this website.</p></noscript>
-<script src="content.js?v=7"></script>
-<script src="site.js?v=7"></script>
+<script src="content.js?v=8"></script>
+<script src="site.js?v=8"></script>
 <script>
 class Component extends DCLogic {
   constructor(props) {

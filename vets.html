@@ -34,7 +34,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 
 <header style="position: sticky; top: 0; z-index: 10; background: #F7F2E9; border-bottom: 1px solid #E2D8C6;">
 <div style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
-<a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px; line-height: 1.25; color: #2E2A26;">
+<a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 12px; line-height: 1.25; color: #2E2A26;">
 <img src="images/logo.png" alt="Dr. Heibe｜輔導空間 標誌" style="width: 56px; height: 48px; object-fit: contain; mix-blend-mode: multiply; display: block;">
 <span style="display: flex; flex-direction: column;">
 <span style="font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 20px; color: #3E5040;">Dr. Heibe｜輔導空間</span>
@@ -42,12 +42,12 @@ a{color:#3E5040}a:hover{color:#26332A}
 </span>
 </a>
 <nav style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
-<a href="index.html" style="text-decoration: none; color: #4A443D;">{{t.nav.home}}</a>
-<a href="index.html" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
+<a href="/" style="text-decoration: none; color: #4A443D;">{{t.nav.home}}</a>
+<a href="/" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
 <a href="#about" style="text-decoration: none; color: #4A443D;">{{t.nav.about}}</a>
 <a href="#services" style="text-decoration: none; color: #4A443D;">{{t.nav.services}}</a>
 <a href="#articles" style="text-decoration: none; color: #4A443D;">{{t.nav.articles}}</a>
-<a href="blog.html" style="text-decoration: none; color: #4A443D;">{{t.nav.blog}}</a>
+<a href="/blog" style="text-decoration: none; color: #4A443D;">{{t.nav.blog}}</a>
 <div style="display: flex; border: 1px solid #C9BEA9; border-radius: 999px; overflow: hidden;" role="group" aria-label="Language">
 <button type="button" onClick="{{setZh}}" style="{{zhStyle}}">中</button>
 <button type="button" onClick="{{setEn}}" style="{{enStyle}}">EN</button>
@@ -157,11 +157,11 @@ a{color:#3E5040}a:hover{color:#26332A}
 <div style="background: #EFE7D8; border-radius: 20px; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px;">
 <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
 <span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; color: #2F3D31;">{{t.blogTitle}}</span>
-<a href="blog.html" style="font-size: 15px; font-weight: 500;">{{t.blogMore}}</a>
+<a href="/blog" style="font-size: 15px; font-weight: 500;">{{t.blogMore}}</a>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
 <sc-for list="{{t.blogPosts}}" as="b" hint-placeholder-count="2">
-<a href="blog.html" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px;">
+<a href="/blog" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px;">
 <span style="font-family: 'Noto Serif TC', serif; font-size: 18px; line-height: 1.5; color: #2F3D31;">{{b.title}}</span>
 <span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{t.blogMore}}</span>
 </a>
@@ -204,15 +204,15 @@ a{color:#3E5040}a:hover{color:#26332A}
 
 <footer style="border-top: 1px solid #E2D8C6; padding: 56px 24px 32px;">
 <div style="max-width: 1160px; margin: 0 auto 32px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center;">
-<a href="index.html" style="display: block;"><img src="images/logo.png" alt="Dr. Heibe｜輔導空間 Dr. Heibe Counselling 標誌" style="width: 220px; max-width: 60vw; height: auto; mix-blend-mode: multiply; display: block;"></a>
+<a href="/" style="display: block;"><img src="images/logo.png" alt="Dr. Heibe｜輔導空間 Dr. Heibe Counselling 標誌" style="width: 220px; max-width: 60vw; height: auto; mix-blend-mode: multiply; display: block;"></a>
 <span style="font-family: 'Noto Serif TC', serif; font-size: 16px; color: #5B6E55;">{{t.slogan}}</span>
 </div>
 <div style="max-width: 1160px; margin: 0 auto; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 14px; color: #5E574F; border-top: 1px solid #E2D8C6; padding-top: 20px;">
 <span>© 2026 Dr. Heibe｜輔導空間 · {{t.footTag}}</span>
 <span style="display: flex; gap: 18px; flex-wrap: wrap;">
-<a href="index.html">{{t.nav.home}}</a>
-<a href="index.html">{{t.nav.owners}}</a>
-<a href="blog.html">{{t.nav.blog}}</a>
+<a href="/">{{t.nav.home}}</a>
+<a href="/">{{t.nav.owners}}</a>
+<a href="/blog">{{t.nav.blog}}</a>
 <a href="#contact">{{t.nav.contact}}</a>
 </span>
 </div>
@@ -221,8 +221,8 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </template>
 <noscript><p style="padding:24px;font-family:sans-serif">請開啟瀏覽器的 JavaScript 以瀏覽本網站。Please enable JavaScript to view this website.</p></noscript>
-<script src="content.js?v=7"></script>
-<script src="site.js?v=7"></script>
+<script src="content.js?v=8"></script>
+<script src="site.js?v=8"></script>
 <script>
 class Component extends DCLogic {
   constructor(props) {
