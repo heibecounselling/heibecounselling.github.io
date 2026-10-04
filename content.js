@@ -82,6 +82,15 @@ window.CONTENT.home = {
           ],
           format: [ { v: '面談或網上視像' }, { v: '每節 50 分鐘' }, { v: '粵語／國語／英語' } ]
         },
+        notice: {
+          eyebrow: "IMPORTANT NOTICE", title: "服務說明與須知",
+          items: [
+            { h: "輔導服務的性質", b: "Dr. Heibe 提供的是情緒支持與陪伴，協助你理解獸醫已提供的醫療資訊、消化情緒、釐清想法。這不是醫療診斷，也不能取代獸醫的專業意見或獨立第二意見；如你正處於情緒危機或有傷害自己的念頭，請立即撥打「情緒通」18111，或前往就近急症室求助。是否接受輔導、何時開始或結束，決定權在你；個案內容可能在保密及匿名原則下接受專業督導討論，不會透露任何足以辨識你身份的資訊。" },
+            { h: "保密與其限制", b: "除非你同意，輔導內容不會透露給第三方。以下情況為例外：你或第三方有立即、嚴重的傷害風險；懷疑兒童或其他易受傷害人士遭受虐待；法律要求必須揭露資料（例如法庭命令）。" },
+            { h: "雙重角色與專業界線", b: "Dr. Heibe 同時具備獸醫與輔導員身份。如你的個案涉及她過去曾以獸醫身份直接診治的動物，會在提供輔導服務前主動告知，並與你討論是否適合繼續或轉介。" },
+            { h: "取消與改期政策", b: "預約須於付款完成後正式確認。如需取消或改期，請於預約時段 48 小時前通知，可免費改期一次；若少於 48 小時通知或未出席，已付費用恕不退還。" }
+          ]
+        },
         res: {
           eyebrow: '文章與故事', title: '在預約之前，先讀一點', more: '前往隨筆手記 →',
           posts: [
@@ -180,6 +189,15 @@ window.CONTENT.home = {
             { n: '03', title: 'Ongoing support', body: 'We continue at your pace, in complete confidence.' }
           ],
           format: [ { v: 'In-person or online video' }, { v: '50-minute sessions' }, { v: 'Cantonese / Mandarin / English' } ]
+        },
+        notice: {
+          eyebrow: "IMPORTANT NOTICE", title: "About the service",
+          items: [
+            { h: "Nature of the service", b: "Dr. Heibe offers emotional support and companionship: helping you make sense of the medical information your vet has already given you, process your emotions and clarify your thoughts. This is not a medical diagnosis, and it cannot replace your vet's professional advice or an independent second opinion. If you are in an emotional crisis or having thoughts of harming yourself, call the 24-hour Mental Health Support Hotline on 18111 now, or go to your nearest Accident & Emergency department. Whether to start, continue or end counselling is always your choice. Your case may be discussed in professional supervision, kept confidential and anonymised, with nothing that could identify you." },
+            { h: "Confidentiality and its limits", b: "What you share in counselling stays private unless you agree otherwise. The exceptions are: an immediate, serious risk of harm to you or someone else; suspected abuse of a child or another vulnerable person; or when the law requires disclosure (for example, a court order)." },
+            { h: "Dual roles and professional boundaries", b: "Dr. Heibe is both a vet and a counsellor. If your case involves an animal she has treated as a vet, she will tell you before counselling begins and talk with you about whether to continue or be referred elsewhere." },
+            { h: "Cancellation and rescheduling", b: "Bookings are confirmed once payment is received. To cancel or reschedule, please give at least 48 hours' notice, which allows one free reschedule. With less than 48 hours' notice, or if you don't attend, the fee is non-refundable." }
+          ]
         },
         res: {
           eyebrow: 'ARTICLES & STORIES', title: 'A little reading before you book', more: 'Go to Blog →',
