@@ -16,7 +16,7 @@ window.CONTENT = {};
  * ============================================================ */
 window.CONTENT.home = {
       zh: {
-        nav: { about: '關於我', owners: '寵物主人', vets: '獸醫同業', blog: '隨筆手記', faq: '常見問題', book: '優先登記' },
+        nav: { about: '關於我', owners: '服務內容', vets: '獸醫同業專區', blog: '隨筆手記', faq: '常見問題', book: '優先登記', resources: '衛教資源', assessment: '寵物離世哀傷評估' },
         hero: {
           eyebrow: '寵物哀傷輔導 · 獸醫業界心理支援',
           l1: '用獸醫的角度照顧動物，', l2: '用輔導的視角理解人',
@@ -48,7 +48,13 @@ window.CONTENT.home = {
           title: '陪你走過與寵物告別的路',
           intro: '失去寵物，或者照顧一隻長期患病的寵物，都可能令人很累、很沮喪，甚至有時會覺得孤單。身邊的人未必理解你，但這份感受是真實的。',
           processLink: '了解服務 →',
-          readLink: '預約前，也許你想閱讀… →',
+          readLink: '預約前，也許你想閱讀',
+          readLinkPosts: [
+            { title: '寵物離世後，陪你認識哀傷', href: '/pet-loss-grief.html' },
+            { title: '輔導的作用：哀傷輔導可以怎樣幫助你', href: '/counselling-approach.html' },
+            { title: '寵物離世哀傷評估（PBQ-C）', href: '/pet-loss-grief.html#assessment' },
+            { title: '了解服務流程', href: '#process' }
+          ],
           items: [
             { n: 1, title: '寵物哀傷輔導', sub: 'Pet Bereavement Counselling', body: '寵物離世前後的哀傷、內疚、思念，以及適應生活的轉變。' },
             { n: 2, title: '照顧者情緒支援', sub: 'Caregiver Emotional Support', body: '照顧長期患病或年老寵物時的壓力、疲累和情緒起伏。' },
@@ -56,8 +62,8 @@ window.CONTENT.home = {
             { n: 4, title: '成人心理健康輔導', sub: 'Adult Mental Health', body: '在安全、保密且具支持性的環境中，探索與處理情緒困擾、壓力、人際關係及生活適應等問題，包括焦慮、抑鬱、強烈情緒波動、失眠、職場或學業壓力。' },
             { n: 5, title: '心理教育', sub: 'Psychoeducation', body: '認識自己的情緒狀況、寵物罹患疾病或離世的失落及哀傷過程，學習照顧自己的方法。' }
           ],
-          blogTitle: '隨筆手記：寫給寵物主人', blogMore: '看更多 →', blogPosts: [ { title: "那些深夜裡的照顧者", excerpt: "你的累，是愛留下的痕跡，不是愛的反面。" }, { title: "關於「放手」這個詞", excerpt: "很多主人不是放手，而是用另一種方式繼續握著。" } ],
-          note: '本服務屬輔導服務，不提供獸醫診症、醫療或精神科診斷及治療。有關毛孩的醫療問題，請與你的主診獸醫商討。'
+          blogTitle: '衛教文章', blogMore: '查看全部 →', blogPosts: [ { title: "寵物離世後，陪你認識哀傷", href: "/pet-loss-grief.html" }, { title: "末期病患：如何陪自己走過「放手」的掙扎", href: "/letting-go.html" }, { title: "輔導的作用：哀傷輔導可以怎樣幫助你", href: "/counselling-approach.html" } ],
+          note: '了解自己的身心狀況 →'
         },
         vets: {
           eyebrow: '給獸醫同業',
@@ -70,7 +76,8 @@ window.CONTENT.home = {
             { tag: '團隊', title: '團隊身心健康活動', body: '正念紓壓、團體支持活動，依團隊人數與時間彈性安排。' }
           ],
           eap: '方案可依診所或機構的規模與需求客製，歡迎洽談報價。',
-          cta: '了解合作方案 →'
+          cta: '了解合作方案 →',
+          blogTitle: '衛教文章', blogMore: '閱讀全文 →', blogPosts: [ { title: "認識獸醫行業的Burnout：不是你不夠堅強", href: "/vet-burnout.html" } ], blogShare: '分享你的想法與故事 →'
         },
         process: {
           eyebrow: '輔導流程',
@@ -93,8 +100,17 @@ window.CONTENT.home = {
         },
         res: {
           eyebrow: '文章與故事', title: '在預約之前，先讀一點', more: '前往隨筆手記 →',
+          postsTitle: '衛教文章', postsMore: '查看全部 →', toolsTitle: '自我評估工具', otherTitle: '更多',
           posts: [
-            { tag: '隨筆手記', title: '一些想法，一些故事', body: '記錄我在獸醫與輔導這條路上的感想與故事。', go: '閱讀隨筆', href: '/blog', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
+            { tag: '衛教文章', title: '寵物離世後，陪你認識哀傷', body: '可能的反應、哀傷的歷程、自助方法，以及甚麼時候要留意。', go: '閱讀文章', href: '/pet-loss-grief.html', tint: '#E3DCE6', img: '', hasImg: false, noImg: true },
+            { tag: '衛教文章', title: '末期病患：如何陪自己走過「放手」的掙扎', body: '認識預期性哀傷，附生活質素評估工具。', go: '閱讀文章', href: '/letting-go.html', tint: '#DCE3E6', img: '', hasImg: false, noImg: true },
+            { tag: '衛教文章', title: '輔導的作用：哀傷輔導可以怎樣幫助你', body: '了解輔導室裡實際發生的事，以及我的輔導手法如何陪你走過這段時刻。', go: '閱讀文章', href: '/counselling-approach.html', tint: '#E6E0D6', img: '', hasImg: false, noImg: true },
+            { tag: '衛教文章', title: '焦慮與情緒低落：GAD-7與PHQ-9自我評估', body: '透過兩份自我評估問卷，初步了解你目前的焦慮與情緒狀態，並附上建議。', go: '閱讀文章', href: '/anxiety-depression-checkin.html', tint: '#DCE6E3', img: '', hasImg: false, noImg: true }
+          ],
+          tools: [
+            { tag: '自我評估工具', title: '生活質素、焦慮情緒與寵物離世哀傷評估', body: '三個互動自我評估工具，幫助你初步了解自己或寵物目前的狀態。', go: '前往評估', href: '/resources.html#tools', tint: '#E6D6DC', img: '', hasImg: false, noImg: true }
+          ],
+          other: [
             { tag: '分享你的故事', title: '說說你與寵物的故事', body: '每一則投稿我都會親自閱讀，你可選擇是否公開。', go: '分享故事', href: '/blog', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
             { tag: '獸醫身心健康', title: '給獸醫與醫護的職場身心文章', body: 'Burnout、困難對話、Mental Health Awareness。', go: '閱讀文章', href: '/vets', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
           ]
@@ -124,7 +140,7 @@ window.CONTENT.home = {
         foot: { home: '首頁', vets: '獸醫同業', blog: '隨筆手記' }
       },
       en: {
-        nav: { about: 'About', owners: 'Pet owners', vets: 'Vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Register interest' },
+        nav: { about: 'About', owners: 'Our services', vets: 'For vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Register interest', resources: 'Resources', assessment: 'Pet bereavement assessment' },
         hero: {
           eyebrow: 'PET BEREAVEMENT COUNSELLING · WELLBEING SUPPORT FOR VET TEAMS',
           l1: 'Caring for animals as\u00a0a\u00a0vet,', l2: 'understanding people as\u00a0a\u00a0counsellor',
@@ -137,7 +153,7 @@ window.CONTENT.home = {
         about: {
           eyebrow: 'ABOUT DR. HEIBE',
           title: 'About Dr. Heibe',
-          p1: 'I\'m Dr. Heibe — a registered veterinarian in Hong Kong (Lau Wing Chi, DVM) and a professionally trained counsellor.',
+          p1: 'I\'m Dr. Heibe, a registered veterinarian in Hong Kong (Lau Wing Chi, DVM) and a professionally trained counsellor.',
           p2: 'Over my years as a vet, I\'ve seen how heavily a pet\'s illness weighs on the people who love them. In the emergency room I\'ve stood beside families through sudden goodbyes and impossible decisions, and watched colleagues quietly absorb the strain of the job. Those moments are why I trained as a counsellor: to better support the people who love animals as much as I do.',
           p3: 'I know what it\'s like when a pet is unwell or nearing the end, and I bring professional counselling training to that understanding. I hope to offer owners and carers a space to make sense of what they feel, and to move through grief in their own time.',
           approachTitle: 'My approach',
@@ -156,7 +172,13 @@ window.CONTENT.home = {
           title: 'Walking with you as you say goodbye',
           intro: 'Losing a pet, or caring for one through a long illness, can leave you drained, disheartened and lonelier than you expected. Others may not quite understand, but what you feel is real.',
           processLink: 'How it works →',
-          readLink: 'Some reading before you book →',
+          readLink: 'Some reading before you book',
+          readLinkPosts: [
+            { title: 'After pet loss: understanding your grief', href: '/pet-loss-grief.html' },
+            { title: 'What counselling can do: how grief counselling helps', href: '/counselling-approach.html' },
+            { title: 'Pet bereavement assessment (PBQ-C)', href: '/pet-loss-grief.html#assessment' },
+            { title: 'How the counselling process works', href: '#process' }
+          ],
           items: [
             { n: 1, title: 'Pet bereavement counselling', sub: '寵物哀傷輔導', body: 'For the grief, guilt and longing that come before and after a pet dies, and for finding your way in life afterwards.' },
             { n: 2, title: 'Support for caregivers', sub: '照顧者情緒支援', body: 'For the stress, exhaustion and emotional ups and downs of looking after a chronically ill or ageing pet.' },
@@ -164,8 +186,8 @@ window.CONTENT.home = {
             { n: 4, title: 'Adult mental health counselling', sub: '成人心理健康輔導', body: 'A safe, confidential space to work through emotional difficulties, stress, relationships and life changes, including anxiety, low mood, overwhelming emotions, sleep problems, and pressure at work or school.' },
             { n: 5, title: 'Psychoeducation', sub: '心理教育', body: 'Learn about your emotions, about grief when a pet is ill or dies, and about ways to look after yourself.' }
           ],
-          blogTitle: 'From the blog: for pet owners', blogMore: 'Read more →', blogPosts: [ { title: "The carers of the small hours", excerpt: "Your tiredness is a mark that love leaves behind, not its opposite." }, { title: "On the words “letting go”", excerpt: "Many owners don't let go — they keep holding on, in a different way." } ],
-          note: 'This is a counselling service. It does not provide veterinary or medical diagnosis or treatment, or psychiatric diagnosis or treatment. Please discuss medical questions with your pet\'s attending vet.'
+          blogTitle: 'Psychoeducation articles', blogMore: 'View all →', blogPosts: [ { title: "After pet loss: understanding your grief", href: "/pet-loss-grief.html" }, { title: "Terminal illness: finding the strength to let go", href: "/letting-go.html" }, { title: "What counselling can do: how grief counselling helps", href: "/counselling-approach.html" } ],
+          note: 'Check in with your own wellbeing →'
         },
         vets: {
           eyebrow: 'FOR VETERINARY PROFESSIONALS',
@@ -178,7 +200,8 @@ window.CONTENT.home = {
             { tag: 'TEAMS', title: 'Team wellbeing activities', body: 'Mindfulness and group support sessions, built around your team.' }
           ],
           eap: 'Every package can be tailored to your clinic\'s size and needs. Get in touch for a quote.',
-          cta: 'Explore partnership options →'
+          cta: 'Explore partnership options →',
+          blogTitle: 'Articles', blogMore: 'Read more →', blogPosts: [ { title: "Understanding burnout in the veterinary profession: it's not about not being strong enough", href: "/vet-burnout.html" } ], blogShare: 'Share your thoughts and story →'
         },
         process: {
           eyebrow: 'HOW IT WORKS',
@@ -200,9 +223,18 @@ window.CONTENT.home = {
           ]
         },
         res: {
-          eyebrow: 'ARTICLES & STORIES', title: 'A little reading before you book', more: 'Go to Blog →',
+          eyebrow: 'ARTICLES & STORIES', title: 'A little reading before you book', more: 'Go to essays →',
+          postsTitle: 'Articles', postsMore: 'View all →', toolsTitle: 'Self-assessment tools', otherTitle: 'More',
           posts: [
-            { tag: 'Blog', title: 'Thoughts and stories', body: 'Notes from a path that runs between veterinary medicine and counselling.', go: 'Read', href: '/blog', tint: '#DDE5D5', img: 'images/cover-blog.jpg', hasImg: true, noImg: false },
+            { tag: 'Article', title: 'After pet loss: understanding your grief', body: 'Possible reactions, the grieving process, self-help, and when to seek support.', go: 'Read', href: '/pet-loss-grief.html', tint: '#E3DCE6', img: '', hasImg: false, noImg: true },
+            { tag: 'Article', title: 'Terminal illness: finding the strength to let go', body: 'Understanding anticipatory grief, with a quality-of-life assessment tool.', go: 'Read', href: '/letting-go.html', tint: '#DCE3E6', img: '', hasImg: false, noImg: true },
+            { tag: 'Article', title: 'What counselling can do: how grief counselling helps', body: 'What actually happens in the counselling room, and how my approach can support you.', go: 'Read', href: '/counselling-approach.html', tint: '#E6E0D6', img: '', hasImg: false, noImg: true },
+            { tag: 'Article', title: 'Anxiety and low mood: GAD-7 and PHQ-9 self-assessment', body: 'Two widely used questionnaires to help you understand your current state, with guidance based on your results.', go: 'Read', href: '/anxiety-depression-checkin.html', tint: '#DCE6E3', img: '', hasImg: false, noImg: true }
+          ],
+          tools: [
+            { tag: 'Self assessment', title: 'Quality of life, anxiety/mood, and pet bereavement tools', body: 'Three interactive self-assessment tools to help you understand your own, or your pet\'s, current state.', go: 'Take a look', href: '/resources.html#tools', tint: '#E6D6DC', img: '', hasImg: false, noImg: true }
+          ],
+          other: [
             { tag: 'Share your story', title: 'Tell me about you and your pet', body: 'I read every story myself, and you decide whether it\'s shared.', go: 'Share', href: '/blog', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
             { tag: 'Vet wellbeing', title: 'Articles for vets and vet nurses', body: 'Burnout, difficult conversations, mental health awareness.', go: 'Read', href: '/vets', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
           ]
@@ -216,7 +248,7 @@ window.CONTENT.home = {
           { q: 'I\'m a vet or vet nurse. Will it feel awkward to see someone from the same field?', a: 'Everything is strictly confidential (apart from legally required exceptions). I will never tell anyone that you are in counselling, who you are, or anything personal you share in our sessions. Unless you choose to, you never need to name your clinic or colleagues. In our sessions, I am your counsellor and you are my client, and everything we do is guided by your best interests. Because I know the industry, you won\'t need to explain how it works, so we can get to what\'s really troubling you sooner.' },
           { q: 'Is what I share confidential?', a: 'Yes. Apart from legally required exceptions such as risk to safety, everything is kept strictly confidential. I explain this clearly in our first conversation, and we sign a confidentiality agreement and a service consent form.' },
           { q: 'What is the format, and how much does it cost?', a: 'Sessions are 50 minutes, in person or by video, in Cantonese, Mandarin or English. Services are expected to open in November, and fees will be shared with everyone who registers their interest. Organisations are welcome to ask for a quote.' },
-          { q: 'Should I choose in-person or online counselling?', a: 'Both are equally confidential — choose whichever fits your life and needs:\n· Online video: good if your schedule is tight, you work shifts, or you\'d rather talk somewhere familiar such as home. Please find a quiet, private space where you won\'t be interrupted, with a stable internet connection.\n· In person: good if you\'d like to step away from your everyday surroundings and talk face to face.\nYou can switch between formats at any time; we\'ll decide on the best arrangement together when we first talk.' }
+          { q: 'Should I choose in-person or online counselling?', a: 'Both are equally confidential. Choose whichever fits your life and needs:\n· Online video: good if your schedule is tight, you work shifts, or you\'d rather talk somewhere familiar such as home. Please find a quiet, private space where you won\'t be interrupted, with a stable internet connection.\n· In person: good if you\'d like to step away from your everyday surroundings and talk face to face.\nYou can switch between formats at any time; we\'ll decide on the best arrangement together when we first talk.' }
         ],
         contact: {
           title: 'Take your time. I\'m here.',
@@ -251,6 +283,7 @@ window.CONTENT.vets = {
           p1: 'Dr. Heibe 是香港註冊獸醫，畢業於國立臺灣大學獸醫學系，同時持有香港大學社會科學碩士（輔導）學位，並已完成在學期間的督導訓練。',
           p2: '她在急重症動物醫院第一線工作，讓她深刻了解獸醫與護理團隊每天要承受的壓力、疲憊與說不出口的情緒。在臨床實習期間，她加入 MARS Veterinary Health 為內部員工提供輔導服務，並在社區中心設計及提供具私隱性的個人輔導服務。',
           p3: '獸醫因著工作的性質，常態性地把自己的需求放在病患和工作之後。她相信，每一個人都值得被好好理解和重視；只有真正懂得獸醫這份工作的重量，才知道如何陪你把說不清楚的感受梳理清楚，陪你走過職業裡最難的部分。',
+          essaysLink: '閱讀我的隨筆手記 →',
           talksLabel: '曾受邀分享主題',
           momentsLabel: '活動花絮',
           momentsHint: '← 左右滑動查看更多 →',
@@ -284,14 +317,17 @@ window.CONTENT.vets = {
         open: '收合', closed: '閱讀全文',
         articles: [
           { title: '認識獸醫行業的 Burnout：不是你不夠堅強',
-            p1: '高強度的工作節奏、情緒勞動、面對生死的日常，讓 Burnout 在獸醫行業中相當普遍——這不是個人意志力的問題，而是長期處於高壓環境下，身心會出現的正常反應。',
-            p2: '常見徵兆包括：對工作逐漸失去熱情、容易疲憊或情緒麻木、對病例或同事感到不耐煩、睡眠與食慾改變。留意這些訊號，是照顧自己的第一步，也是團隊可以一起建立的文化，而不是等到撐不住才處理。' },
+            p1: '高強度的工作節奏、情緒勞動、面對生死的日常，讓 Burnout 在獸醫行業中相當普遍，這不是個人意志力的問題，而是長期處於高壓環境下，身心會出現的正常反應。',
+            p2: '常見徵兆包括：對工作逐漸失去熱情、容易疲憊或情緒麻木、對病例或同事感到不耐煩、睡眠與食慾改變。留意這些訊號，是照顧自己的第一步，也是團隊可以一起建立的文化，而不是等到撐不住才處理。', href: '' },
           { title: '壞消息之外：與主人溝通中，你也需要被理解',
-            p1: '傳遞壞消息、面對主人的情緒反應、在有限時間內做出清楚解釋——這些溝通時刻，對獸醫來說同樣耗費心力。很多時候，我們習慣把焦點放在「怎麼說對主人比較好」，卻很少談「說完之後，你自己好嗎」。',
-            p2: '學習溝通技巧很重要，但同樣重要的是：允許自己在困難對話之後，也需要一點時間消化情緒，而不是立刻接著下一個病例。' },
+            p1: '傳遞壞消息、面對主人的情緒反應、在有限時間內做出清楚解釋，這些溝通時刻，對獸醫來說同樣耗費心力。很多時候，我們習慣把焦點放在「怎麼說對主人比較好」，卻很少談「說完之後，你自己好嗎」。',
+            p2: '學習溝通技巧很重要，但同樣重要的是：允許自己在困難對話之後，也需要一點時間消化情緒，而不是立刻接著下一個病例。', href: '' },
           { title: '職場壓力調適與 Mental Health Awareness：從覺察開始',
-            p1: 'Mental Health Awareness 不是等到出現嚴重狀況才談，而是在日常工作中，建立對自己與同事身心狀態的基本覺察——留意壓力累積的訊號，也願意在同行之間坦誠地說「我最近有點吃力」。',
-            p2: '團隊層級的支持（例如定期的身心健康活動、開放討論壓力的空間）與個人層級的求助（一對一輔導），可以互相補足，讓照顧彼此不再只是口號。' }
+            p1: 'Mental Health Awareness 不是等到出現嚴重狀況才談，而是在日常工作中，建立對自己與同事身心狀態的基本覺察，留意壓力累積的訊號，也願意在同行之間坦誠地說「我最近有點吃力」。',
+            p2: '團隊層級的支持（例如定期的身心健康活動、開放討論壓力的空間）與個人層級的求助（一對一輔導），可以互相補足，讓照顧彼此不再只是口號。', href: '' },
+          { title: '自我評估工具',
+            p1: '如果你想初步了解自己目前的焦慮、情緒狀態，或寵物離世後的哀傷程度，可以使用本網站的自我評估工具，獲得初步分數和參考建議。',
+            p2: '這些工具僅供自我了解之用，不能取代專業人士的正式評估。', href: '/resources.html#tools' }
         ],
         blogTitle: '隨筆手記：寫給獸醫同業', blogMore: '看更多 →', blogPosts: [ { title: "下班後帶回家的那些個案", excerpt: "那份不安，其實是職業道德在說話。" }, { title: "寫給我身邊的護士們", excerpt: "倦怠不是個人的失敗。" } ],
         crisis: '如果你正處於情緒危機，或有傷害自己的念頭，請立即致電「情緒通」18111 精神健康支援熱線（24 小時），或前往就近急症室求助。',
@@ -328,6 +364,7 @@ window.CONTENT.vets = {
           p1: 'Dr. Heibe is a registered veterinarian in Hong Kong. She graduated from the School of Veterinary Medicine at National Taiwan University and holds a Master of Social Sciences (Counselling) from the University of Hong Kong, having completed the programme\'s supervised clinical training.',
           p2: 'Years on the front line of emergency and critical care have given her a deep understanding of the stress, exhaustion and unspoken emotions that vets and nurses carry every day. During her clinical practicum she provided counselling for staff at MARS Veterinary Health, and designed and delivered confidential one-to-one counselling at a community centre.',
           p3: 'Vets routinely put their own needs behind their patients and their work. She believes everyone deserves to be truly understood and valued, and that it takes someone who knows the weight of veterinary work to help you untangle feelings that are hard to put into words and walk beside you through the hardest parts of the profession.',
+          essaysLink: 'Read my essays →',
           talksLabel: 'Invited talks',
           momentsLabel: 'Event highlights',
           momentsHint: '← Swipe for more →',
@@ -362,13 +399,16 @@ window.CONTENT.vets = {
         articles: [
           { title: 'Burnout in veterinary work: it\'s not about being strong enough',
             p1: 'A relentless pace, emotional labour and daily encounters with life and death make burnout common in veterinary work. It isn\'t a failure of willpower; it\'s how body and mind naturally respond to prolonged pressure.',
-            p2: 'Common signs include losing enthusiasm for work, feeling drained or emotionally numb, growing impatient with cases or colleagues, and changes in sleep and appetite. Noticing these signals is the first step in caring for yourself, and something teams can build into their culture rather than waiting until someone reaches breaking point.' },
+            p2: 'Common signs include losing enthusiasm for work, feeling drained or emotionally numb, growing impatient with cases or colleagues, and changes in sleep and appetite. Noticing these signals is the first step in caring for yourself, and something teams can build into their culture rather than waiting until someone reaches breaking point.', href: '' },
           { title: 'Beyond breaking bad news: you deserve to be understood too',
             p1: 'Breaking bad news, meeting clients\' emotional reactions and explaining things clearly under time pressure all take their toll. We often focus on how best to say it for the client, but rarely ask: how are you after saying it?',
-            p2: 'Communication skills matter, but so does giving yourself time to process a difficult conversation before moving straight on to the next case.' },
+            p2: 'Communication skills matter, but so does giving yourself time to process a difficult conversation before moving straight on to the next case.', href: '' },
           { title: 'Workplace stress and mental health awareness: it starts with noticing',
             p1: 'Mental health awareness isn\'t only for when things become serious. It means paying everyday attention to how you and your colleagues are doing: noticing when stress builds, and feeling able to tell a colleague honestly, “I\'ve been struggling a bit lately.”',
-            p2: 'Team support (regular wellbeing activities, space to talk openly about stress) and individual help (one-to-one counselling) work best together, so that looking after one another becomes more than a slogan.' }
+            p2: 'Team support (regular wellbeing activities, space to talk openly about stress) and individual help (one-to-one counselling) work best together, so that looking after one another becomes more than a slogan.', href: '' },
+          { title: 'Self assessment tool',
+            p1: 'If you would like a first look at your current anxiety, mood, or grief after losing a pet, you can use the self-assessment tools on this site for an initial score and reference guidance.',
+            p2: 'These tools are for self-understanding only and cannot replace a formal assessment by a professional.', href: '/resources.html#tools' }
         ],
         blogTitle: 'From the blog: for vet professionals', blogMore: 'Read more →', blogPosts: [ { title: "The cases we take home", excerpt: "That unease is really our professional ethics speaking." }, { title: "To the nurses beside me", excerpt: "Burnout is not a personal failure." } ],
         crisis: 'If you are in an emotional crisis or having thoughts of harming yourself, please call the 24-hour Mental Health Support Hotline on 18111 immediately, or go to the nearest emergency room.',
@@ -396,181 +436,432 @@ window.CONTENT.vets = {
 /* ============================================================
  * 隨筆手記 Blog page (blog.html)
  * ============================================================ */
-window.CONTENT.blog = {
-      zh: {
-        sub: '隨筆手記',
-        nav: { home: '首頁', owners: '寵物主人', vets: '獸醫同業', share: '分享你的故事', book: '優先登記' },
-        hero: { eyebrow: '隨筆 · Blog', title: '一些想法，一些故事', sub: '這裡記錄我在獸醫與輔導這條路上的感想與故事，寫給願意停下來讀一讀的你。', tag: '' },
-        postsTitle: '最新文章', ownersPostsTitle: '寫給寵物主人', vetsPostsTitle: '寫給獸醫同業', readMore: '閱讀全文', collapse: '收合', sourceLabel: '資料來源：', sourceLink: '閱讀原文',
-        posts: [
-          { group: "owners", tag: "寵物主人", date: "2026年10月", title: "那些深夜裡的照顧者",
-            excerpt: "你的累，是愛留下的痕跡，不是愛的反面。",
-            paras: [
-              "在急症室值夜班時，半夜的候診區常常坐著一些很安靜的人。他們不是第一次來，手上拿著藥袋，熟練地說出毛孩的病歷和用藥。我總會留意他們的眼睛。",
-              "以前做獸醫時，我的注意力大多放在病床上的那隻動物。讀輔導之後，我開始看見站在病床旁邊的人。他們很少談自己，好像說一句「我好累」，就等於承認自己愛得不夠。",
-              "我想對這些照顧者說：你的累，是愛留下的痕跡，不是愛的反面。如果某一晚你只想坐下來，甚麼都不做，那也沒關係。"
-            ] },
-          { group: "owners", tag: "寵物主人", date: "2026年10月", title: "關於「放手」這個詞",
-            excerpt: "很多主人不是放手，而是用另一種方式繼續握著。",
-            paras: [
-              "我做過很多次安樂死。每一次，主人在簽名前都會停頓一下，那幾秒很長。有時候會有人問我：「醫生，如果係你，你會點做？」我明白，他們其實是在問：「我這樣做，是不是對的？」",
-              "後來在輔導室裡，我聽到另一個版本的故事：決定之後的幾個月、甚至幾年，那個問題仍然在心裡迴響。而就算毛孩是自然離世，很多主人一樣會內疚——會想如果早一點發現、如果多陪一晚。",
-              "我慢慢覺得，「放手」這個詞不太準確。很多主人不是放手，而是用另一種方式繼續握著——握著回憶、握著問題、握著那份愛。也許療癒不是停止發問，而是有一天，可以溫柔地回答自己。"
-            ] },
-          { group: "owners", tag: "寵物主人", date: "2026年10月", title: "還在身邊，卻已經開始想念",
-            excerpt: "有一種哀傷，是在失去之前就開始的。",
-            paras: [
-              "有一種哀傷，是在失去之前就開始的。毛孩還在身邊，會吃飯、會撒嬌，可是你看著牠的時候，心裡已經在預習告別。",
-              "很多主人跟我說，他們不敢在牠面前哭，怕牠感受到；也不敢跟別人說，怕被說「牠還在啊，別想太多」。於是這份哀傷，變得很孤單。",
-              "我想說，提早出現的哀傷，不代表你放棄了牠。那只是愛提早開始學習告別。在這段日子裡，你可以哭，也可以笑；可以照顧牠，也可以照顧那個正在不捨的自己。"
-            ] },
-          { group: "owners", tag: "寵物主人", date: "2026年10月", title: "診症室裡緊張的你",
-            excerpt: "你的緊張很正常，因為你在乎。",
-            paras: [
-              "在診症室裡，我常常見到比毛孩更緊張的主人：抱得很緊、說話很快、一直問「牠會不會痛」。有些人會向我道歉：「對不起，我太緊張了。」",
-              "以前我會想，該怎樣讓主人冷靜下來。現在我更想說：你的緊張很正常，因為你在乎。",
-              "下次如果你在候診室心跳加速，深呼吸一下，有我們一起努力，你做得很好了。"
-            ] },
-          { group: "vets", tag: "獸醫同業", date: "2026年10月", title: "下班後帶回家的那些個案",
-            excerpt: "那份不安，其實是職業道德在說話。",
-            paras: [
-              "有些個案，下班換了衫、坐上車，還是會跟著你回家。不一定是最嚴重的那一個，而是那個「其實可以救，但最後沒有」的。",
-              "剛入行時，我以為那份沉重是因為自己不夠堅強，要學會「放下」。後來讀到「道德困擾」這個概念，我才明白：那是因為我知道對動物最好的是甚麼，卻因為費用、主人的決定或者制度，沒辦法做到。那份不安，其實是職業道德在說話。",
-              "我不再要求自己「不要想」。我開始允許自己承認：這件事令我難過。有時候，承認本身已經是一種照顧。"
-            ] },
-          { group: "vets", tag: "獸醫同業", date: "2026年10月", title: "寫給我身邊的護士們",
-            excerpt: "倦怠不是個人的失敗。",
-            paras: [
-              "在急症室，我最依賴的人是護士。凌晨病房一下子來了三個急症，是她們先把靜脈導管放好、把氧氣接上，記得每一隻動物下一次吃藥的時間。",
-              "我也見過很多很好的護士離開這個行業。不是因為不愛動物，而是因為太累、太少被看見。每次聽到「其實我好鍾意呢份工，但我撐唔落去」，我都很心痛。",
-              "倦怠不是個人的失敗。我希望我們這一行可以少一點「辛苦是正常的」，多一點「你辛苦了，我們一起想辦法」。"
-            ] },
-          { group: "vets", tag: "獸醫同業", date: "2026年10月", title: "當獸醫，最累的是甚麼？",
-            excerpt: "每一件單獨看都不算甚麼，加起來卻很重。",
-            paras: [
-              "朋友常問我：「做獸醫最辛苦嘅，係咪見到動物死？」我通常會笑一笑，不知道怎樣解釋。",
-              "其實最累的，往往是那些疊在一起的東西：連續的夜班、一邊做手術一邊想著候診區的主人、要在幾分鐘內解釋費用、面對一個情緒激動的家庭，然後下一個病例已經在等。每一件單獨看都不算甚麼，加起來卻很重。",
-              "讀輔導之後，我學會先把這些東西一件件拿出來看清楚，而不是一下子全部背在身上。看清楚，不一定能讓工作變輕，但會讓我對自己溫柔一點。"
-            ] },
-          { group: "vets", tag: "獸醫同業", date: "2026年10月", title: "櫃檯後面的那個人",
-            excerpt: "他們很少被問：「你今天還好嗎？」",
-            paras: [
-              "在動物醫院裡，最先見到主人眼淚的，通常不是醫生，而是前台同事。電話響起時的慌亂、付款時的爭拗、毛孩離開後來接牠回家的那一刻——很多都發生在櫃檯前。",
-              "我常常覺得，前台同事做的是一份沒有被寫進職位描述的工作：接住別人最脆弱的時刻，同時保持微笑，然後轉身接聽下一個電話。",
-              "他們很少被問：「你今日還好嗎？」我希望我們都記得問。"
-            ] }
-        ],
-        empty: { title: '目前還沒有文章發布，敬請期待。', sub: '之後有新的感想或故事，會在這裡分享。', link: '先讀讀給獸醫與醫護的職場身心文章 →' },
-        share: {
-          title: '分享你的故事',
-          p1: '如果你也想說說自己與寵物的故事，或是一些感想，歡迎寄給我。每一則投稿我都會親自閱讀；若你同意公開分享，經整理後可能會刊登在這個部落格（不會顯示你的真實姓名或 Email）。',
-          p2: '按下方按鈕會開啟一封已填好格式的電郵，想說多少都可以，不需要很完整或很正式。如有照片，也可以直接附加在郵件中。',
-          gmail: '用 Gmail 網頁版寄出', app: '開啟郵件程式', or: '或直接寄到', include: '電郵內請註明',
-          fields: [
-            { k: '暱稱', v: '刊登時只會顯示暱稱' },
-            { k: '是否同意公開分享', v: '願意公開，或不公開、只寫給 Dr. Heibe 看' },
-            { k: '希望的回覆方式', v: '電郵私下回覆／部落格公開回應／不需要回覆' },
-            { k: '你的故事或感想', v: '想說多少都可以' }
-          ],
-          subject: '部落格故事投稿：',
-          lines: ['暱稱：', '是否同意公開分享（願意公開／不公開，僅給 Dr. Heibe 看）：', '希望的回覆方式（電郵私下回覆／可於部落格公開回應／不需要回覆）：', '', '我的故事或感想：', '']
-        },
-        picsOpenLabel: '收合個人資料收集聲明 ▲', picsClosedLabel: '個人資料收集及使用聲明（請詳閱）▼',
-        pics: [
-          { k: '收集目的：', v: '你提供的資料僅用於審核你希望分享的故事、考慮是否於本部落格刊登，以及在你需要時與你聯繫回覆。' },
-          { k: '資料類別：', v: '暱稱、Email、故事內容，以及你對是否公開分享及回覆方式的選擇（若你附加照片，亦包括該等照片）。' },
-          { k: '資料轉交：', v: '資料只會直接寄送到 Dr. Heibe 本人的電郵信箱，不經第三方系統或資料庫儲存。若你選擇公開分享並經審核通過，故事內容（不含真實姓名或 Email）可能會刊登於本部落格；除此以外，不會轉交予任何第三方。' },
-          { k: '查閱及更正：', v: '你有權要求查閱、更正或移除我們所持有關於你的個人資料，請電郵至 dr.heibelau.work@gmail.com。本聲明遵守香港《個人資料（私隱）條例》（第486章）。' }
-        ],
-        slogan: '用獸醫的角度照顧動物，用輔導的視角理解人',
-        footTag: '診療室外的輔導員'
+window.CONTENT.essays = {
+  "zh": {
+    "sub": "隨筆手記",
+    "nav": {
+      "home": "首頁",
+      "owners": "寵物主人",
+      "vets": "獸醫同業",
+      "wall": "寵物牆",
+      "book": "優先登記"
+    },
+    "hero": {
+      "eyebrow": "隨筆 · Blog",
+      "title": "一些想法，一些故事",
+      "sub": "這裡記錄我在獸醫與輔導這條路上的感想與故事，寫給願意停下來讀一讀的你。",
+      "tag": ""
+    },
+    "postsTitle": "最新文章",
+    "ownersPostsTitle": "寫給寵物主人",
+    "vetsPostsTitle": "寫給獸醫同業",
+    "readMore": "閱讀全文",
+    "collapse": "收合",
+    "sourceLabel": "資料來源：",
+    "sourceLink": "閱讀原文",
+    "posts": [
+      {
+        "group": "owners",
+        "tag": "寵物主人",
+        "date": "2026年10月",
+        "title": "那份傷心，不需要道歉",
+        "excerpt": "寵物離世的傷心，從來都不是「反應太大」。",
+        "paras": [
+          "輔導室裡見過一位來訪者，坐下來第一句就是道歉：「我知道這個反應很誇張，牠其實只是一隻貓。」牠陪伴她十四年，從大學宿舍到現在。可是說這句話的時候，她低著頭，好像自己做錯了甚麼。",
+          "心理學裡有個詞叫「被剝奪的哀傷」（disenfranchised grief），由學者 Kenneth Doka 提出，指那些不被社會公開承認、不被允許公開哀悼的失去。寵物離世很多時候就是這樣，身邊人可能會說「別想太多了」、「再養一隻就好了」，令本來已經很沉重的傷心，變得更加孤單。2026年愛爾蘭 Maynooth University 一項發表於 PLOS One 的研究，訪問了975位曾經歷至親離世的成年人，發現當中7.5%曾喪失寵物的人，哀傷反應已經達到「延長哀傷障礙」（prolonged grief disorder）的臨床程度，與失去摯友（7.8%）、祖父母（8.3%）、兄弟姊妹（8.9%）的比率非常接近。更有21%的受訪者，表示寵物離世是他們人生中最難過的一次喪親經歷。",
+          "我想對那位來訪者說（也想對每一個曾經為寵物離世而落淚、又忍住不好意思說出口的你說）：你的傷心，不需要向任何人解釋，也不用道歉。十四年的陪伴是真實的，你的傷心也是真實的。你不是反應過大，你只是愛得很深。"
+        ]
       },
-      en: {
-        sub: 'Blog',
-        nav: { home: 'Home', owners: 'Pet owners', vets: 'Vet professionals', share: 'Share your story', book: 'Register interest' },
-        hero: { eyebrow: 'Blog', title: 'Thoughts and stories', sub: 'Reflections from my path between veterinary medicine and counselling, for anyone who\'d like to pause and read for a while.', tag: '' },
-        postsTitle: 'Latest posts', ownersPostsTitle: 'For pet owners', vetsPostsTitle: 'For vet professionals', readMore: 'Read more', collapse: 'Close', sourceLabel: 'Source: ', sourceLink: 'Read the original',
-        posts: [
-          { group: "owners", tag: "Pet owners", date: "October 2026", title: "The carers of the small hours",
-            excerpt: "Your tiredness is a mark that love leaves behind, not its opposite.",
-            paras: [
-              "On night shifts in the ER, the waiting area in the small hours often holds a few very quiet people. It isn't their first visit: they carry bags of medication and can recite their pet's history and doses from memory. I always notice their eyes.",
-              "As a vet, my attention used to rest mostly on the animal on the table. Since training as a counsellor, I've started to see the person standing beside it. They rarely talk about themselves, as if saying “I'm exhausted” would mean admitting they don't love enough.",
-              "What I'd like to tell these carers is this: your tiredness is a mark that love leaves behind, not its opposite. And if one night all you want is to sit down and do nothing at all, that's okay too."
-            ] },
-          { group: "owners", tag: "Pet owners", date: "October 2026", title: "On the words “letting go”",
-            excerpt: "Many owners don't let go — they keep holding on, in a different way.",
-            paras: [
-              "I have performed many euthanasias. Every time, there is a pause before the owner signs, and those few seconds feel very long. Sometimes someone asks me, “Doctor, what would you do if it were you?” I understand that what they are really asking is, “Am I doing the right thing?”",
-              "Later, in the counselling room, I heard the other half of the story: months or even years after the decision, that question still echoes. And even when a pet dies naturally, many owners feel the same guilt — if only I'd noticed sooner, if only I'd stayed one more night.",
-              "I've come to feel that “letting go” isn't quite the right phrase. Many owners don't let go; they keep holding on in another way — holding the memories, the questions, the love. Perhaps healing isn't about no longer asking, but about one day being able to answer yourself gently."
-            ] },
-          { group: "owners", tag: "Pet owners", date: "October 2026", title: "Still here, already missed",
-            excerpt: "There is a kind of grief that begins before the loss.",
-            paras: [
-              "There is a kind of grief that begins before the loss. Your pet is still here — still eating, still curling up beside you — yet when you look at them, part of you is already rehearsing goodbye.",
-              "Many owners tell me they don't dare cry in front of their pet in case they sense it, and don't dare tell anyone else in case they hear, “They're still here — don't overthink it.” So this grief becomes a lonely one.",
-              "Grief that arrives early doesn't mean you've given up on them. It's simply love starting to learn how to say goodbye. In these days you can cry and you can laugh; you can care for them, and you can care for the part of you that doesn't want to let them go."
-            ] },
-          { group: "owners", tag: "Pet owners", date: "October 2026", title: "To the nervous owner in the consult room",
-            excerpt: "Your nerves are normal, because you care.",
-            paras: [
-              "In the consult room I often meet owners more nervous than their pets: holding on tight, talking fast, asking again and again, “Will it hurt?” Some apologise to me: “Sorry, I'm just so anxious.”",
-              "I used to wonder how to calm owners down. Now I'd rather say: your nerves are normal, because you care.",
-              "Next time your heart races in the waiting room, take a breath. We're in this together — and you're doing really well."
-            ] },
-          { group: "vets", tag: "Vet professionals", date: "October 2026", title: "The cases we take home",
-            excerpt: "That unease is really our professional ethics speaking.",
-            paras: [
-              "Some cases follow you home — after you've changed out of your scrubs, after you've got in the car. Not always the most serious one, but the one that “could have been saved, and wasn't”.",
-              "When I first started, I thought that heaviness meant I wasn't strong enough and needed to learn to “let it go”. It was only when I came across the idea of moral distress that I understood: it came from knowing what was best for the animal, yet being unable to do it because of cost, an owner's decision or the system. That unease is really our professional ethics speaking.",
-              "I no longer tell myself “don't think about it”. Instead I let myself admit: this made me sad. Sometimes, admitting it is already a form of care."
-            ] },
-          { group: "vets", tag: "Vet professionals", date: "October 2026", title: "To the nurses beside me",
-            excerpt: "Burnout is not a personal failure.",
-            paras: [
-              "In the ER, the people I rely on most are the nurses. When three emergencies arrive on the ward at once in the middle of the night, they're the ones who place the IV lines, connect the oxygen and remember when every animal's next dose is due.",
-              "I've also watched many wonderful nurses leave the profession — not because they stopped loving animals, but because they were too tired and too rarely seen. Every time I hear, “I really love this job, but I can't keep going,” it breaks my heart.",
-              "Burnout is not a personal failure. I hope our profession can say a little less “it's supposed to be hard” and a little more “you've worked so hard — let's figure this out together.”"
-            ] },
-          { group: "vets", tag: "Vet professionals", date: "October 2026", title: "What's the hardest part of being a vet?",
-            excerpt: "Each thing on its own is small; together they weigh a lot.",
-            paras: [
-              "Friends often ask me, “Is the hardest part of being a vet seeing animals die?” I usually just smile; it's hard to explain.",
-              "What's most tiring is often everything stacked together: back-to-back night shifts, operating while thinking about the owner in the waiting room, explaining costs in a few minutes, supporting a distressed family — and then the next case is already waiting. Each thing on its own is small; together they weigh a lot.",
-              "Counselling taught me to take these things out one by one and look at them clearly, instead of carrying them all at once. Seeing them clearly doesn't always make the work lighter, but it helps me be a little gentler with myself."
-            ] },
-          { group: "vets", tag: "Vet professionals", date: "October 2026", title: "The person behind the front desk",
-            excerpt: "They are rarely asked, “Are you okay today?”",
-            paras: [
-              "In an animal hospital, the first person to see an owner's tears is often not the vet but the front-desk team. The panic when the phone rings, the arguments at payment, the moment someone comes to take their pet home for the last time — so much of it happens at the counter.",
-              "I often think the front desk does a job that was never written into the job description: holding people in their most fragile moments, keeping a smile, and then turning to answer the next call.",
-              "They are rarely asked, “Are you okay today?” I hope we all remember to ask."
-            ] }
-        ],
-        empty: { title: 'No posts yet — stay tuned.', sub: 'New reflections and stories will be shared here.', link: 'Meanwhile, read the wellbeing articles for vets and vet nurses →' },
-        share: {
-          title: 'Share your story',
-          p1: 'If you\'d like to tell me about you and your pet, or share a few thoughts, I\'d love to hear from you. I read every story myself. If you agree, it may be lightly edited and published here (without your real name or email).',
-          p2: 'The buttons below open a ready-to-fill email. Write as much or as little as you like; it doesn\'t need to be polished or complete. You\'re welcome to attach photos too.',
-          gmail: 'Send with Gmail', app: 'Open email app', or: 'Or email directly:', include: 'Please include',
-          fields: [
-            { k: 'Nickname', v: 'Only your nickname is shown if published' },
-            { k: 'Consent to publish', v: 'Happy to share publicly, or only for Dr. Heibe to read' },
-            { k: 'Preferred reply', v: 'Private email reply / public reply on the blog / no reply needed' },
-            { k: 'Your story or thoughts', v: 'As much or as little as you like' }
-          ],
-          subject: 'Blog story submission: ',
-          lines: ['Nickname:', 'Consent to publish (yes, share publicly / no, only for Dr. Heibe):', 'Preferred reply (private email / public reply on the blog / no reply needed):', '', 'My story or thoughts:', '']
-        },
-        picsOpenLabel: 'Hide Personal Information Collection Statement ▲', picsClosedLabel: 'Personal Information Collection Statement ▼',
-        pics: [
-          { k: 'Purpose: ', v: 'The information you provide is used only to review the story you wish to share, decide whether to publish it on this blog, and contact you if you would like a reply.' },
-          { k: 'Data collected: ', v: 'Nickname, email, your story, and your choices about publication and replies (including any photos you attach).' },
-          { k: 'Transfer: ', v: 'Your information is sent directly to Dr. Heibe\'s own email inbox and is not stored in any third-party system or database. If you agree to publication and your story is approved, its content (without your real name or email) may appear on this blog; otherwise it is not passed to any third party.' },
-          { k: 'Access and correction: ', v: 'You may request access to, correction or removal of your personal data by emailing dr.heibelau.work@gmail.com. This statement follows the Hong Kong Personal Data (Privacy) Ordinance (Cap. 486).' }
-        ],
-        slogan: 'Caring for animals as a vet, understanding people as a counsellor',
-        footTag: 'A counsellor beyond the consultation room'
+      {
+        "group": "owners",
+        "tag": "寵物主人",
+        "date": "2026年10月",
+        "title": "那些深夜裡的照顧者",
+        "excerpt": "你的累，是愛留下的痕跡，不是愛的反面。",
+        "paras": [
+          "在急症室值夜班時，半夜的候診區常常坐著一些很安靜的人。他們不是第一次來，手上拿著藥袋，熟練地說出毛孩的病歷和用藥。我總會留意他們的眼睛。",
+          "以前做獸醫時，我的注意力大多放在病床上的那隻動物。讀輔導之後，我開始看見站在病床旁邊的人。他們很少談自己，好像說一句「我好累」，就等於承認自己愛得不夠。",
+          "我想對這些照顧者說：你的累，是愛留下的痕跡，不是愛的反面。如果某一晚你只想坐下來，甚麼都不做，那也沒關係。"
+        ]
+      },
+      {
+        "group": "owners",
+        "tag": "寵物主人",
+        "date": "2026年10月",
+        "title": "關於「放手」這個詞",
+        "excerpt": "很多主人不是放手，而是用另一種方式繼續握著。",
+        "paras": [
+          "我做過很多次安樂死。每一次，主人在簽名前都會停頓一下，那幾秒很長。有時候會有人問我：「醫生，如果係你，你會點做？」我明白，他們其實是在問：「我這樣做，是不是對的？」",
+          "後來在輔導室裡，我聽到另一個版本的故事：決定之後的幾個月、甚至幾年，那個問題仍然在心裡迴響。而就算毛孩是自然離世，很多主人一樣會內疚，會想如果早一點發現、如果多陪一晚。",
+          "我慢慢覺得，「放手」這個詞不太準確。很多主人不是放手，而是用另一種方式繼續握著：握著回憶、握著問題、握著那份愛。也許療癒不是停止發問，而是有一天，可以溫柔地回答自己。"
+        ]
+      },
+      {
+        "group": "owners",
+        "tag": "寵物主人",
+        "date": "2026年10月",
+        "title": "還在身邊，卻已經開始想念",
+        "excerpt": "有一種哀傷，是在失去之前就開始的。",
+        "paras": [
+          "有一種哀傷，是在失去之前就開始的。毛孩還在身邊，會吃飯、會撒嬌，可是你看著牠的時候，心裡已經在預習告別。",
+          "很多主人跟我說，他們不敢在牠面前哭，怕牠感受到；也不敢跟別人說，怕被說「牠還在啊，別想太多」。於是這份哀傷，變得很孤單。",
+          "我想說，提早出現的哀傷，不代表你放棄了牠。那只是愛提早開始學習告別。在這段日子裡，你可以哭，也可以笑；可以照顧牠，也可以照顧那個正在不捨的自己。"
+        ]
+      },
+      {
+        "group": "owners",
+        "tag": "寵物主人",
+        "date": "2026年10月",
+        "title": "診症室裡緊張的你",
+        "excerpt": "你的緊張很正常，因為你在乎。",
+        "paras": [
+          "在診症室裡，我常常見到比毛孩更緊張的主人：抱得很緊、說話很快、一直問「牠會不會痛」。有些人會向我道歉：「對不起，我太緊張了。」",
+          "以前我會想，該怎樣讓主人冷靜下來。現在我更想說：你的緊張很正常，因為你在乎。",
+          "下次如果你在候診室心跳加速，深呼吸一下，有我們一起努力，你做得很好了。"
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "獸醫同業",
+        "date": "2026年10月",
+        "title": "下班後帶回家的那些個案",
+        "excerpt": "那份不安，其實是職業道德在說話。",
+        "paras": [
+          "有些個案，下班換了衫、坐上車，還是會跟著你回家。不一定是最嚴重的那一個，而是那個「其實可以救，但最後沒有」的。",
+          "剛入行時，我以為那份沉重是因為自己不夠堅強，要學會「放下」。後來讀到「道德困擾」這個概念，我才明白：那是因為我知道對動物最好的是甚麼，卻因為費用、主人的決定或者制度，沒辦法做到。那份不安，其實是職業道德在說話。",
+          "我不再要求自己「不要想」。我開始允許自己承認：這件事令我難過。有時候，承認本身已經是一種照顧。"
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "獸醫同業",
+        "date": "2026年10月",
+        "title": "寫給我身邊的護士們",
+        "excerpt": "倦怠不是個人的失敗。",
+        "paras": [
+          "在急症室，我最依賴的人是護士。凌晨病房一下子來了三個急症，是她們先把靜脈導管放好、把氧氣接上，記得每一隻動物下一次吃藥的時間。",
+          "我也見過很多很好的護士離開這個行業。不是因為不愛動物，而是因為太累、太少被看見。每次聽到「其實我好鍾意呢份工，但我撐唔落去」，我都很心痛。",
+          "倦怠不是個人的失敗。我希望我們這一行可以少一點「辛苦是正常的」，多一點「你辛苦了，我們一起想辦法」。"
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "獸醫同業",
+        "date": "2026年10月",
+        "title": "當獸醫，最累的是甚麼？",
+        "excerpt": "每一件單獨看都不算甚麼，加起來卻很重。",
+        "paras": [
+          "朋友常問我：「做獸醫最辛苦嘅，係咪見到動物死？」我通常會笑一笑，不知道怎樣解釋。",
+          "其實最累的，往往是那些疊在一起的東西：連續的夜班、一邊做手術一邊想著候診區的主人、要在幾分鐘內解釋費用、面對一個情緒激動的家庭，然後下一個病例已經在等。每一件單獨看都不算甚麼，加起來卻很重。",
+          "讀輔導之後，我學會先把這些東西一件件拿出來看清楚，而不是一下子全部背在身上。看清楚，不一定能讓工作變輕，但會讓我對自己溫柔一點。"
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "獸醫同業",
+        "date": "2026年10月",
+        "title": "櫃檯後面的那個人",
+        "excerpt": "他們很少被問：「你今天還好嗎？」",
+        "paras": [
+          "在動物醫院裡，最先見到主人眼淚的，通常不是醫生，而是前台同事。電話響起時的慌亂、付款時的爭拗、毛孩離開後來接牠回家的那一刻，很多都發生在櫃檯前。",
+          "我常常覺得，前台同事做的是一份沒有被寫進職位描述的工作：接住別人最脆弱的時刻，同時保持微笑，然後轉身接聽下一個電話。",
+          "他們很少被問：「你今日還好嗎？」我希望我們都記得問。"
+        ]
       }
-    };
+    ],
+    "empty": {
+      "title": "目前還沒有文章發布，敬請期待。",
+      "sub": "之後有新的感想或故事，會在這裡分享。",
+      "link": "先讀讀給獸醫與醫護的職場身心文章 →"
+    },
+    "slogan": "用獸醫的角度照顧動物，用輔導的視角理解人",
+    "footTag": "診療室外的輔導員"
+  },
+  "en": {
+    "sub": "Essays",
+    "nav": {
+      "home": "Home",
+      "owners": "Pet owners",
+      "vets": "Vet professionals",
+      "wall": "Pet Wall",
+      "book": "Register interest"
+    },
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Thoughts and stories",
+      "sub": "Reflections from my path between veterinary medicine and counselling, for anyone who'd like to pause and read for a while.",
+      "tag": ""
+    },
+    "postsTitle": "Latest posts",
+    "ownersPostsTitle": "For pet owners",
+    "vetsPostsTitle": "For vet professionals",
+    "readMore": "Read more",
+    "collapse": "Close",
+    "sourceLabel": "Source: ",
+    "sourceLink": "Read the original",
+    "posts": [
+      {
+        "group": "owners",
+        "tag": "Pet owners",
+        "date": "October 2026",
+        "title": "That sadness needs no apology",
+        "excerpt": "Grief for a pet was never \"overreacting.\"",
+        "paras": [
+          "A client once sat down in my counselling room and opened with an apology: \"I know this is an overreaction; she was just a cat.\" Her cat had been with her for fourteen years, from her university dorm room to now. But as she said it, she looked down, as if she'd done something wrong.",
+          "There's a term in psychology called disenfranchised grief, coined by Dr. Kenneth Doka, for losses that society doesn't openly recognise or allow us to mourn in public. Pet loss often falls into this category: people around us may say \"don't think about it too much\" or \"you can always get another one,\" and a grief that is already heavy becomes a lonely one too. A 2026 study by Maynooth University in Ireland, published in PLOS One, surveyed 975 adults who had lost someone close to them. It found that 7.5% of those who had lost a pet showed grief responses meeting the clinical threshold for prolonged grief disorder, strikingly close to the rates for losing a close friend (7.8%), a grandparent (8.3%) or a sibling (8.9%). 21% of respondents named their pet's death as the most distressing loss of their life.",
+          "What I want to say to that client, and to anyone who has cried over a pet's death and then quietly apologised for it, is this: your sadness needs no explanation, and no apology. Fourteen years of companionship was real, and so is your grief. You weren't overreacting. You simply loved deeply."
+        ]
+      },
+      {
+        "group": "owners",
+        "tag": "Pet owners",
+        "date": "October 2026",
+        "title": "The carers of the small hours",
+        "excerpt": "Your tiredness is a mark that love leaves behind, not its opposite.",
+        "paras": [
+          "On night shifts in the ER, the waiting area in the small hours often holds a few very quiet people. It isn't their first visit: they carry bags of medication and can recite their pet's history and doses from memory. I always notice their eyes.",
+          "As a vet, my attention used to rest mostly on the animal on the table. Since training as a counsellor, I've started to see the person standing beside it. They rarely talk about themselves, as if saying “I'm exhausted” would mean admitting they don't love enough.",
+          "What I'd like to tell these carers is this: your tiredness is a mark that love leaves behind, not its opposite. And if one night all you want is to sit down and do nothing at all, that's okay too."
+        ]
+      },
+      {
+        "group": "owners",
+        "tag": "Pet owners",
+        "date": "October 2026",
+        "title": "On the words “letting go”",
+        "excerpt": "Many owners don't let go; they keep holding on, in a different way.",
+        "paras": [
+          "I have performed many euthanasias. Every time, there is a pause before the owner signs, and those few seconds feel very long. Sometimes someone asks me, “Doctor, what would you do if it were you?” I understand that what they are really asking is, “Am I doing the right thing?”",
+          "Later, in the counselling room, I heard the other half of the story: months or even years after the decision, that question still echoes. And even when a pet dies naturally, many owners feel the same guilt: if only I'd noticed sooner, if only I'd stayed one more night.",
+          "I've come to feel that “letting go” isn't quite the right phrase. Many owners don't let go; they keep holding on in another way: holding the memories, the questions, the love. Perhaps healing isn't about no longer asking, but about one day being able to answer yourself gently."
+        ]
+      },
+      {
+        "group": "owners",
+        "tag": "Pet owners",
+        "date": "October 2026",
+        "title": "Still here, already missed",
+        "excerpt": "There is a kind of grief that begins before the loss.",
+        "paras": [
+          "There is a kind of grief that begins before the loss. Your pet is still here, still eating, still curling up beside you, yet when you look at them, part of you is already rehearsing goodbye.",
+          "Many owners tell me they don't dare cry in front of their pet in case they sense it, and don't dare tell anyone else in case they hear, “They're still here, don't overthink it.” So this grief becomes a lonely one.",
+          "Grief that arrives early doesn't mean you've given up on them. It's simply love starting to learn how to say goodbye. In these days you can cry and you can laugh; you can care for them, and you can care for the part of you that doesn't want to let them go."
+        ]
+      },
+      {
+        "group": "owners",
+        "tag": "Pet owners",
+        "date": "October 2026",
+        "title": "To the nervous owner in the consult room",
+        "excerpt": "Your nerves are normal, because you care.",
+        "paras": [
+          "In the consult room I often meet owners more nervous than their pets: holding on tight, talking fast, asking again and again, “Will it hurt?” Some apologise to me: “Sorry, I'm just so anxious.”",
+          "I used to wonder how to calm owners down. Now I'd rather say: your nerves are normal, because you care.",
+          "Next time your heart races in the waiting room, take a breath. We're in this together, and you're doing really well."
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "Vet professionals",
+        "date": "October 2026",
+        "title": "The cases we take home",
+        "excerpt": "That unease is really our professional ethics speaking.",
+        "paras": [
+          "Some cases follow you home, after you've changed out of your scrubs, after you've got in the car. Not always the most serious one, but the one that “could have been saved, and wasn't”.",
+          "When I first started, I thought that heaviness meant I wasn't strong enough and needed to learn to “let it go”. It was only when I came across the idea of moral distress that I understood: it came from knowing what was best for the animal, yet being unable to do it because of cost, an owner's decision or the system. That unease is really our professional ethics speaking.",
+          "I no longer tell myself “don't think about it”. Instead I let myself admit: this made me sad. Sometimes, admitting it is already a form of care."
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "Vet professionals",
+        "date": "October 2026",
+        "title": "To the nurses beside me",
+        "excerpt": "Burnout is not a personal failure.",
+        "paras": [
+          "In the ER, the people I rely on most are the nurses. When three emergencies arrive on the ward at once in the middle of the night, they're the ones who place the IV lines, connect the oxygen and remember when every animal's next dose is due.",
+          "I've also watched many wonderful nurses leave the profession, not because they stopped loving animals, but because they were too tired and too rarely seen. Every time I hear, “I really love this job, but I can't keep going,” it breaks my heart.",
+          "Burnout is not a personal failure. I hope our profession can say a little less “it's supposed to be hard” and a little more “you've worked so hard, let's figure this out together.”"
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "Vet professionals",
+        "date": "October 2026",
+        "title": "What's the hardest part of being a vet?",
+        "excerpt": "Each thing on its own is small; together they weigh a lot.",
+        "paras": [
+          "Friends often ask me, “Is the hardest part of being a vet seeing animals die?” I usually just smile; it's hard to explain.",
+          "What's most tiring is often everything stacked together: back-to-back night shifts, operating while thinking about the owner in the waiting room, explaining costs in a few minutes, supporting a distressed family, and then the next case is already waiting. Each thing on its own is small; together they weigh a lot.",
+          "Counselling taught me to take these things out one by one and look at them clearly, instead of carrying them all at once. Seeing them clearly doesn't always make the work lighter, but it helps me be a little gentler with myself."
+        ]
+      },
+      {
+        "group": "vets",
+        "tag": "Vet professionals",
+        "date": "October 2026",
+        "title": "The person behind the front desk",
+        "excerpt": "They are rarely asked, “Are you okay today?”",
+        "paras": [
+          "In an animal hospital, the first person to see an owner's tears is often not the vet but the front-desk team. The panic when the phone rings, the arguments at payment, the moment someone comes to take their pet home for the last time. So much of it happens at the counter.",
+          "I often think the front desk does a job that was never written into the job description: holding people in their most fragile moments, keeping a smile, and then turning to answer the next call.",
+          "They are rarely asked, “Are you okay today?” I hope we all remember to ask."
+        ]
+      }
+    ],
+    "empty": {
+      "title": "No posts yet. Stay tuned.",
+      "sub": "New reflections and stories will be shared here.",
+      "link": "Meanwhile, read the wellbeing articles for vets and vet nurses →"
+    },
+    "slogan": "Caring for animals as a vet, understanding people as a counsellor",
+    "footTag": "A counsellor beyond the consultation room"
+  }
+};
+
+window.CONTENT.blog = {
+  "zh": {
+    "sub": "寵物牆投稿區",
+    "nav": {
+      "home": "首頁",
+      "essays": "隨筆手記",
+      "book": "優先登記"
+    },
+    "hero": {
+      "eyebrow": "寵物牆 · SHARE YOUR STORY",
+      "title": "寫下你和牠的故事",
+      "sub": "這裡是一個溫柔的角落，讓你分享和寵物之間的故事和感想。每一則投稿我都會親自閱讀。",
+      "tag": ""
+    },
+    "share": {
+      "title": "分享你的故事",
+      "p1": "如果你也想說說自己與寵物的故事，或是一些感想，歡迎寄給我。每一則投稿我都會親自閱讀；若你同意公開分享，經整理後可能會刊登在這個部落格（不會顯示你的真實姓名或 Email）。",
+      "p2": "按下方按鈕會開啟一封已填好格式的電郵，想說多少都可以，不需要很完整或很正式。如有照片，也可以直接附加在郵件中。",
+      "gmail": "用 Gmail 網頁版寄出",
+      "app": "開啟郵件程式",
+      "or": "或直接寄到",
+      "include": "電郵內請註明",
+      "fields": [
+        {
+          "k": "暱稱",
+          "v": "刊登時只會顯示暱稱"
+        },
+        {
+          "k": "是否同意公開分享",
+          "v": "願意公開，或不公開、只寫給 Dr. Heibe 看"
+        },
+        {
+          "k": "希望的回覆方式",
+          "v": "電郵私下回覆／部落格公開回應／不需要回覆"
+        },
+        {
+          "k": "你的故事或感想",
+          "v": "想說多少都可以"
+        }
+      ],
+      "subject": "部落格故事投稿：",
+      "lines": [
+        "暱稱：",
+        "是否同意公開分享（願意公開／不公開，僅給 Dr. Heibe 看）：",
+        "希望的回覆方式（電郵私下回覆／可於部落格公開回應／不需要回覆）：",
+        "",
+        "我的故事或感想：",
+        ""
+      ]
+    },
+    "picsOpenLabel": "收合個人資料收集聲明 ▲",
+    "picsClosedLabel": "個人資料收集及使用聲明（請詳閱）▼",
+    "pics": [
+      {
+        "k": "收集目的：",
+        "v": "你提供的資料僅用於審核你希望分享的故事、考慮是否於本部落格刊登，以及在你需要時與你聯繫回覆。"
+      },
+      {
+        "k": "資料類別：",
+        "v": "暱稱、Email、故事內容，以及你對是否公開分享及回覆方式的選擇（若你附加照片，亦包括該等照片）。"
+      },
+      {
+        "k": "資料轉交：",
+        "v": "資料只會直接寄送到 Dr. Heibe 本人的電郵信箱，不經第三方系統或資料庫儲存。若你選擇公開分享並經審核通過，故事內容（不含真實姓名或 Email）可能會刊登於本部落格；除此以外，不會轉交予任何第三方。"
+      },
+      {
+        "k": "查閱及更正：",
+        "v": "你有權要求查閱、更正或移除我們所持有關於你的個人資料，請電郵至 dr.heibelau.work@gmail.com。本聲明遵守香港《個人資料（私隱）條例》（第486章）。"
+      }
+    ],
+    "slogan": "用獸醫的角度照顧動物，用輔導的視角理解人",
+    "footTag": "診療室外的輔導員"
+  },
+  "en": {
+    "sub": "Pet Wall",
+    "nav": {
+      "home": "Home",
+      "essays": "Essays",
+      "book": "Register interest"
+    },
+    "hero": {
+      "eyebrow": "PET WALL · SHARE YOUR STORY",
+      "title": "Tell me about you and your pet",
+      "sub": "A gentle corner to share your story and feelings about your pet. I personally read every submission.",
+      "tag": ""
+    },
+    "share": {
+      "title": "Share your story",
+      "p1": "If you'd like to tell me about you and your pet, or share a few thoughts, I'd love to hear from you. I read every story myself. If you agree, it may be lightly edited and published here (without your real name or email).",
+      "p2": "The buttons below open a ready-to-fill email. Write as much or as little as you like; it doesn't need to be polished or complete. You're welcome to attach photos too.",
+      "gmail": "Send with Gmail",
+      "app": "Open email app",
+      "or": "Or email directly:",
+      "include": "Please include",
+      "fields": [
+        {
+          "k": "Nickname",
+          "v": "Only your nickname is shown if published"
+        },
+        {
+          "k": "Consent to publish",
+          "v": "Happy to share publicly, or only for Dr. Heibe to read"
+        },
+        {
+          "k": "Preferred reply",
+          "v": "Private email reply / public reply on the blog / no reply needed"
+        },
+        {
+          "k": "Your story or thoughts",
+          "v": "As much or as little as you like"
+        }
+      ],
+      "subject": "Blog story submission: ",
+      "lines": [
+        "Nickname:",
+        "Consent to publish (yes, share publicly / no, only for Dr. Heibe):",
+        "Preferred reply (private email / public reply on the blog / no reply needed):",
+        "",
+        "My story or thoughts:",
+        ""
+      ]
+    },
+    "picsOpenLabel": "Hide Personal Information Collection Statement ▲",
+    "picsClosedLabel": "Personal Information Collection Statement ▼",
+    "pics": [
+      {
+        "k": "Purpose: ",
+        "v": "The information you provide is used only to review the story you wish to share, decide whether to publish it on this blog, and contact you if you would like a reply."
+      },
+      {
+        "k": "Data collected: ",
+        "v": "Nickname, email, your story, and your choices about publication and replies (including any photos you attach)."
+      },
+      {
+        "k": "Transfer: ",
+        "v": "Your information is sent directly to Dr. Heibe's own email inbox and is not stored in any third-party system or database. If you agree to publication and your story is approved, its content (without your real name or email) may appear on this blog; otherwise it is not passed to any third party."
+      },
+      {
+        "k": "Access and correction: ",
+        "v": "You may request access to, correction or removal of your personal data by emailing dr.heibelau.work@gmail.com. This statement follows the Hong Kong Personal Data (Privacy) Ordinance (Cap. 486)."
+      }
+    ],
+    "slogan": "Caring for animals as a vet, understanding people as a counsellor",
+    "footTag": "A counsellor beyond the consultation room"
+  }
+};

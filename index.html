@@ -3,9 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. Heibe｜輔導空間</title>
+<title>Dr. Heibe Counselling｜寵物哀傷輔導 & 獸醫身心健康支援</title>
 <meta name="description" content="Dr. Heibe｜輔導空間：寵物哀傷輔導及獸醫業界心理支援。Pet bereavement counselling and wellbeing support for veterinary professionals in Hong Kong.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dr. Heibe Counselling｜寵物哀傷輔導 & 獸醫身心健康支援">
+<meta property="og:description" content="Dr. Heibe｜輔導空間：寵物哀傷輔導及獸醫業界心理支援。Pet bereavement counselling and wellbeing support for veterinary professionals in Hong Kong.">
+<meta property="og:url" content="https://heibecounselling.com/">
+<meta property="og:image" content="https://heibecounselling.com/images/logo.png">
 <link rel="icon" href="images/logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Dr. Heibe｜輔導空間",
+  "description": "寵物哀傷輔導及獸醫業界心理支援",
+  "url": "https://heibecounselling.com/",
+  "image": "https://heibecounselling.com/images/logo.png",
+  "areaServed": { "@type": "Country", "name": "Hong Kong" },
+  "serviceType": ["寵物哀傷輔導", "獸醫身心健康支援", "Pet bereavement counselling", "Veterinary wellbeing support"],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Heibe Lau",
+    "jobTitle": "Registered Veterinarian; Registered Counsellor"
+  }
+}
+</script>
 <style>
 /* 手機版：避免固定寬度的元素超出螢幕 Mobile: keep fixed-width blocks inside the screen */
 
@@ -40,6 +62,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 </style>
 </head>
 <body>
+<a href="#top" style="position: absolute; left: -9999px; top: 0; z-index: 100; background: #3E5040; color: #FFFDF8; padding: 12px 20px; border-radius: 0 0 8px 0; font-size: 15px; text-decoration: none;" onfocus="this.style.left='0'" onblur="this.style.left='-9999px'">跳至主要內容 / Skip to content</a>
 <div id="page-root"></div>
 <template id="page-template">
 <div style="background: #F7F2E9; color: #2E2A26; font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; font-size: 17px; line-height: 1.75;">
@@ -56,13 +79,13 @@ a{color:#3E5040}a:hover{color:#26332A}
 <nav style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
 <a href="#about" style="text-decoration: none; color: #4A443D;">{{t.nav.about}}</a>
 <a href="#owners" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
-<a href="/vets" style="text-decoration: none; color: #4A443D;">{{t.nav.vets}}</a>
-<a href="/blog" style="text-decoration: none; color: #4A443D;">{{t.nav.blog}}</a>
-<a href="#faq" style="text-decoration: none; color: #4A443D;">{{t.nav.faq}}</a>
+<a href="/resources.html" style="text-decoration: none; color: #4A443D;">{{t.nav.resources}}</a>
+<a href="/pet-loss-grief.html#assessment" style="text-decoration: none; color: #4A443D;">{{t.nav.assessment}}</a>
 <div style="display: flex; border: 1px solid #C9BEA9; border-radius: 999px; overflow: hidden;" role="group" aria-label="Language">
 <button type="button" onClick="{{setZh}}" style="{{zhStyle}}">中</button>
 <button type="button" onClick="{{setEn}}" style="{{enStyle}}">EN</button>
 </div>
+<a href="/vets" style="text-decoration: none; color: #4A443D;">{{t.nav.vets}}</a>
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 10px 20px; border-radius: 999px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">{{t.nav.book}}</a>
 </nav>
 </div>
@@ -78,6 +101,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <div style="display: flex; gap: 12px; flex-wrap: wrap;">
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 28px; border-radius: 999px; font-weight: 500;">{{t.hero.cta}}</a>
 <a href="#about" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 26px; border-radius: 999px; font-weight: 500;">{{t.hero.cta2}}</a>
+<a href="#faq" style="text-decoration: none; color: #3E5040; font-weight: 500; align-self: center; padding: 13px 4px;">{{t.nav.faq}} →</a>
 </div>
 <span style="font-size: 14px; color: #5E574F;">{{t.hero.launch}}</span>
 </div>
@@ -163,51 +187,15 @@ a{color:#3E5040}a:hover{color:#26332A}
 <p style="margin: 0; font-size: 16px; color: #4A443D;">{{s.body}}</p>
 </div>
 </sc-for>
-<div style="display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: 32px 28px;">
-<a href="#process" style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; line-height: 1.5;">{{t.owners.processLink}}</a>
-<a href="#resources" style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; line-height: 1.5;">{{t.owners.readLink}}</a>
-</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; padding: 18px 22px; background: #E4EBDD; border-radius: 14px;">
-<p style="margin: 0; font-size: 15px; color: #33402F; max-width: 760px;">{{t.owners.note}}</p>
-<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 12px 24px; border-radius: 999px; font-weight: 500; font-size: 15px;">{{t.nav.book}}</a>
-</div>
-<div style="background: #EFE7D8; border-radius: 20px; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px;">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
-<span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; color: #2F3D31;">{{t.owners.blogTitle}}</span>
-<a href="/blog" style="font-size: 15px; font-weight: 500;">{{t.owners.blogMore}}</a>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
-<sc-for list="{{t.owners.blogPosts}}" as="b" hint-placeholder-count="2">
-<a href="/blog" style="text-decoration: none; color: #2E2A26; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px;">
-<span style="font-family: 'Noto Serif TC', serif; font-size: 18px; line-height: 1.5; color: #2F3D31;">{{b.title}}</span>
-<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{t.owners.blogMore}}</span>
-</a>
+<div style="background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 10px;">
+<span style="font-family: 'Noto Serif TC', serif; font-size: 15px; color: #5B6E55;">&nbsp;</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 22px; color: #2F3D31; line-height: 1.4;">{{t.owners.readLink}}</h3>
+<div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+<sc-for list="{{t.owners.readLinkPosts}}" as="r" hint-placeholder-count="4">
+<a href="{{r.href}}" style="text-decoration: none; font-size: 15px; color: #3E5040; font-weight: 500;">{{r.title}} →</a>
 </sc-for>
 </div>
 </div>
-</div>
-</section>
-
-<section id="vets" style="background: #3E5040; color: #F7F2E9; padding: 96px 24px;">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
-<span style="font-size: 14px; letter-spacing: 0.12em; color: #CFDCC6; font-weight: 500;">{{t.vets.eyebrow}}</span>
-<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3vw, 38px); line-height: 1.4; color: #FFFDF8;">{{t.vets.title}}</h2>
-<p style="margin: 0; color: #E8E1D3;">{{t.vets.intro}}</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
-<sc-for list="{{t.vets.items}}" as="s" hint-placeholder-count="4">
-<div style="background: #4A5D4B; border-radius: 20px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px;">
-<span style="font-size: 13px; letter-spacing: 0.08em; color: #CFDCC6;">{{s.tag}}</span>
-<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 21px; color: #FFFDF8; line-height: 1.4;">{{s.title}}</h3>
-<p style="margin: 0; font-size: 15px; color: #E8E1D3;">{{s.body}}</p>
-</div>
-</sc-for>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; border-top: 1px solid #5F735F; padding-top: 28px;">
-<p style="margin: 0; color: #E8E1D3; max-width: 640px;">{{t.vets.eap}}</p>
-<a href="/vets" style="text-decoration: none; background: #F7F2E9; color: #2F3D31; padding: 14px 26px; border-radius: 999px; font-weight: 500;">{{t.vets.cta}}</a>
 </div>
 </div>
 </section>
@@ -235,6 +223,87 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </section>
 
+<section id="resources" style="background: #EFE7D8; padding: 88px 24px;">
+<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.res.eyebrow}}</span>
+<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(26px, 3vw, 34px); line-height: 1.4; color: #2F3D31;">{{t.res.title}}</h2>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 20px; color: #2F3D31;">{{t.res.postsTitle}}</h3>
+<a href="/resources.html#articles" style="font-size: 15px; font-weight: 500;">{{t.res.postsMore}}</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+<sc-for list="{{t.res.posts}}" as="b" hint-placeholder-count="4">
+<a href="{{b.href}}" style="text-decoration: none; color: #2E2A26; background: #F7F2E9; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
+<sc-if value="{{b.hasImg}}" hint-placeholder-val="{{true}}">
+<img src="{{b.img}}" alt="{{b.title}}" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #E4DCCD;">
+</sc-if>
+<sc-if value="{{b.noImg}}" hint-placeholder-val="{{false}}">
+<div style="aspect-ratio: 16 / 9; background: {{b.tint}};"></div>
+</sc-if>
+<div style="padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{b.tag}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 19px; line-height: 1.5; color: #2F3D31;">{{b.title}}</h3>
+<span style="font-size: 14px; color: #4A443D;">{{b.body}}</span>
+<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{b.go}} →</span>
+</div>
+</a>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 20px; color: #2F3D31;">{{t.res.toolsTitle}}</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+<sc-for list="{{t.res.tools}}" as="b" hint-placeholder-count="1">
+<a href="{{b.href}}" style="text-decoration: none; color: #2E2A26; background: #F7F2E9; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
+<sc-if value="{{b.hasImg}}" hint-placeholder-val="{{true}}">
+<img src="{{b.img}}" alt="{{b.title}}" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #E4DCCD;">
+</sc-if>
+<sc-if value="{{b.noImg}}" hint-placeholder-val="{{false}}">
+<div style="aspect-ratio: 16 / 9; background: {{b.tint}};"></div>
+</sc-if>
+<div style="padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{b.tag}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 19px; line-height: 1.5; color: #2F3D31;">{{b.title}}</h3>
+<span style="font-size: 14px; color: #4A443D;">{{b.body}}</span>
+<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{b.go}} →</span>
+</div>
+</a>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 20px; color: #2F3D31;">{{t.res.otherTitle}}</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+<sc-for list="{{t.res.other}}" as="b" hint-placeholder-count="2">
+<a href="{{b.href}}" style="text-decoration: none; color: #2E2A26; background: #F7F2E9; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
+<sc-if value="{{b.hasImg}}" hint-placeholder-val="{{true}}">
+<img src="{{b.img}}" alt="{{b.title}}" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #E4DCCD;">
+</sc-if>
+<sc-if value="{{b.noImg}}" hint-placeholder-val="{{false}}">
+<div style="aspect-ratio: 16 / 9; background: {{b.tint}};"></div>
+</sc-if>
+<div style="padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px;">
+<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{b.tag}}</span>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 19px; line-height: 1.5; color: #2F3D31;">{{b.title}}</h3>
+<span style="font-size: 14px; color: #4A443D;">{{b.body}}</span>
+<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{b.go}} →</span>
+</div>
+</a>
+</sc-for>
+</div>
+</div>
+
+</div>
+</section>
+
 <section id="notice" style="padding: 0 24px 96px;">
 <div style="max-width: 1160px; margin: 0 auto; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 24px; padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; gap: 28px; box-sizing: border-box;">
 <div style="display: flex; flex-direction: column; gap: 12px;">
@@ -251,35 +320,6 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </div>
 </section>
-<section id="resources" style="background: #EFE7D8; padding: 88px 24px;">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px;">
-<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;">
-<div style="display: flex; flex-direction: column; gap: 12px;">
-<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.res.eyebrow}}</span>
-</div>
-<a href="/blog" style="font-weight: 500;">{{t.res.more}}</a>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-<sc-for list="{{t.res.posts}}" as="b" hint-placeholder-count="3">
-<a href="{{b.href}}" style="text-decoration: none; color: #2E2A26; background: #F7F2E9; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;">
-<sc-if value="{{b.hasImg}}" hint-placeholder-val="{{true}}">
-<img src="{{b.img}}" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #E4DCCD;">
-</sc-if>
-<sc-if value="{{b.noImg}}" hint-placeholder-val="{{false}}">
-<div style="aspect-ratio: 16 / 9; background: {{b.tint}};"></div>
-</sc-if>
-<div style="padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px;">
-<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{b.tag}}</span>
-<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 19px; line-height: 1.5; color: #2F3D31;">{{b.title}}</h3>
-<span style="font-size: 14px; color: #4A443D;">{{b.body}}</span>
-<span style="font-size: 14px; color: #3E5040; font-weight: 500;">{{b.go}} →</span>
-</div>
-</a>
-</sc-for>
-</div>
-</div>
-</section>
-
 <section id="faq" style="padding: 96px 24px;">
 <div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px;">
 <div style="display: flex; flex-direction: column; gap: 12px;">
@@ -310,6 +350,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <p style="margin: 0; color: #33402F;">{{t.contact.body}}</p>
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 28px; border-radius: 999px; font-weight: 500;">{{t.contact.cta}}</a>
+<a href="#faq" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">{{t.nav.faq}}</a>
 <a href="{{gmailHref}}" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">{{t.contact.mail}}</a>
 <a href="https://www.instagram.com/heibe.counsellingvet" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">Instagram</a>
 <a href="https://www.threads.net/@heibe.counsellingvet" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">Threads</a>
@@ -340,7 +381,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <span style="display: flex; gap: 18px; flex-wrap: wrap;">
 <a href="/">{{t.foot.home}}</a>
 <a href="/vets">{{t.foot.vets}}</a>
-<a href="/blog">{{t.foot.blog}}</a>
+<a href="/essays.html">{{t.foot.blog}}</a>
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener">{{t.nav.book}}</a>
 </span>
 </div>
@@ -349,7 +390,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </template>
 <noscript><p style="padding:24px;font-family:sans-serif">請開啟瀏覽器的 JavaScript 以瀏覽本網站。Please enable JavaScript to view this website.</p></noscript>
-<script src="content.js?v=14"></script>
+<script src="content.js?v=27"></script>
 <script src="site.js?v=14"></script>
 <script>
 class Component extends DCLogic {
@@ -379,10 +420,11 @@ class Component extends DCLogic {
           : 'font-size: clamp(28px, 3.3vw, 40px); text-wrap: balance;'),
       heroLineStyle: lang === 'zh' ? 'white-space: nowrap;' : '',
       gmailHref: 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent('dr.heibelau.work@gmail.com') + '&su=' + encodeURIComponent(lang === 'zh' ? '輔導服務查詢' : 'Counselling enquiry'),
+      vetsShareMailHref: 'mailto:dr.heibelau.work@gmail.com?subject=' + encodeURIComponent(lang === 'zh' ? '分享：給獸醫同業的想法與故事' : 'Share: thoughts and story from a vet colleague'),
       zhStyle: lang === 'zh' ? on : off,
       enStyle: lang === 'en' ? on : off,
-      setZh: () => this.setState({ lang: 'zh' }),
-      setEn: () => this.setState({ lang: 'en' })
+      setZh: () => { document.documentElement.lang = 'zh-Hant-HK'; this.setState({ lang: 'zh' }); },
+      setEn: () => { document.documentElement.lang = 'en'; this.setState({ lang: 'en' }); }
     };
   }
 }

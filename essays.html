@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. Heibe｜寵物牆投稿區</title>
-<meta name="description" content="Dr. Heibe｜輔導空間：寫下你和寵物之間的故事，與同路人分享。每一則投稿我都會親自閱讀。">
+<title>Dr. Heibe｜隨筆手記</title>
+<meta name="description" content="Dr. Heibe｜輔導空間：獸醫與輔導之間的感想與故事，寫給寵物主人同獸醫同業。Reflections from a path between veterinary medicine and counselling.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dr. Heibe｜寵物牆投稿區">
-<meta property="og:description" content="Dr. Heibe｜輔導空間：寫下你和寵物之間的故事，與同路人分享。每一則投稿我都會親自閱讀。">
-<meta property="og:url" content="https://heibecounselling.com/blog">
+<meta property="og:title" content="Dr. Heibe｜隨筆手記">
+<meta property="og:description" content="Dr. Heibe｜輔導空間：獸醫與輔導之間的感想與故事，寫給寵物主人同獸醫同業。Reflections from a path between veterinary medicine and counselling.">
+<meta property="og:url" content="https://heibecounselling.com/essays.html">
 <meta property="og:image" content="https://heibecounselling.com/images/logo.png">
 <link rel="icon" href="images/logo.png">
 <style>
@@ -44,7 +44,9 @@ a{color:#3E5040}a:hover{color:#26332A}
 </a>
 <nav style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
 <a href="/" style="text-decoration: none; color: #4A443D;">{{t.nav.home}}</a>
-<a href="/essays.html" style="text-decoration: none; color: #4A443D;">{{t.nav.essays}}</a>
+<a href="#owner-posts" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
+<a href="#vet-posts" style="text-decoration: none; color: #4A443D;">{{t.nav.vets}}</a>
+<a href="/blog" style="text-decoration: none; color: #4A443D;">{{t.nav.wall}}</a>
 <div style="display: flex; border: 1px solid #C9BEA9; border-radius: 999px; overflow: hidden;" role="group" aria-label="Language">
 <button type="button" onClick="{{setZh}}" style="{{zhStyle}}">中</button>
 <button type="button" onClick="{{setEn}}" style="{{enStyle}}">EN</button>
@@ -54,7 +56,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </header>
 
-<section style="position: relative; overflow: hidden; min-height: 420px; padding: 120px 24px 72px; margin-bottom: 40px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;">
+<section style="position: relative; overflow: hidden; min-height: 460px; padding: 120px 24px 104px; margin-bottom: 72px; box-sizing: border-box; display: flex; align-items: center; justify-content: center;">
 <img src="images/hero-cat.jpg" alt="" aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 42%; opacity: 0.4; mix-blend-mode: multiply; display: block; pointer-events: none;">
 <div style="position: relative; max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px;">
 <span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">{{t.hero.eyebrow}}</span>
@@ -63,36 +65,51 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 </section>
 
-<section id="share" style="padding: 0 24px 96px;">
-<div style="max-width: 1160px; margin: 0 auto; background: #E4EBDD; border-radius: 32px; padding: clamp(36px, 6vw, 72px); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: start;">
-<div style="display: flex; flex-direction: column; gap: 16px;">
-<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">SHARE YOUR STORY</span>
-<h2 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.4; color: #2F3D31;">{{t.share.title}}</h2>
-<p style="margin: 0; color: #33402F;">{{t.share.p1}}</p>
-<p style="margin: 0; color: #33402F; font-size: 15px;">{{t.share.p2}}</p>
-<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;">
-<a href="{{gmailHref}}" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 14px 26px; border-radius: 999px; font-weight: 500;">{{t.share.gmail}}</a>
-<a href="{{mailHref}}" style="text-decoration: none; border: 1px solid #3E5040; color: #3E5040; padding: 13px 24px; border-radius: 999px; font-weight: 500;">{{t.share.app}}</a>
+<section id="owner-posts" style="padding: 0 24px 72px;">
+<div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">FOR PET OWNERS</span>
+<h2 style="margin: 0 0 4px; font-family: 'Noto Serif TC', serif; font-size: clamp(26px, 3vw, 34px); line-height: 1.4; color: #2F3D31;">{{t.ownersPostsTitle}}</h2>
+<sc-for list="{{ownerPosts}}" as="p" hint-placeholder-count="2">
+<article style="background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 28px 30px; display: flex; flex-direction: column; gap: 12px;">
+<div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+<span style="font-size: 13px; font-weight: 500; color: #33402F; background: #E4EBDD; padding: 3px 12px; border-radius: 999px;">{{p.tag}}</span>
+<span style="font-size: 13px; color: #5E574F;">{{p.date}}</span>
 </div>
-<p style="margin: 0; font-size: 15px; color: #33402F;">{{t.share.or}} <a href="{{mailHref}}">dr.heibelau.work@gmail.com</a></p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 14px; background: #F7F2E9; border-radius: 20px; padding: 28px;">
-<span style="font-size: 13px; color: #5B6E55; font-weight: 500;">{{t.share.include}}</span>
-<sc-for list="{{t.share.fields}}" as="f" hint-placeholder-count="4">
-<div style="display: flex; flex-direction: column; gap: 2px; padding-bottom: 10px; border-bottom: 1px solid #E2D8C6;">
-<span style="font-size: 15px; color: #2E2A26;">{{f.k}}</span>
-<span style="font-size: 13px; color: #5E574F;">{{f.v}}</span>
-</div>
-</sc-for>
-<button type="button" onClick="{{togglePics}}" aria-expanded="{{picsOpen}}" style="background: none; border: 0; padding: 8px 0; min-height: 44px; text-align: left; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 500; color: #3E5040;">{{picsLabel}}</button>
-<sc-if value="{{picsOpen}}" hint-placeholder-val="{{false}}">
-<div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #4A443D; line-height: 1.7;">
-<sc-for list="{{t.pics}}" as="p" hint-placeholder-count="4">
-<p style="margin: 0;"><b>{{p.k}}</b>{{p.v}}</p>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 22px; line-height: 1.5; color: #2F3D31;">{{p.title}}</h3>
+<sc-if value="{{p.open}}" hint-placeholder-val="{{false}}">
+<div style="border-top: 1px solid #E2D8C6; padding-top: 18px; display: flex; flex-direction: column; gap: 14px;">
+<sc-for list="{{p.paras}}" as="q" hint-placeholder-count="4">
+<p style="margin: 0; font-size: 16px; color: #2E2A26; line-height: 1.9;">{{q.v}}</p>
 </sc-for>
 </div>
 </sc-if>
+<button type="button" onClick="{{p.toggle}}" aria-expanded="{{p.open}}" style="align-self: flex-start; background: none; border: 0; padding: 8px 0; min-height: 44px; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 500; color: #3E5040;">{{p.label}}</button>
+</article>
+</sc-for>
 </div>
+</section>
+
+<section id="vet-posts" style="padding: 0 24px 72px;">
+<div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+<span style="font-size: 14px; letter-spacing: 0.12em; color: #5B6E55; font-weight: 500;">FOR VET PROFESSIONALS</span>
+<h2 style="margin: 0 0 4px; font-family: 'Noto Serif TC', serif; font-size: clamp(26px, 3vw, 34px); line-height: 1.4; color: #2F3D31;">{{t.vetsPostsTitle}}</h2>
+<sc-for list="{{vetPosts}}" as="p" hint-placeholder-count="2">
+<article style="background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 20px; padding: 28px 30px; display: flex; flex-direction: column; gap: 12px;">
+<div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+<span style="font-size: 13px; font-weight: 500; color: #33402F; background: #E4EBDD; padding: 3px 12px; border-radius: 999px;">{{p.tag}}</span>
+<span style="font-size: 13px; color: #5E574F;">{{p.date}}</span>
+</div>
+<h3 style="margin: 0; font-family: 'Noto Serif TC', serif; font-size: 22px; line-height: 1.5; color: #2F3D31;">{{p.title}}</h3>
+<sc-if value="{{p.open}}" hint-placeholder-val="{{false}}">
+<div style="border-top: 1px solid #E2D8C6; padding-top: 18px; display: flex; flex-direction: column; gap: 14px;">
+<sc-for list="{{p.paras}}" as="q" hint-placeholder-count="4">
+<p style="margin: 0; font-size: 16px; color: #2E2A26; line-height: 1.9;">{{q.v}}</p>
+</sc-for>
+</div>
+</sc-if>
+<button type="button" onClick="{{p.toggle}}" aria-expanded="{{p.open}}" style="align-self: flex-start; background: none; border: 0; padding: 8px 0; min-height: 44px; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 500; color: #3E5040;">{{p.label}}</button>
+</article>
+</sc-for>
 </div>
 </section>
 
@@ -105,7 +122,8 @@ a{color:#3E5040}a:hover{color:#26332A}
 <span>© 2026 Dr. Heibe｜輔導空間 · {{t.footTag}}</span>
 <span style="display: flex; gap: 18px; flex-wrap: wrap;">
 <a href="/">{{t.nav.home}}</a>
-<a href="/essays.html">{{t.nav.essays}}</a>
+<a href="/vets">{{t.nav.vets}}</a>
+<a href="/blog">{{t.nav.wall}}</a>
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener">{{t.nav.book}}</a>
 </span>
 </div>
@@ -120,25 +138,24 @@ a{color:#3E5040}a:hover{color:#26332A}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { lang: null, pics: false };
+    this.state = { lang: null, open: {} };
   }
   renderVals() {
     const lang = this.state.lang || this.props.startLang || 'zh';
-    const T = window.CONTENT.blog;
+    const T = window.CONTENT.essays;
     const t = T[lang];
-    const to = 'dr.heibelau.work@gmail.com';
-    const body = t.share.lines.join('\n');
-    const subject = t.share.subject;
+    const openMap = this.state.open;
+    const posts = t.posts.map((p, i) => ({
+      ...p, paras: p.paras.map(v => ({ v })), open: !!openMap[i], label: openMap[i] ? t.collapse : t.readMore,
+      toggle: () => this.setState({ open: { ...this.state.open, [i]: !this.state.open[i] } })
+    }));
     const base = 'border: 0; min-width: 44px; min-height: 36px; padding: 6px 12px; font-size: 14px; cursor: pointer; font-family: inherit;';
     const on = base + ' background: #3E5040; color: #FFFDF8;';
     const off = base + ' background: transparent; color: #4A443D;';
     return {
-      t,
-      mailHref: 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body),
-      gmailHref: 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body),
-      picsOpen: this.state.pics,
-      picsLabel: this.state.pics ? t.picsOpenLabel : t.picsClosedLabel,
-      togglePics: () => this.setState({ pics: !this.state.pics }),
+      t, posts,
+      ownerPosts: posts.filter(p => p.group === 'owners'),
+      vetPosts: posts.filter(p => p.group === 'vets'),
       zhStyle: lang === 'zh' ? on : off,
       enStyle: lang === 'en' ? on : off,
       setZh: () => { document.documentElement.lang = 'zh-Hant-HK'; this.setState({ lang: 'zh' }); },
