@@ -50,7 +50,7 @@ window.CONTENT.home = {
           processLink: '了解服務 →',
           moreLabel: '更多',
           moreLinks: [
-            { title: '了解輔導如何幫助你', href: '/counselling-approach.html' },
+            { title: '了解輔導如何幫助你', href: '/what-is-counselling.html' },
             { title: '瀏覽更多身心資源', href: '#resources' },
             { title: '有關預約服務的常見問題', href: '#faq' }
           ],
@@ -173,7 +173,7 @@ window.CONTENT.home = {
           processLink: 'How it works →',
           moreLabel: 'More',
           moreLinks: [
-            { title: 'Understand how counselling can help you', href: '/counselling-approach.html' },
+            { title: 'Understand how counselling can help you', href: '/what-is-counselling.html' },
             { title: 'Browse more wellbeing resources', href: '#resources' },
             { title: 'FAQs about booking a session', href: '#faq' }
           ],
