@@ -16,7 +16,7 @@ window.CONTENT = {};
  * ============================================================ */
 window.CONTENT.home = {
       zh: {
-        nav: { about: '關於我', owners: '服務內容', vets: '獸醫同業專區', blog: '隨筆手記', faq: '常見問題', book: '優先登記', resources: '衛教資源', assessment: '寵物離世哀傷評估' },
+        nav: { about: '關於我', owners: '服務內容', vets: '獸醫同業專區', blog: '隨筆手記', faq: '常見問題', book: '優先登記', resources: '衛教資源', assessment: '寵物離世哀傷評估', petLossZone: '寵物離世專區', caregiverZone: '照顧者情緒支援專區' },
         hero: {
           eyebrow: '寵物哀傷輔導 · 獸醫業界心理支援',
           l1: '用獸醫的角度照顧動物，', l2: '用輔導的視角理解人',
@@ -48,12 +48,11 @@ window.CONTENT.home = {
           title: '陪你走過與寵物告別的路',
           intro: '失去寵物，或者照顧一隻長期患病的寵物，都可能令人很累、很沮喪，甚至有時會覺得孤單。身邊的人未必理解你，但這份感受是真實的。',
           processLink: '了解服務 →',
-          readLink: '預約前，也許你想閱讀',
-          readLinkPosts: [
-            { title: '寵物離世後，陪你認識哀傷', href: '/pet-loss-grief.html' },
-            { title: '輔導的作用：哀傷輔導可以怎樣幫助你', href: '/counselling-approach.html' },
-            { title: '寵物離世哀傷評估（PBQ-C）', href: '/pet-loss-grief.html#assessment' },
-            { title: '了解服務流程', href: '#process' }
+          moreLabel: '更多',
+          moreLinks: [
+            { title: '了解輔導如何幫助你', href: '/counselling-approach.html' },
+            { title: '瀏覽更多身心資源', href: '#resources' },
+            { title: '有關預約服務的常見問題', href: '#faq' }
           ],
           items: [
             { n: 1, title: '寵物哀傷輔導', sub: 'Pet Bereavement Counselling', body: '寵物離世前後的哀傷、內疚、思念，以及適應生活的轉變。' },
@@ -140,7 +139,7 @@ window.CONTENT.home = {
         foot: { home: '首頁', vets: '獸醫同業', blog: '隨筆手記' }
       },
       en: {
-        nav: { about: 'About', owners: 'Our services', vets: 'For vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Register interest', resources: 'Resources', assessment: 'Pet bereavement assessment' },
+        nav: { about: 'About', owners: 'Our services', vets: 'For vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Register interest', resources: 'Resources', assessment: 'Pet bereavement assessment', petLossZone: 'Pet Loss', caregiverZone: 'Caregiver Support' },
         hero: {
           eyebrow: 'PET BEREAVEMENT COUNSELLING · WELLBEING SUPPORT FOR VET TEAMS',
           l1: 'Caring for animals as\u00a0a\u00a0vet,', l2: 'understanding people as\u00a0a\u00a0counsellor',
@@ -172,12 +171,11 @@ window.CONTENT.home = {
           title: 'Walking with you as you say goodbye',
           intro: 'Losing a pet, or caring for one through a long illness, can leave you drained, disheartened and lonelier than you expected. Others may not quite understand, but what you feel is real.',
           processLink: 'How it works →',
-          readLink: 'Some reading before you book',
-          readLinkPosts: [
-            { title: 'After pet loss: understanding your grief', href: '/pet-loss-grief.html' },
-            { title: 'What counselling can do: how grief counselling helps', href: '/counselling-approach.html' },
-            { title: 'Pet bereavement assessment (PBQ-C)', href: '/pet-loss-grief.html#assessment' },
-            { title: 'How the counselling process works', href: '#process' }
+          moreLabel: 'More',
+          moreLinks: [
+            { title: 'Understand how counselling can help you', href: '/counselling-approach.html' },
+            { title: 'Browse more wellbeing resources', href: '#resources' },
+            { title: 'FAQs about booking a session', href: '#faq' }
           ],
           items: [
             { n: 1, title: 'Pet bereavement counselling', sub: '寵物哀傷輔導', body: 'For the grief, guilt and longing that come before and after a pet dies, and for finding your way in life afterwards.' },
@@ -201,7 +199,7 @@ window.CONTENT.home = {
           ],
           eap: 'Every package can be tailored to your clinic\'s size and needs. Get in touch for a quote.',
           cta: 'Explore partnership options →',
-          blogTitle: 'Articles', blogMore: 'Read more →', blogPosts: [ { title: "Understanding burnout in the veterinary profession: it's not about not being strong enough", href: "/vet-burnout.html" } ], blogShare: 'Share your thoughts and story →'
+          blogTitle: 'Articles', blogMore: 'Read more →', blogPosts: [ { title: "Understanding burnout in the veterinary profession: it's not about being strong enough", href: "/vet-burnout.html" } ], blogShare: 'Share your thoughts and story →'
         },
         process: {
           eyebrow: 'HOW IT WORKS',
@@ -232,7 +230,7 @@ window.CONTENT.home = {
             { tag: 'Article', title: 'Anxiety and low mood: GAD-7 and PHQ-9 self-assessment', body: 'Two widely used questionnaires to help you understand your current state, with guidance based on your results.', go: 'Read', href: '/anxiety-depression-checkin.html', tint: '#DCE6E3', img: '', hasImg: false, noImg: true }
           ],
           tools: [
-            { tag: 'Self assessment', title: 'Quality of life, anxiety/mood, and pet bereavement tools', body: 'Three interactive self-assessment tools to help you understand your own, or your pet\'s, current state.', go: 'Take a look', href: '/resources.html#tools', tint: '#E6D6DC', img: '', hasImg: false, noImg: true }
+            { tag: 'Self-assessment', title: 'Quality of life, anxiety/mood, and pet bereavement tools', body: 'Three interactive self-assessment tools to help you understand your own, or your pet\'s, current state.', go: 'Take a look', href: '/resources.html#tools', tint: '#E6D6DC', img: '', hasImg: false, noImg: true }
           ],
           other: [
             { tag: 'Share your story', title: 'Tell me about you and your pet', body: 'I read every story myself, and you decide whether it\'s shared.', go: 'Share', href: '/blog', tint: '#EAD9C8', img: 'images/cover-share-story.jpg', hasImg: true, noImg: false },
@@ -406,7 +404,7 @@ window.CONTENT.vets = {
           { title: 'Workplace stress and mental health awareness: it starts with noticing',
             p1: 'Mental health awareness isn\'t only for when things become serious. It means paying everyday attention to how you and your colleagues are doing: noticing when stress builds, and feeling able to tell a colleague honestly, “I\'ve been struggling a bit lately.”',
             p2: 'Team support (regular wellbeing activities, space to talk openly about stress) and individual help (one-to-one counselling) work best together, so that looking after one another becomes more than a slogan.', href: '' },
-          { title: 'Self assessment tool',
+          { title: 'Self-assessment tool',
             p1: 'If you would like a first look at your current anxiety, mood, or grief after losing a pet, you can use the self-assessment tools on this site for an initial score and reference guidance.',
             p2: 'These tools are for self-understanding only and cannot replace a formal assessment by a professional.', href: '/resources.html#tools' }
         ],

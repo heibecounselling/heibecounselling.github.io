@@ -49,21 +49,25 @@ input[type=range]{accent-color:#3E5040}
 </span>
 </a>
 <nav style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:15px;">
-<a href="/" style="text-decoration:none;color:#4A443D;">首頁</a>
-<a href="/blog" style="text-decoration:none;color:#4A443D;">隨筆手記</a>
-<a href="/resources.html#articles" style="text-decoration:none;color:#4A443D;">衛教文章總覽</a>
-<a href="/resources.html#tools" style="text-decoration:none;color:#4A443D;">自我評估工具</a>
-<a href="mailto:dr.heibelau.work@gmail.com?subject=%E6%9F%A5%E8%A9%A2%EF%BC%9A%E5%AF%B5%E7%89%A9%E9%9B%A2%E4%B8%96%E8%BC%94%E5%B0%8E%E6%9C%8D%E5%8B%99" style="text-decoration:none;color:#4A443D;">查詢</a>
-<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration:none;background:#3E5040;color:#FFFDF8;padding:10px 20px;border-radius:999px;font-weight:500;">預約</a>
+<a href="/" data-zh="首頁" data-en="Home" style="text-decoration:none;color:#4A443D;">首頁</a>
+<a href="/blog" data-zh="寵物牆" data-en="Pet Wall" style="text-decoration:none;color:#4A443D;">寵物牆</a>
+<a href="/resources.html#articles" data-zh="衛教文章總覽" data-en="All articles" style="text-decoration:none;color:#4A443D;">衛教文章總覽</a>
+<a href="/resources.html#tools" data-zh="自我評估工具" data-en="Self-assessment tools" style="text-decoration:none;color:#4A443D;">自我評估工具</a>
+<a href="mailto:dr.heibelau.work@gmail.com?subject=%E6%9F%A5%E8%A9%A2%EF%BC%9A%E5%AF%B5%E7%89%A9%E9%9B%A2%E4%B8%96%E8%BC%94%E5%B0%8E%E6%9C%8D%E5%8B%99" data-zh="查詢" data-en="Enquire" style="text-decoration:none;color:#4A443D;">查詢</a>
+<div style="display:flex;border:1px solid #C9BEA9;border-radius:999px;overflow:hidden;" role="group" aria-label="Language">
+<button type="button" id="lang-zh-btn" style="border:0;padding:6px 14px;font-size:13px;cursor:pointer;background:#3E5040;color:#FFFDF8;">中</button>
+<button type="button" id="lang-en-btn" style="border:0;padding:6px 14px;font-size:13px;cursor:pointer;background:transparent;color:#4A443D;">EN</button>
+</div>
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" data-zh="預約" data-en="Register interest" style="text-decoration:none;background:#3E5040;color:#FFFDF8;padding:10px 20px;border-radius:999px;font-weight:500;">預約</a>
 </nav>
 </div>
 </header>
 
 <section class="hero-pad" style="padding:88px 24px 56px;">
 <div class="wrap" style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px;">
-<span style="font-size:14px;letter-spacing:0.12em;color:#5B6E55;font-weight:500;">衛教文章 · 寵物離世</span>
-<h1 style="margin:0;font-family:'Noto Serif TC',serif;font-size:clamp(28px,4vw,42px);line-height:1.4;color:#2F3D31;">寵物離世後，陪你認識哀傷</h1>
-<p style="margin:0;font-size:18px;color:#4A443D;">如果你正在經歷寵物離世，也許會發現這份悲傷比想像中沉重，甚至不知道該如何向身邊的人訴說。其實，找人說出這份悲傷、讓這份感受得到理解，可以幫助你渡過這個艱難時刻。</p>
+<span data-zh="衛教文章 · 寵物離世" data-en="Psychoeducation · Pet Loss" style="font-size:14px;letter-spacing:0.12em;color:#5B6E55;font-weight:500;">衛教文章 · 寵物離世</span>
+<h1 data-zh="寵物離世後，陪你認識哀傷" data-en="After Pet Loss: Understanding Your Grief" style="margin:0;font-family:'Noto Serif TC',serif;font-size:clamp(28px,4vw,42px);line-height:1.4;color:#2F3D31;">寵物離世後，陪你認識哀傷</h1>
+<p data-zh="如果你正在經歷寵物離世，也許會發現這份悲傷比想像中沉重，甚至不知道該如何向身邊的人訴說。其實，找人說出這份悲傷、讓這份感受得到理解，可以幫助你渡過這個艱難時刻。" data-en="If you're going through the loss of a pet, you may be finding this sadness heavier than you expected, and perhaps not knowing how to put it into words for the people around you. Putting this grief into words, and letting it be understood, can help you get through this difficult time." style="margin:0;font-size:18px;color:#4A443D;">如果你正在經歷寵物離世，也許會發現這份悲傷比想像中沉重，甚至不知道該如何向身邊的人訴說。其實，找人說出這份悲傷、讓這份感受得到理解，可以幫助你渡過這個艱難時刻。</p>
 </div>
 </section>
 
@@ -71,74 +75,74 @@ input[type=range]{accent-color:#3E5040}
 <div class="wrap" style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:40px;">
 
 <div style="display:flex;flex-direction:column;gap:14px;">
-<h2 style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">你可能會經歷的反應</h2>
-<p style="margin:0;color:#4A443D;">寵物離世後，你可能會感到強烈的悲傷、空虛或若有所失；腦海裡反覆浮現與牠相處的畫面；對於某些決定（例如安樂死的時機、有沒有更早發現牠的病）感到自責或愧疚；感到孤單，尤其是當身邊的人未能完全理解這份傷心的重量；也可能夾雜著憤怒，或者不斷想「如果當時怎樣做就好了」。這些反應都是常見的，不代表你反應過大。</p>
+<h2 data-zh="你可能會經歷的反應" data-en="Reactions You Might Experience" style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">你可能會經歷的反應</h2>
+<p data-zh="寵物離世後，你可能會感到強烈的悲傷、空虛或若有所失；腦海裡反覆浮現與牠相處的畫面；對於某些決定（例如安樂死的時機、有沒有更早發現牠的病）感到自責或愧疚；感到孤單，尤其是當身邊的人未能完全理解這份傷心的重量；也可能夾雜著憤怒，或者不斷想「如果當時怎樣做就好了」。這些反應都是常見的，不代表你反應過大。" data-en="After a pet dies, you may feel intense sadness, emptiness or a sense of loss; images of time spent together may keep replaying in your mind; you may feel self-blame or guilt over certain decisions (such as the timing of euthanasia, or whether you could have noticed the illness sooner); you may feel lonely, especially when the people around you don't fully understand the weight of this sadness; and anger may be mixed in too, or you may keep thinking &quot;if only I had done things differently.&quot; These reactions are all common, and they don't mean you're overreacting." style="margin:0;color:#4A443D;">寵物離世後，你可能會感到強烈的悲傷、空虛或若有所失；腦海裡反覆浮現與牠相處的畫面；對於某些決定（例如安樂死的時機、有沒有更早發現牠的病）感到自責或愧疚；感到孤單，尤其是當身邊的人未能完全理解這份傷心的重量；也可能夾雜著憤怒，或者不斷想「如果當時怎樣做就好了」。這些反應都是常見的，不代表你反應過大。</p>
 </div>
 
 <div style="display:flex;flex-direction:column;gap:14px;">
-<h2 style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">哀傷不是一條直線</h2>
-<p style="margin:0;color:#4A443D;">哀傷的過程並非一步一步、順序發生的階段，而是會反覆出現、時進時退。你可能某一天感覺好轉，第二天又突然被觸動；某些紀念日、氣味、物品都可能令情緒再次湧現。這些起伏都是正常的，不代表你「退步」了。</p>
+<h2 data-zh="哀傷不是一條直線" data-en="Grief Is Not a Straight Line" style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">哀傷不是一條直線</h2>
+<p data-zh="哀傷的過程並非一步一步、順序發生的階段，而是會反覆出現、時進時退。你可能某一天感覺好轉，第二天又突然被觸動；某些紀念日、氣味、物品都可能令情緒再次湧現。這些起伏都是正常的，不代表你「退步」了。" data-en="Grief doesn't unfold step by step, in a fixed order of stages; it comes and goes, moving forward and pulling back. You might feel better one day, and suddenly be caught off guard the next; certain anniversaries, smells or objects can bring the emotions rushing back. These ups and downs are all normal, and they don't mean you've &quot;gone backwards.&quot;" style="margin:0;color:#4A443D;">哀傷的過程並非一步一步、順序發生的階段，而是會反覆出現、時進時退。你可能某一天感覺好轉，第二天又突然被觸動；某些紀念日、氣味、物品都可能令情緒再次湧現。這些起伏都是正常的，不代表你「退步」了。</p>
 </div>
 
 <div style="display:flex;flex-direction:column;gap:14px;">
-<h2 style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">可以怎樣幫助自己</h2>
+<h2 data-zh="可以怎樣幫助自己" data-en="Ways to Help Yourself" style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">可以怎樣幫助自己</h2>
 <ul style="margin:0;padding-left:1.3em;color:#4A443D;display:flex;flex-direction:column;gap:12px;">
-<li><strong style="color:#2F3D31;">容許自己有情緒：</strong>哀傷沒有「應該」的樣子。難過、生氣、麻木，甚至鬆一口氣，這些感受都可以存在，不需要批判自己。</li>
-<li><strong style="color:#2F3D31;">與他人連結：</strong>找身邊理解你的人傾訴，見面或視像都可以。有時候，單純有人願意聆聽，已經是很大的支持。</li>
-<li><strong style="color:#2F3D31;">參加同路人小組：</strong>與曾經有過相似經歷的人連結，可以讓你感到不再孤單，也能從別人的故事裡得到共鳴與力量。</li>
-<li><strong style="color:#2F3D31;">尋找專業人士的陪伴：</strong>這不代表你「有問題」，而是給自己多一個機會，梳理這些複雜的情緒，與一個理解你的人同步，找到最適合自己的方式，幫助自己走過這段路。</li>
+<li data-zh-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;容許自己有情緒：&lt;/strong&gt;哀傷沒有「應該」的樣子。難過、生氣、麻木，甚至鬆一口氣，這些感受都可以存在，不需要批判自己。" data-en-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;Allow yourself to feel:&lt;/strong&gt; Grief has no &quot;should.&quot; Sadness, anger, numbness, even relief; all of these feelings are allowed to exist, without judging yourself for them."><strong style="color:#2F3D31;">容許自己有情緒：</strong>哀傷沒有「應該」的樣子。難過、生氣、麻木，甚至鬆一口氣，這些感受都可以存在，不需要批判自己。</li>
+<li data-zh-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;與他人連結：&lt;/strong&gt;找身邊理解你的人傾訴，見面或視像都可以。有時候，單純有人願意聆聽，已經是很大的支持。" data-en-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;Connect with others:&lt;/strong&gt; Talk to someone around you who understands, whether in person or over video. Sometimes, simply having someone willing to listen is already a great support."><strong style="color:#2F3D31;">與他人連結：</strong>找身邊理解你的人傾訴，見面或視像都可以。有時候，單純有人願意聆聽，已經是很大的支持。</li>
+<li data-zh-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;參加同路人小組：&lt;/strong&gt;與曾經有過相似經歷的人連結，可以讓你感到不再孤單，也能從別人的故事裡得到共鳴與力量。" data-en-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;Join a peer support group:&lt;/strong&gt; Connecting with others who have been through something similar can help you feel less alone, and you may find resonance and strength in their stories."><strong style="color:#2F3D31;">參加同路人小組：</strong>與曾經有過相似經歷的人連結，可以讓你感到不再孤單，也能從別人的故事裡得到共鳴與力量。</li>
+<li data-zh-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;尋找專業人士的陪伴：&lt;/strong&gt;這不代表你「有問題」，而是給自己多一個機會，梳理這些複雜的情緒，與一個理解你的人同步，找到最適合自己的方式，幫助自己走過這段路。" data-en-html="&lt;strong style=&quot;color:#2F3D31;&quot;&gt;Look for the support of a professional:&lt;/strong&gt; This doesn't mean something is &quot;wrong&quot; with you; it means giving yourself another chance to work through these complicated feelings with someone who understands you, and finding the way that works best for you to walk through this."><strong style="color:#2F3D31;">尋找專業人士的陪伴：</strong>這不代表你「有問題」，而是給自己多一個機會，梳理這些複雜的情緒，與一個理解你的人同步，找到最適合自己的方式，幫助自己走過這段路。</li>
 </ul>
 </div>
 
 <div style="display:flex;flex-direction:column;gap:14px;">
-<h2 style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">甚麼程度的哀傷是正常的</h2>
-<p style="margin:0;color:#4A443D;">每個人、每段關係的哀傷歷程都不同，沒有一個「標準時間表」。感到持續的悲傷、偶爾難以集中、睡眠或食慾稍有變化，都是哀傷常見的一部分。</p>
+<h2 data-zh="甚麼程度的哀傷是正常的" data-en="What Level of Grief Is Normal" style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">甚麼程度的哀傷是正常的</h2>
+<p data-zh="每個人、每段關係的哀傷歷程都不同，沒有一個「標準時間表」。感到持續的悲傷、偶爾難以集中、睡眠或食慾稍有變化，都是哀傷常見的一部分。" data-en="Everyone's grief, and every relationship's grief, unfolds differently; there's no &quot;standard timetable.&quot; Ongoing sadness, occasional trouble concentrating, and slight changes in sleep or appetite are all a common part of grief." style="margin:0;color:#4A443D;">每個人、每段關係的哀傷歷程都不同，沒有一個「標準時間表」。感到持續的悲傷、偶爾難以集中、睡眠或食慾稍有變化，都是哀傷常見的一部分。</p>
 </div>
 
 <div id="assessment" style="display:flex;flex-direction:column;gap:18px;">
-<h2 style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">自我評估：寵物喪親問卷（PBQ-C）</h2>
-<p style="margin:0;color:#4A443D;">以下是寵物喪親問卷（Pet Bereavement Questionnaire，繁體中文版）, 一份用來了解寵物離世後，你在悲傷、憤怒與內疚三方面感受強度的自我評估工具。請根據最近一段時間的感受，為每一項選擇最符合你狀態的答案。如果你的寵物多於一隻離世，請以最近期離世的寵物作準。這份工具沒有絕對的臨床分界，主要用來幫助你了解自己目前的狀態，並不能取代專業人士的評估。</p>
+<h2 data-zh="自我評估：寵物喪親問卷（PBQ-C）" data-en="Self-Assessment: Pet Bereavement Questionnaire (PBQ-C)" style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">自我評估：寵物喪親問卷（PBQ-C）</h2>
+<p data-zh="以下是寵物喪親問卷（Pet Bereavement Questionnaire，繁體中文版）, 一份用來了解寵物離世後，你在悲傷、憤怒與內疚三方面感受強度的自我評估工具。請根據最近一段時間的感受，為每一項選擇最符合你狀態的答案。如果你的寵物多於一隻離世，請以最近期離世的寵物作準。這份工具沒有絕對的臨床分界，主要用來幫助你了解自己目前的狀態，並不能取代專業人士的評估。" data-en="Below is the Pet Bereavement Questionnaire (Traditional Chinese version), a self-assessment tool for understanding the intensity of your grief, anger and guilt after losing a pet. Based on how you've been feeling recently, choose the answer that best fits your state for each item. If you have lost more than one pet, please answer with your most recent loss in mind. This tool has no absolute clinical cutoff; it's mainly meant to help you understand where you currently stand, and it cannot replace a professional's assessment." style="margin:0;color:#4A443D;">以下是寵物喪親問卷（Pet Bereavement Questionnaire，繁體中文版）, 一份用來了解寵物離世後，你在悲傷、憤怒與內疚三方面感受強度的自我評估工具。請根據最近一段時間的感受，為每一項選擇最符合你狀態的答案。如果你的寵物多於一隻離世，請以最近期離世的寵物作準。這份工具沒有絕對的臨床分界，主要用來幫助你了解自己目前的狀態，並不能取代專業人士的評估。</p>
 
 <div style="background:#FFFDF8;border:1px solid #E2D8C6;border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:22px;">
-<span style="background:#E4EBDD;color:#3E5040;font-size:13px;font-weight:700;padding:4px 14px;border-radius:999px;letter-spacing:.04em;align-self:flex-start;">互動評估工具 · PBQ-C 寵物喪親問卷</span>
+<span data-zh="互動評估工具 · PBQ-C 寵物喪親問卷" data-en="Interactive Tool · PBQ-C Pet Bereavement Questionnaire" style="background:#E4EBDD;color:#3E5040;font-size:13px;font-weight:700;padding:4px 14px;border-radius:999px;letter-spacing:.04em;align-self:flex-start;">互動評估工具 · PBQ-C 寵物喪親問卷</span>
 <div id="pbq-items" style="display:flex;flex-direction:column;gap:20px;"></div>
 <div id="pbq-result-box" style="background:#EFE7D8;border-radius:14px;padding:20px 22px;display:none;flex-direction:column;gap:8px;">
-<p style="margin:0;font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;">總分：<strong id="pbq-total">0</strong> / 48</p>
-<p style="margin:0;font-size:15px;color:#33402F;">悲傷（Grief）：<strong id="pbq-grief">0</strong> ／ 憤怒（Anger）：<strong id="pbq-anger">0</strong> ／ 內疚（Guilt）：<strong id="pbq-guilt">0</strong></p>
+<p style="margin:0;font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;"><span id="pbq-total-label" data-zh="總分：" data-en="Total score: ">總分：</span><strong id="pbq-total">0</strong> / 48</p>
+<p style="margin:0;font-size:15px;color:#33402F;"><span id="pbq-grief-label" data-zh="悲傷（Grief）：" data-en="Grief: ">悲傷（Grief）：</span><strong id="pbq-grief">0</strong> ／ <span id="pbq-anger-label" data-zh="憤怒（Anger）：" data-en="Anger: ">憤怒（Anger）：</span><strong id="pbq-anger">0</strong> ／ <span id="pbq-guilt-label" data-zh="內疚（Guilt）：" data-en="Guilt: ">內疚（Guilt）：</span><strong id="pbq-guilt">0</strong></p>
 <p id="pbq-interpret" style="margin:0;font-size:15px;color:#33402F;"></p>
 </div>
-<p id="pbq-progress" style="margin:0;font-size:14px;color:#5E574F;">完成以上題目之後，將會顯示你的分數。</p>
-<p style="margin:0;font-size:13px;color:#8A8276;">此評估工具僅供自我了解，不能取代專業人士的正式評估。</p>
+<p id="pbq-progress" data-zh="完成以上題目之後，將會顯示你的分數。" data-en="Once you've completed the items above, your score will appear here." style="margin:0;font-size:14px;color:#5E574F;">完成以上題目之後，將會顯示你的分數。</p>
+<p data-zh="此評估工具僅供自我了解，不能取代專業人士的正式評估。" data-en="This assessment tool is for self-understanding only and cannot replace a formal assessment by a professional." style="margin:0;font-size:13px;color:#8A8276;">此評估工具僅供自我了解，不能取代專業人士的正式評估。</p>
 </div>
 </div>
 
 <div style="display:flex;flex-direction:column;gap:14px;">
-<h2 style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">甚麼時候要留意</h2>
-<p style="margin:0;color:#4A443D;">你可以先使用以上的PBQ-C自我評估工具，了解自己目前的狀態。如果思念寵物會讓你感到痛楚，甚至影響你的睡眠、工作、人際關係，或者開始感到麻木、迴避一切與牠有關的事物、覺得生活失去意義、難以回到日常生活，這可能已經超出一般哀傷的範圍，你需要找專業人士談一談。如果你曾經有傷害自己的念頭，請立即致電「情緒通」18111，或前往最近的急症室求助。</p>
+<h2 data-zh="甚麼時候要留意" data-en="When to Pay Closer Attention" style="margin:0;font-family:'Noto Serif TC',serif;font-size:24px;color:#2F3D31;">甚麼時候要留意</h2>
+<p data-zh="你可以先使用以上的PBQ-C自我評估工具，了解自己目前的狀態。如果思念寵物會讓你感到痛楚，甚至影響你的睡眠、工作、人際關係，或者開始感到麻木、迴避一切與牠有關的事物、覺得生活失去意義、難以回到日常生活，這可能已經超出一般哀傷的範圍，你需要找專業人士談一談。如果你曾經有傷害自己的念頭，請立即致電「情緒通」18111，或前往最近的急症室求助。" data-en="You can start by using the PBQ-C self-assessment tool above to get a sense of where you stand right now. If missing your pet is causing you pain, or even affecting your sleep, work or relationships, or if you're starting to feel numb, avoiding anything connected to them, feeling that life has lost meaning, or finding it hard to return to daily life, this may have moved beyond ordinary grief, and it's worth talking to a professional. If you have ever had thoughts of harming yourself, please call the Mental Health Support Hotline on 18111 right away, or go to your nearest emergency room." style="margin:0;color:#4A443D;">你可以先使用以上的PBQ-C自我評估工具，了解自己目前的狀態。如果思念寵物會讓你感到痛楚，甚至影響你的睡眠、工作、人際關係，或者開始感到麻木、迴避一切與牠有關的事物、覺得生活失去意義、難以回到日常生活，這可能已經超出一般哀傷的範圍，你需要找專業人士談一談。如果你曾經有傷害自己的念頭，請立即致電「情緒通」18111，或前往最近的急症室求助。</p>
 </div>
 
 <div style="background:#EFE7D8;border-radius:20px;padding:32px 28px;display:flex;flex-direction:column;gap:16px;">
-<p style="margin:0;font-size:18px;color:#2F3D31;font-family:'Noto Serif TC',serif;line-height:1.7;">牠曾經是你生命裡重要的一部分，這份傷心也值得被認真對待。如果你需要一個空間，讓這份感受得到理解和陪伴，我在這裡，陪你度過。</p>
+<p data-zh="牠曾經是你生命裡重要的一部分，這份傷心也值得被認真對待。如果你需要一個空間，讓這份感受得到理解和陪伴，我在這裡，陪你度過。" data-en="They were an important part of your life, and this sadness deserves to be taken seriously too. If you need a space where this feeling can be understood and accompanied, I'm here to walk through it with you." style="margin:0;font-size:18px;color:#2F3D31;font-family:'Noto Serif TC',serif;line-height:1.7;">牠曾經是你生命裡重要的一部分，這份傷心也值得被認真對待。如果你需要一個空間，讓這份感受得到理解和陪伴，我在這裡，陪你度過。</p>
 <div style="display:flex;gap:12px;flex-wrap:wrap;">
-<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration:none;background:#3E5040;color:#FFFDF8;padding:12px 24px;border-radius:999px;font-weight:500;font-size:15px;">預約</a>
-<a href="mailto:dr.heibelau.work@gmail.com?subject=%E6%9F%A5%E8%A9%A2%EF%BC%9A%E5%AF%B5%E7%89%A9%E9%9B%A2%E4%B8%96%E8%BC%94%E5%B0%8E%E6%9C%8D%E5%8B%99" style="text-decoration:none;border:1px solid #3E5040;color:#3E5040;padding:11px 23px;border-radius:999px;font-weight:500;font-size:15px;">查詢</a>
-<a href="/blog#share" style="text-decoration:none;border:1px solid #3E5040;color:#3E5040;padding:11px 23px;border-radius:999px;font-weight:500;font-size:15px;">寫你的故事</a>
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" data-zh="預約" data-en="Register interest" style="text-decoration:none;background:#3E5040;color:#FFFDF8;padding:12px 24px;border-radius:999px;font-weight:500;font-size:15px;">預約</a>
+<a href="mailto:dr.heibelau.work@gmail.com?subject=%E6%9F%A5%E8%A9%A2%EF%BC%9A%E5%AF%B5%E7%89%A9%E9%9B%A2%E4%B8%96%E8%BC%94%E5%B0%8E%E6%9C%8D%E5%8B%99" data-zh="查詢" data-en="Enquire" style="text-decoration:none;border:1px solid #3E5040;color:#3E5040;padding:11px 23px;border-radius:999px;font-weight:500;font-size:15px;">查詢</a>
+<a href="/blog#share" data-zh="寫你的故事" data-en="Share your story" style="text-decoration:none;border:1px solid #3E5040;color:#3E5040;padding:11px 23px;border-radius:999px;font-weight:500;font-size:15px;">寫你的故事</a>
 </div>
 </div>
 
 <div style="display:flex;flex-direction:column;gap:14px;">
-<h3 style="margin:0;font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;">你可能也想看</h3>
+<h3 data-zh="你可能也想看" data-en="You might also like" style="margin:0;font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;">你可能也想看</h3>
 <a href="/letting-go.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:6px;">
-<span style="font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;">末期病患：如何陪自己走過「放手」的掙扎</span>
-<span style="font-size:14px;color:#3E5040;font-weight:500;">閱讀文章 →</span>
+<span data-zh="末期病患：如何陪自己走過「放手」的掙扎" data-en="Terminal Illness: Finding the Strength to Walk Through the Struggle of &quot;Letting Go&quot;" style="font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;">末期病患：如何陪自己走過「放手」的掙扎</span>
+<span data-zh="閱讀文章 →" data-en="Read article →" style="font-size:14px;color:#3E5040;font-weight:500;">閱讀文章 →</span>
 </a>
 <a href="/counselling-approach.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:6px;">
-<span style="font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;">輔導的作用：哀傷輔導可以怎樣幫助你</span>
-<span style="font-size:14px;color:#3E5040;font-weight:500;">閱讀文章 →</span>
+<span data-zh="輔導的作用：哀傷輔導可以怎樣幫助你" data-en="What Counselling Can Do: How Grief Counselling Helps" style="font-family:'Noto Serif TC',serif;font-size:18px;color:#2F3D31;">輔導的作用：哀傷輔導可以怎樣幫助你</span>
+<span data-zh="閱讀文章 →" data-en="Read article →" style="font-size:14px;color:#3E5040;font-weight:500;">閱讀文章 →</span>
 </a>
 </div>
 
-<p style="margin:0;font-size:13px;color:#8A8276;line-height:1.8;">參考資料：Doka, K. J. (1989). <em>Disenfranchised Grief: Recognizing Hidden Sorrow.</em> ／ Hyland, P. et al. (2026). No pets allowed: Evidence that prolonged grief disorder can occur following the death of a pet. <em>PLOS One.</em> ／ Fundamentals of Grief and Loss (OER), Section 6.3, docmckee.com. ／ Yiu, W. W., Cheung, H. N., &amp; Wong, P. W. C. (2024). Adaptation and validation of the Pet Bereavement Questionnaire (PBQ) for Chinese population. <em>Animals, 14</em>(19), 2845.</p>
+<p style="margin:0;font-size:13px;color:#8A8276;line-height:1.8;"><span data-zh="參考資料：" data-en="References: ">參考資料：</span>Doka, K. J. (1989). <em>Disenfranchised Grief: Recognizing Hidden Sorrow.</em> ／ Hyland, P. et al. (2026). No pets allowed: Evidence that prolonged grief disorder can occur following the death of a pet. <em>PLOS One.</em> ／ Fundamentals of Grief and Loss (OER), Section 6.3, docmckee.com. ／ Yiu, W. W., Cheung, H. N., &amp; Wong, P. W. C. (2024). Adaptation and validation of the Pet Bereavement Questionnaire (PBQ) for Chinese population. <em>Animals, 14</em>(19), 2845.</p>
 
 </div>
 </section>
@@ -150,39 +154,41 @@ input[type=range]{accent-color:#3E5040}
 <div style="max-width:1160px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#5E574F;border-top:1px solid #E2D8C6;padding-top:20px;">
 <span>© 2026 Dr. Heibe｜輔導空間 · Dr. Heibe Counselling</span>
 <span style="display:flex;gap:18px;flex-wrap:wrap;">
-<a href="/">首頁</a>
-<a href="/vets">獸醫資源</a>
-<a href="/blog">隨筆手記</a>
-<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener">預約</a>
+<a href="/" data-zh="首頁" data-en="Home">首頁</a>
+<a href="/vets" data-zh="獸醫資源" data-en="Vet professionals">獸醫資源</a>
+<a href="/blog" data-zh="寵物牆" data-en="Pet Wall">寵物牆</a>
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" data-zh="預約" data-en="Register interest">預約</a>
 </span>
 </div>
 </footer>
 
 <script>
 (function(){
-  var opts = [
-    {v:0, label:'非常不同意'},
-    {v:1, label:'不同意'},
-    {v:2, label:'同意'},
-    {v:3, label:'非常同意'}
-  ];
+  var lang = 'zh';
+
+  var opts = {
+    zh: [ {v:0, label:'非常不同意'}, {v:1, label:'不同意'}, {v:2, label:'同意'}, {v:3, label:'非常同意'} ],
+    en: [ {v:0, label:'Strongly disagree'}, {v:1, label:'Disagree'}, {v:2, label:'Agree'}, {v:3, label:'Strongly agree'} ]
+  };
   var items = [
-    {idx:1, text:'我對獸醫無法救活我的寵物而感到憤怒。（如不適用可省略本題）', sub:'anger', optional:true},
-    {idx:2, text:'我對寵物的離世感到非常痛心。', sub:'grief'},
-    {idx:3, text:'失去我的寵物後，我對我的生活感到空虛。', sub:'grief'},
-    {idx:4, text:'我曾經做過關於我寵物離世的噩夢。', sub:'grief'},
-    {idx:5, text:'失去我的寵物後，我感到非常孤獨。', sub:'grief'},
-    {idx:6, text:'我本應可以察覺我的寵物可能會發生不好的事情。', sub:'guilt'},
-    {idx:7, text:'我非常想念我的寵物。', sub:'grief'},
-    {idx:8, text:'我對於未能給予我的寵物更好的照顧而感到非常內疚。', sub:'guilt'},
-    {idx:9, text:'我對於我沒有做更多的事情來拯救我的寵物而感到遺憾。', sub:'guilt'},
-    {idx:10, text:'當我想起我的寵物時，我會哭泣。', sub:'grief'},
-    {idx:11, text:'我對其他人有份造成我寵物的死亡而感到憤怒。', sub:'anger'},
-    {idx:12, text:'我對我寵物的離世感到非常悲傷。', sub:'grief'},
-    {idx:13, text:'我對我的朋友／家人沒有提供更多的幫助而感到憤怒。', sub:'anger'},
-    {idx:14, text:'我對我的寵物最後時刻的片段感到非常煎熬。', sub:'grief'},
-    {idx:15, text:'我永遠無法走出失去寵物的陰影。', sub:'anger'},
-    {idx:16, text:'我希望我能對我的寵物表現出更多的愛。', sub:'guilt'}
+    {idx:1, sub:'anger', optional:true,
+      zh:'我對獸醫無法救活我的寵物而感到憤怒。（如不適用可省略本題）',
+      en:"I feel angry that the vet could not save my pet. (Skip this item if it doesn't apply to you.)"},
+    {idx:2, sub:'grief', zh:'我對寵物的離世感到非常痛心。', en:"I feel very heartbroken about my pet's death."},
+    {idx:3, sub:'grief', zh:'失去我的寵物後，我對我的生活感到空虛。', en:'Since losing my pet, I feel empty about my life.'},
+    {idx:4, sub:'grief', zh:'我曾經做過關於我寵物離世的噩夢。', en:"I have had nightmares about my pet's death."},
+    {idx:5, sub:'grief', zh:'失去我的寵物後，我感到非常孤獨。', en:'Since losing my pet, I feel very lonely.'},
+    {idx:6, sub:'guilt', zh:'我本應可以察覺我的寵物可能會發生不好的事情。', en:'I should have been able to tell that something bad was going to happen to my pet.'},
+    {idx:7, sub:'grief', zh:'我非常想念我的寵物。', en:'I miss my pet very much.'},
+    {idx:8, sub:'guilt', zh:'我對於未能給予我的寵物更好的照顧而感到非常內疚。', en:"I feel very guilty that I wasn't able to give my pet better care."},
+    {idx:9, sub:'guilt', zh:'我對於我沒有做更多的事情來拯救我的寵物而感到遺憾。', en:"I feel regret that I didn't do more to save my pet."},
+    {idx:10, sub:'grief', zh:'當我想起我的寵物時，我會哭泣。', en:'I cry when I think about my pet.'},
+    {idx:11, sub:'anger', zh:'我對其他人有份造成我寵物的死亡而感到憤怒。', en:"I feel angry that other people played a part in my pet's death."},
+    {idx:12, sub:'grief', zh:'我對我寵物的離世感到非常悲傷。', en:"I feel very sad about my pet's death."},
+    {idx:13, sub:'anger', zh:'我對我的朋友／家人沒有提供更多的幫助而感到憤怒。', en:"I feel angry that my friends or family didn't offer more help."},
+    {idx:14, sub:'grief', zh:'我對我的寵物最後時刻的片段感到非常煎熬。', en:"I find it very distressing to think about my pet's final moments."},
+    {idx:15, sub:'anger', zh:'我永遠無法走出失去寵物的陰影。', en:'I will never get over the shadow of losing my pet.'},
+    {idx:16, sub:'guilt', zh:'我希望我能對我的寵物表現出更多的愛。', en:'I wish I had shown my pet more love.'}
   ];
 
   var wrap = document.getElementById('pbq-items');
@@ -192,20 +198,45 @@ input[type=range]{accent-color:#3E5040}
     row.style.flexDirection = 'column';
     row.style.gap = '10px';
     var qid = 'pbq-q' + it.idx;
-    var optsHtml = opts.map(function(o){
-      return '<label><input class="opt" type="radio" name="' + qid + '" value="' + o.v + '">' + o.label + '</label>';
+    var optLabels = [];
+    var optsHtml = opts[lang].map(function(o, oi){
+      return '<label><input class="opt" type="radio" name="' + qid + '" value="' + o.v + '"><span data-opt-idx="' + oi + '">' + o.label + '</span></label>';
     }).join('');
     row.innerHTML =
-      '<p style="margin:0;font-size:16px;color:#2F3D31;">' + it.idx + '. ' + it.text + '</p>' +
+      '<p style="margin:0;font-size:16px;color:#2F3D31;"><span class="q-num">' + it.idx + '. </span><span class="q-text">' + it[lang] + '</span></p>' +
       '<div class="opt" style="display:flex;flex-wrap:wrap;gap:16px;">' + optsHtml + '</div>';
     wrap.appendChild(row);
+    it.textEl = row.querySelector('.q-text');
+    it.optEls = Array.prototype.slice.call(row.querySelectorAll('[data-opt-idx]'));
   });
 
-  function interpret(total){
-    if (total <= 16) return '這個分數顯示，你目前與寵物離世相關的困擾程度相對較輕。這份工具沒有絕對的臨床分界，分數主要用來幫助你了解自己目前的狀態。';
-    if (total <= 32) return '這個分數顯示，你目前與寵物離世相關的困擾程度屬中等。如果這些感受持續影響你的生活，建議找專業人士談一談。';
-    return '這個分數顯示，你目前與寵物離世相關的困擾程度較高。建議盡快找專業人士談一談，一起梳理這些感受。';
+  function retextTool(){
+    items.forEach(function(it){
+      it.textEl.textContent = it[lang];
+      it.optEls.forEach(function(el){
+        var oi = parseInt(el.getAttribute('data-opt-idx'), 10);
+        el.textContent = opts[lang][oi].label;
+      });
+    });
   }
+
+  var interpretText = {
+    zh: function(total){
+      if (total <= 16) return '這個分數顯示，你目前與寵物離世相關的困擾程度相對較輕。這份工具沒有絕對的臨床分界，分數主要用來幫助你了解自己目前的狀態。';
+      if (total <= 32) return '這個分數顯示，你目前與寵物離世相關的困擾程度屬中等。如果這些感受持續影響你的生活，建議找專業人士談一談。';
+      return '這個分數顯示，你目前與寵物離世相關的困擾程度較高。建議盡快找專業人士談一談，一起梳理這些感受。';
+    },
+    en: function(total){
+      if (total <= 16) return 'This score suggests that your current level of distress related to your pet\'s death is relatively mild. This tool has no absolute clinical cutoff; the score is mainly meant to help you understand where you currently stand.';
+      if (total <= 32) return "This score suggests that your current level of distress related to your pet's death is moderate. If these feelings continue to affect your life, it's recommended that you talk to a professional.";
+      return "This score suggests that your current level of distress related to your pet's death is relatively high. It's recommended that you talk to a professional as soon as possible, to work through these feelings together.";
+    }
+  };
+  var progressPartial = {
+    zh: function(n){ return '已完成 ' + n + ' / 16 題（第1題如不適用可略過）。'; },
+    en: function(n){ return n + " / 16 items completed (item 1 can be skipped if it doesn't apply)."; }
+  };
+  var progressDone = { zh: '以下是你的初步結果：', en: 'Here are your initial results:' };
 
   function update(){
     var allRadios = document.querySelectorAll('#pbq-items input[type=radio]');
@@ -220,7 +251,7 @@ input[type=range]{accent-color:#3E5040}
     });
 
     var answered = Object.keys(groups).filter(function(n){ return groups[n] !== null; }).length;
-    document.getElementById('pbq-progress').textContent = requiredDone ? '以下是你的初步結果：' : ('已完成 ' + answered + ' / 16 題（第1題如不適用可略過）。');
+    document.getElementById('pbq-progress').textContent = requiredDone ? progressDone[lang] : progressPartial[lang](answered);
 
     if (requiredDone) {
       var totals = {grief:0, anger:0, guilt:0};
@@ -234,7 +265,7 @@ input[type=range]{accent-color:#3E5040}
       document.getElementById('pbq-grief').textContent = totals.grief;
       document.getElementById('pbq-anger').textContent = totals.anger;
       document.getElementById('pbq-guilt').textContent = totals.guilt;
-      document.getElementById('pbq-interpret').textContent = interpret(total);
+      document.getElementById('pbq-interpret').textContent = interpretText[lang](total);
     } else {
       document.getElementById('pbq-result-box').style.display = 'none';
     }
@@ -244,6 +275,35 @@ input[type=range]{accent-color:#3E5040}
     r.addEventListener('change', update);
   });
   update();
+
+  function applyStaticLang(){
+    document.querySelectorAll('[data-zh]').forEach(function(el){
+      el.textContent = lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+    });
+    document.querySelectorAll('[data-zh-html]').forEach(function(el){
+      el.innerHTML = lang === 'zh' ? el.getAttribute('data-zh-html') : el.getAttribute('data-en-html');
+    });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant-HK' : 'en';
+  }
+
+  function setLang(l){
+    lang = l;
+    applyStaticLang();
+    retextTool();
+    update();
+    var zhBtn = document.getElementById('lang-zh-btn');
+    var enBtn = document.getElementById('lang-en-btn');
+    if (lang === 'zh') {
+      zhBtn.style.background = '#3E5040'; zhBtn.style.color = '#FFFDF8';
+      enBtn.style.background = 'transparent'; enBtn.style.color = '#4A443D';
+    } else {
+      enBtn.style.background = '#3E5040'; enBtn.style.color = '#FFFDF8';
+      zhBtn.style.background = 'transparent'; zhBtn.style.color = '#4A443D';
+    }
+  }
+
+  document.getElementById('lang-zh-btn').addEventListener('click', function(){ setLang('zh'); });
+  document.getElementById('lang-en-btn').addEventListener('click', function(){ setLang('en'); });
 })();
 </script>
 
