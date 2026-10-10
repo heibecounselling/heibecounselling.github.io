@@ -52,6 +52,14 @@ html[lang="en"] #page-root .hero-eyebrow { text-wrap: balance; letter-spacing: 0
 @media (max-width: 420px) {
   #page-root section [style*="grid-template-columns"] { grid-template-columns: minmax(0, 1fr) !important; }
 }
+/* 手機版選單：窄屏幕用漢堡選單取代逐個連結排列 Mobile menu: hamburger disclosure replaces the inline link row on narrow screens */
+#page-root header details.mobile-nav { display: none; }
+#page-root header details.mobile-nav > summary { list-style: none; cursor: pointer; }
+#page-root header details.mobile-nav > summary::-webkit-details-marker { display: none; }
+@media (max-width: 760px) {
+  #page-root header nav.desktop-nav { display: none !important; }
+  #page-root header details.mobile-nav { display: block; }
+}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet">
@@ -76,7 +84,7 @@ a{color:#3E5040}a:hover{color:#26332A}
 <span style="font-size: 12px; letter-spacing: 0.08em; color: #5E574F;">DR. HEIBE COUNSELLING</span>
 </span>
 </a>
-<nav style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
+<nav class="desktop-nav" style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap; font-size: 15px;">
 <a href="#about" style="text-decoration: none; color: #4A443D;">{{t.nav.about}}</a>
 <a href="#owners" style="text-decoration: none; color: #4A443D;">{{t.nav.owners}}</a>
 <a href="/resources.html" style="text-decoration: none; color: #4A443D;">{{t.nav.resources}}</a>
@@ -88,6 +96,21 @@ a{color:#3E5040}a:hover{color:#26332A}
 </div>
 <a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 10px 20px; border-radius: 999px; font-weight: 500; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center;">{{t.nav.book}}</a>
 </nav>
+<details class="mobile-nav">
+<summary aria-label="選單 / Menu" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #C9BEA9; border-radius: 10px; color: #3E5040; font-size: 20px;">&#9776;</summary>
+<div style="position: absolute; right: 24px; top: 68px; z-index: 20; background: #FFFDF8; border: 1px solid #E2D8C6; border-radius: 14px; padding: 10px; display: flex; flex-direction: column; gap: 2px; min-width: 200px; box-shadow: 0 6px 20px rgba(0,0,0,.12);">
+<a href="#about" style="text-decoration: none; color: #4A443D; padding: 10px 12px; border-radius: 8px; font-size: 15px;">{{t.nav.about}}</a>
+<a href="#owners" style="text-decoration: none; color: #4A443D; padding: 10px 12px; border-radius: 8px; font-size: 15px;">{{t.nav.owners}}</a>
+<a href="/resources.html" style="text-decoration: none; color: #4A443D; padding: 10px 12px; border-radius: 8px; font-size: 15px;">{{t.nav.resources}}</a>
+<a href="/resources.html#pet-loss-zone" style="text-decoration: none; color: #4A443D; padding: 10px 12px; border-radius: 8px; font-size: 15px;">{{t.nav.petLossZone}}</a>
+<a href="/resources.html#caregiver-support-zone" style="text-decoration: none; color: #4A443D; padding: 10px 12px; border-radius: 8px; font-size: 15px;">{{t.nav.caregiverZone}}</a>
+<div style="display: flex; border: 1px solid #C9BEA9; border-radius: 999px; overflow: hidden; margin: 6px 12px;" role="group" aria-label="Language">
+<button type="button" onClick="{{setZh}}" style="{{zhStyle}}">中</button>
+<button type="button" onClick="{{setEn}}" style="{{enStyle}}">EN</button>
+</div>
+<a href="https://forms.gle/92M658kcjwABPxq89" target="_blank" rel="noopener" style="text-decoration: none; background: #3E5040; color: #FFFDF8; padding: 10px 12px; border-radius: 8px; font-weight: 500; text-align: center; margin: 2px 12px 2px;">{{t.nav.book}}</a>
+</div>
+</details>
 </div>
 </header>
 
