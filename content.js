@@ -136,7 +136,7 @@ window.CONTENT.home = {
           ],
           crisis: '如你或身邊的人有即時危險，請致電 999 或前往最近的急症室。24 小時精神健康支援熱線「情緒通」18111。'
         },
-        foot: { home: '首頁', vets: '獸醫同業', blog: '隨筆手記' }
+        foot: { home: '首頁', vets: '獸醫同業', blog: '衛教資源' }
       },
       en: {
         nav: { about: 'About', owners: 'Our services', vets: 'For vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Register interest', resources: 'Resources', assessment: 'Pet bereavement assessment', petLossZone: 'Pet Loss', caregiverZone: 'Caregiver Support' },
@@ -259,7 +259,7 @@ window.CONTENT.home = {
           ],
           crisis: 'If you or someone close to you is in immediate danger, call 999 or go to the nearest emergency room. For 24-hour support, call the Mental Health Support Hotline on 18111.'
         },
-        foot: { home: 'Home', vets: 'Vet professionals', blog: 'Blog' }
+        foot: { home: 'Home', vets: 'Vet professionals', blog: 'Resources' }
       }
     };
 
