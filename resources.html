@@ -22,6 +22,27 @@ a:hover{color:#26332A}
   .wrap{padding:0 20px !important}
   .hero-pad{padding:56px 20px 40px !important}
 }
+.zone{display:grid;grid-template-columns:240px minmax(0,1fr);gap:24px 48px;padding-top:48px;border-top:1px solid #E2D8C6;}
+.zhead{display:flex;flex-direction:column;gap:12px;}
+.zhead h2{font-size:26px !important;}
+.zhead p{font-size:15px !important;line-height:1.8;}
+.zbody{display:flex;flex-direction:column;gap:28px;min-width:0;}
+.zbody > div:first-child[style*="grid"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:16px !important;}
+.zbody a[href="/blog"], .zbody a[href="/vets"]{background:#F1EADD !important;}
+.zbody > div > h3{font-size:17px !important;}
+.zbody details.story{background:none !important;border:0 !important;border-bottom:1px solid #E2D8C6 !important;border-radius:0 !important;padding:14px 4px !important;}
+.zbody details.story > summary{flex-direction:row !important;justify-content:space-between;align-items:center;gap:16px;}
+.zbody details.story > summary > span:first-child{display:none;}
+.zbody details.story > summary > span:nth-child(2){font-size:17px !important;}
+.zbody details.story .read-toggle{white-space:nowrap;}
+@media (max-width: 600px){ .rgrid{grid-template-columns:minmax(0,1fr) !important;} }
+.toolgrid > a{height:100%;box-sizing:border-box;}
+@media (max-width: 860px){
+  .zone{grid-template-columns:minmax(0,1fr);gap:20px;}
+}
+@media (max-width: 600px){
+  .zbody > div:first-child[style*="grid"]{grid-template-columns:minmax(0,1fr) !important;}
+}
 details.story > summary{list-style:none;cursor:pointer;}
 details.story > summary::-webkit-details-marker{display:none;}
 details.story .read-toggle::before{content:'閱讀全文 →';}
@@ -54,7 +75,7 @@ html[lang="en"] details.story[open] .read-toggle::before{content:'Collapse ↑';
 </header>
 
 <section class="hero-pad" style="padding:88px 24px 40px;">
-<div class="wrap" style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px;">
+<div class="wrap" style="max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:18px;">
 <span data-zh="衛教資源" data-en="Resources" style="font-size:14px;letter-spacing:0.12em;color:#5B6E55;font-weight:500;">衛教資源</span>
 <h1 data-zh="衛教文章與自我評估工具" data-en="Articles &amp; Self-Assessment Tools" style="margin:0;font-family:'Noto Serif TC',serif;font-size:clamp(28px,4vw,42px);line-height:1.4;color:#2F3D31;">衛教文章與自我評估工具</h1>
 <p data-zh="以下是網站內全部衛教文章、小故事，以及三個互動自我評估工具，幫助你初步了解自己或寵物目前的狀態。這些工具並非診斷工具，結果僅供參考，不能取代專業人士的正式評估。" data-en="Below you'll find every article and short story on this site, along with three interactive self-assessment tools to help you get an initial sense of how you or your pet are doing right now. These tools are not diagnostic; results are for reference only and cannot replace a formal assessment by a professional." style="margin:0;font-size:18px;color:#4A443D;">以下是網站內全部衛教文章、小故事，以及三個互動自我評估工具，幫助你初步了解自己或寵物目前的狀態。這些工具並非診斷工具，結果僅供參考，不能取代專業人士的正式評估。</p>
@@ -62,18 +83,20 @@ html[lang="en"] details.story[open] .read-toggle::before{content:'Collapse ↑';
 <a href="#pet-loss-zone" data-zh="寵物離世專區" data-en="Pet Loss Zone" style="text-decoration:none;background:#3E5040;color:#FFFDF8;padding:9px 18px;border-radius:999px;font-size:14px;font-weight:500;">寵物離世專區</a>
 <a href="#caregiver-support-zone" data-zh="照顧者情緒支援專區" data-en="Caregiver Support Zone" style="text-decoration:none;background:#3E5040;color:#FFFDF8;padding:9px 18px;border-radius:999px;font-size:14px;font-weight:500;">照顧者情緒支援專區</a>
 <a href="#tools" data-zh="自我評估工具" data-en="Self-Assessment Tools" style="text-decoration:none;border:1px solid #3E5040;color:#3E5040;padding:8px 17px;border-radius:999px;font-size:14px;font-weight:500;">自我評估工具</a>
-<a href="#research" data-zh="研究分享" data-en="Research Spotlight" style="text-decoration:none;border:1px solid #3E5040;color:#3E5040;padding:8px 17px;border-radius:999px;font-size:14px;font-weight:500;">研究分享</a>
 </div>
 </div>
 </section>
 
 <section id="articles" style="padding:0 24px 56px;">
-<div class="wrap" style="max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:56px;">
+<div class="wrap" style="max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:56px;">
 
-<div id="pet-loss-zone" style="display:flex;flex-direction:column;gap:18px;scroll-margin-top:90px;">
+<div id="pet-loss-zone" class="zone" style="scroll-margin-top:90px;">
+<div class="zhead">
 <span data-zh="專區" data-en="Zone" style="font-size:14px;letter-spacing:0.12em;color:#5B6E55;font-weight:500;">專區</span>
 <h2 data-zh="寵物離世專區" data-en="Pet Loss Zone" style="margin:0;font-family:'Noto Serif TC',serif;font-size:26px;color:#2F3D31;">寵物離世專區</h2>
 <p data-zh="寵物離世前後的哀傷、預期性哀傷，以及陪自己與寵物走過這段時刻的衛教文章、自我評估工具，還有寵物牆的思念空間。" data-en="Articles, self-assessment tools, and the Pet Wall memorial space, for the grief before and after a pet's death, anticipatory grief, and walking through this time alongside your pet." style="margin:0;font-size:16px;color:#4A443D;">寵物離世前後的哀傷、預期性哀傷，以及陪自己與寵物走過這段時刻的衛教文章、自我評估工具，還有寵物牆的思念空間。</p>
+</div>
+<div class="zbody">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
 <a href="/pet-loss-grief.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;">
 <span data-zh="寵物離世後，陪你認識哀傷" data-en="After Pet Loss: Understanding Your Grief" style="font-family:'Noto Serif TC',serif;font-size:19px;color:#2F3D31;">寵物離世後，陪你認識哀傷</span>
@@ -160,12 +183,34 @@ html[lang="en"] details.story[open] .read-toggle::before{content:'Collapse ↑';
 </div>
 </details>
 </div>
+
+<div style="display:flex;flex-direction:column;gap:14px;margin-top:10px;">
+<h3 id="pet-loss-research" data-zh="研究分享" data-en="Research Spotlight" style="margin:0;font-family:'Noto Serif TC',serif;font-size:20px;color:#2F3D31;scroll-margin-top:90px;">研究分享</h3>
+<div class="rgrid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;">
+<a href="/research-packman.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;min-width:0;">
+<span data-zh="研究摘要" data-en="Research Summary" style="font-size:13px;font-weight:500;color:#33402F;background:#E4EBDD;padding:3px 12px;border-radius:999px;align-self:flex-start;">研究摘要</span>
+<span data-zh="為甚麼寵物離世的哀傷常被忽視？一項跨文化研究的發現" data-en="Why Is Pet Loss Grief So Often Overlooked? Findings from a Cross-Cultural Study" style="font-family:'Noto Serif TC',serif;font-size:18px;line-height:1.5;color:#2F3D31;">為甚麼寵物離世的哀傷常被忽視？一項跨文化研究的發現</span>
+<span data-zh-html="&lt;em&gt;OMEGA – Journal of Death and Dying&lt;/em&gt;・2014" data-en-html="&lt;em&gt;OMEGA – Journal of Death and Dying&lt;/em&gt;・2014" style="font-size:13px;color:#5E574F;"><em>OMEGA – Journal of Death and Dying</em>・2014</span>
+<span data-zh="閱讀全文 →" data-en="Read the summary →" style="margin-top:auto;font-size:14px;color:#3E5040;font-weight:500;">閱讀全文 →</span>
+</a>
+<a href="/research-tam.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;min-width:0;">
+<span data-zh="研究摘要" data-en="Research Summary" style="font-size:13px;font-weight:500;color:#33402F;background:#E4EBDD;padding:3px 12px;border-radius:999px;align-self:flex-start;">研究摘要</span>
+<span data-zh="陪毛孩抗癌，主人也承受著「照顧者壓力」：香港研究的發現" data-en="When Your Pet Is Fighting Cancer, Owners Carry a Weight Too: Findings from a Hong Kong Study" style="font-family:'Noto Serif TC',serif;font-size:18px;line-height:1.5;color:#2F3D31;">陪毛孩抗癌，主人也承受著「照顧者壓力」：香港研究的發現</span>
+<span data-zh-html="&lt;em&gt;Journal of Small Animal Practice&lt;/em&gt;・2026" data-en-html="&lt;em&gt;Journal of Small Animal Practice&lt;/em&gt;・2026" style="font-size:13px;color:#5E574F;"><em>Journal of Small Animal Practice</em>・2026</span>
+<span data-zh="閱讀全文 →" data-en="Read the summary →" style="margin-top:auto;font-size:14px;color:#3E5040;font-weight:500;">閱讀全文 →</span>
+</a>
+</div>
+</div>
+</div>
 </div>
 
-<div id="caregiver-support-zone" style="display:flex;flex-direction:column;gap:18px;scroll-margin-top:90px;">
+<div id="caregiver-support-zone" class="zone" style="scroll-margin-top:90px;">
+<div class="zhead">
 <span data-zh="專區" data-en="Zone" style="font-size:14px;letter-spacing:0.12em;color:#5B6E55;font-weight:500;">專區</span>
 <h2 data-zh="照顧者情緒支援專區" data-en="Caregiver Support Zone" style="margin:0;font-family:'Noto Serif TC',serif;font-size:26px;color:#2F3D31;">照顧者情緒支援專區</h2>
 <p data-zh="無論你是正在照顧患病毛孩的主人，還是在獸醫工作中付出的同業，長期照顧他人或動物，同樣需要被照顧。這裡集合情緒與心理健康、輔導，以及獸醫身心健康的衛教文章與資源。" data-en="Whether you're an owner caring for a sick pet, or a veterinary professional giving your all at work, caring for others, human or animal, over the long term means you need care too. Here you'll find articles and resources on emotional and mental wellbeing, counselling, and wellbeing in veterinary work." style="margin:0;font-size:16px;color:#4A443D;">無論你是正在照顧患病毛孩的主人，還是在獸醫工作中付出的同業，長期照顧他人或動物，同樣需要被照顧。這裡集合情緒與心理健康、輔導，以及獸醫身心健康的衛教文章與資源。</p>
+</div>
+<div class="zbody">
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
 <a href="/anxiety-depression-checkin.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;">
 <span data-zh="焦慮與情緒低落：GAD-7與PHQ-9自我評估" data-en="Anxiety and Low Mood: GAD-7 and PHQ-9 Self-Assessment" style="font-family:'Noto Serif TC',serif;font-size:19px;color:#2F3D31;">焦慮與情緒低落：GAD-7與PHQ-9自我評估</span>
@@ -245,15 +290,34 @@ html[lang="en"] details.story[open] .read-toggle::before{content:'Collapse ↑';
 </div>
 </details>
 </div>
+
+<div style="display:flex;flex-direction:column;gap:14px;margin-top:10px;">
+<h3 id="caregiver-research" data-zh="研究分享" data-en="Research Spotlight" style="margin:0;font-family:'Noto Serif TC',serif;font-size:20px;color:#2F3D31;scroll-margin-top:90px;">研究分享</h3>
+<div class="rgrid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;">
+<a href="/research-podpecan.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;min-width:0;">
+<span data-zh="研究摘要" data-en="Research Summary" style="font-size:13px;font-weight:500;color:#33402F;background:#E4EBDD;padding:3px 12px;border-radius:999px;align-self:flex-start;">研究摘要</span>
+<span data-zh="獸醫行業的Burnout有多普遍？斯洛文尼亞473位執業獸醫的調查結果" data-en="How Common Is Burnout Among Vets? Findings from a Survey of 473 Slovenian Veterinarians" style="font-family:'Noto Serif TC',serif;font-size:18px;line-height:1.5;color:#2F3D31;">獸醫行業的Burnout有多普遍？斯洛文尼亞473位執業獸醫的調查結果</span>
+<span data-zh-html="&lt;em&gt;Veterinary Sciences&lt;/em&gt;・2025" data-en-html="&lt;em&gt;Veterinary Sciences&lt;/em&gt;・2025" style="font-size:13px;color:#5E574F;"><em>Veterinary Sciences</em>・2025</span>
+<span data-zh="閱讀全文 →" data-en="Read the summary →" style="margin-top:auto;font-size:14px;color:#3E5040;font-weight:500;">閱讀全文 →</span>
+</a>
+<a href="/research-volk.html" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;min-width:0;">
+<span data-zh="研究摘要" data-en="Research Summary" style="font-size:13px;font-weight:500;color:#33402F;background:#E4EBDD;padding:3px 12px;border-radius:999px;align-self:flex-start;">研究摘要</span>
+<span data-zh="獸醫的倦怠、自殺念頭與身心健康：一項涵蓋2,874位美國獸醫的大型研究" data-en="Burnout, Suicidal Ideation, and Wellbeing: A Large-Scale Study of 2,874 US Veterinarians" style="font-family:'Noto Serif TC',serif;font-size:18px;line-height:1.5;color:#2F3D31;">獸醫的倦怠、自殺念頭與身心健康：一項涵蓋2,874位美國獸醫的大型研究</span>
+<span data-zh-html="&lt;em&gt;Journal of the American Veterinary Medical Association&lt;/em&gt;・2020" data-en-html="&lt;em&gt;Journal of the American Veterinary Medical Association&lt;/em&gt;・2020" style="font-size:13px;color:#5E574F;"><em>Journal of the American Veterinary Medical Association</em>・2020</span>
+<span data-zh="閱讀全文 →" data-en="Read the summary →" style="margin-top:auto;font-size:14px;color:#3E5040;font-weight:500;">閱讀全文 →</span>
+</a>
+</div>
+</div>
+</div>
 </div>
 
 </div>
 </section>
 
 <section id="tools" style="padding:0 24px 56px;background:#EFE7D8;">
-<div class="wrap" style="max-width:860px;margin:0 auto;padding-top:56px;display:flex;flex-direction:column;gap:24px;">
+<div class="wrap" style="max-width:1040px;margin:0 auto;padding-top:56px;display:flex;flex-direction:column;gap:24px;">
 <h2 data-zh="自我評估工具" data-en="Self-Assessment Tools" style="margin:0;font-family:'Noto Serif TC',serif;font-size:26px;color:#2F3D31;">自我評估工具</h2>
-<div style="display:flex;flex-direction:column;gap:18px;">
+<div class="toolgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
 
 <a href="/letting-go.html#assessment" style="text-decoration:none;color:#2E2A26;background:#FFFDF8;border:1px solid #E2D8C6;border-radius:20px;padding:28px 26px;display:flex;flex-direction:column;gap:10px;">
 <span data-zh="末期病患 · 生活質素評估" data-en="Terminal Illness · Quality of Life" style="font-size:13px;color:#5B6E55;font-weight:500;">末期病患 · 生活質素評估</span>
@@ -278,131 +342,6 @@ html[lang="en"] details.story[open] .read-toggle::before{content:'Collapse ↑';
 
 </div>
 <p data-zh="如果你正處於情緒危機，或有傷害自己的念頭，請立即致電「情緒通」18111 精神健康支援熱線（24小時），或前往就近急症室求助。" data-en="If you are in emotional crisis, or having thoughts of harming yourself, please call the Mental Health Support Hotline 18111 (24 hours) immediately, or go to your nearest emergency room for help." style="margin:0;padding:18px 22px;border:1.5px solid #B5826B;background:#F6E9DF;border-radius:14px;font-size:15px;color:#5A2F1E;line-height:1.7;">如果你正處於情緒危機，或有傷害自己的念頭，請立即致電「情緒通」18111 精神健康支援熱線（24小時），或前往就近急症室求助。</p>
-</div>
-</section>
-
-<section id="research" style="padding:56px 24px;">
-<div class="wrap" style="max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:18px;">
-<span data-zh="專區" data-en="Zone" style="font-size:14px;letter-spacing:0.12em;color:#5B6E55;font-weight:500;">專區</span>
-<h2 data-zh="研究分享" data-en="Research Spotlight" style="margin:0;font-family:'Noto Serif TC',serif;font-size:26px;color:#2F3D31;">研究分享</h2>
-<p data-zh="這裡會分享寵物喪親、獸醫身心健康，以及相關心理學研究的簡短摘要，希望為研究人員、助人工作者，以及純粹感興趣的你，提供一個容易理解的引介。內容會陸續增加。" data-en="Here I'll share brief summaries of research on pet bereavement, veterinary wellbeing, and related psychology, written to be an accessible introduction for researchers, helping professionals, and anyone simply curious. More will be added over time." style="margin:0;font-size:16px;color:#4A443D;">這裡會分享寵物喪親、獸醫身心健康，以及相關心理學研究的簡短摘要，希望為研究人員、助人工作者，以及純粹感興趣的你，提供一個容易理解的引介。內容會陸續增加。</p>
-
-<div style="background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:14px;">
-
-<div style="display:flex;flex-direction:column;gap:8px;">
-<span data-zh="研究摘要" data-en="Research Summary" style="font-size:13px;font-weight:500;color:#33402F;background:#E4EBDD;padding:3px 12px;border-radius:999px;align-self:flex-start;">研究摘要</span>
-<span data-zh="為甚麼寵物離世的哀傷常被忽視？一項跨文化研究的發現" data-en="Why Is Pet Loss Grief So Often Overlooked? Findings from a Cross-Cultural Study" style="font-family:'Noto Serif TC',serif;font-size:19px;color:#2F3D31;line-height:1.5;">為甚麼寵物離世的哀傷常被忽視？一項跨文化研究的發現</span>
-<span data-zh-html="原題：&lt;em&gt;Online survey as empathic bridging for the disenfranchised grief of pet loss&lt;/em&gt;" data-en-html="Original title: &lt;em&gt;Online survey as empathic bridging for the disenfranchised grief of pet loss&lt;/em&gt;" style="font-size:14px;color:#5E574F;">原題：<em>Online survey as empathic bridging for the disenfranchised grief of pet loss</em></span>
-<div style="font-size:13px;color:#5E574F;line-height:1.8;margin-top:2px;">
-<div data-zh="作者：Wendy Packman, Betty J. Carmack, Rachel Katz, France Carlos, Nigel P. Field, Craig Landers" data-en="Authors: Wendy Packman, Betty J. Carmack, Rachel Katz, France Carlos, Nigel P. Field, Craig Landers">作者：Wendy Packman, Betty J. Carmack, Rachel Katz, France Carlos, Nigel P. Field, Craig Landers</div>
-<div data-zh-html="出處：&lt;em&gt;OMEGA – Journal of Death and Dying&lt;/em&gt;, 2014, 69(4), 333–356" data-en-html="Published in: &lt;em&gt;OMEGA – Journal of Death and Dying&lt;/em&gt;, 2014, 69(4), 333–356">出處：<em>OMEGA – Journal of Death and Dying</em>, 2014, 69(4), 333–356</div>
-<div data-zh-html="原文連結：&lt;a href=&quot;https://doi.org/10.2190/OM.69.4.a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;color:#3E5040;&quot;&gt;https://doi.org/10.2190/OM.69.4.a&lt;/a&gt;" data-en-html="Original article: &lt;a href=&quot;https://doi.org/10.2190/OM.69.4.a&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;color:#3E5040;&quot;&gt;https://doi.org/10.2190/OM.69.4.a&lt;/a&gt;">原文連結：<a href="https://doi.org/10.2190/OM.69.4.a" target="_blank" rel="noopener" style="color:#3E5040;">https://doi.org/10.2190/OM.69.4.a</a></div>
-</div>
-</div>
-
-<details class="story">
-<summary style="display:flex;"><span class="read-toggle" style="font-size:14px;color:#3E5040;font-weight:500;"></span></summary>
-<div style="margin-top:4px;padding-top:16px;border-top:1px solid #E2D8C6;display:flex;flex-direction:column;gap:14px;">
-
-<div>
-<p data-zh="研究背景與方法" data-en="Background and method" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">研究背景與方法</p>
-<p data-zh="研究團隊指出，他們回顧過近年關於寵物離世的書籍與文獻，發現幾乎沒有觸及文化差異這個角度，於是設計了這項跨文化研究。團隊邀請曾經歷寵物離世的成年人填寫網上問卷，最終有200位美國參與者及35位法語加拿大參與者，回答了問卷最後一條開放式問題：「現在你已經答完我們的問題，你還有沒有其他關於哀悼寵物的感受或想法，想和我們分享？」團隊採用「導向式內容分析法」（directed content analysis），把文字回應上載到ATLAS.ti軟件做系統編碼：先由三位研究員獨立編碼，再一起討論至有共識為止；法語加拿大參與者的回應，亦由雙語研究員翻譯做英文，再與美國樣本一併分析比較。" data-en="The research team noted that, in reviewing recent books and literature on pet loss, they found the topic of cultural difference almost entirely unaddressed, which led them to design this cross-cultural study. They invited adults who had experienced the death of a pet to complete an online survey; ultimately, 200 U.S. participants and 35 French Canadian participants answered the survey's final open-ended question: &quot;Now that you have answered our questions, are there any other feelings or thoughts about your experience of grieving for your pet that you would like to share with us?&quot; The team used directed content analysis, uploading the written responses into ATLAS.ti software for systematic coding: three researchers first coded independently, then discussed until reaching consensus; responses from the French Canadian sample were also translated into English by bilingual researchers before being analysed alongside the U.S. sample." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">研究團隊指出，他們回顧過近年關於寵物離世的書籍與文獻，發現幾乎沒有觸及文化差異這個角度，於是設計了這項跨文化研究。團隊邀請曾經歷寵物離世的成年人填寫網上問卷，最終有200位美國參與者及35位法語加拿大參與者，回答了問卷最後一條開放式問題：「現在你已經答完我們的問題，你還有沒有其他關於哀悼寵物的感受或想法，想和我們分享？」團隊採用「導向式內容分析法」（directed content analysis），把文字回應上載到ATLAS.ti軟件做系統編碼：先由三位研究員獨立編碼，再一起討論至有共識為止；法語加拿大參與者的回應，亦由雙語研究員翻譯做英文，再與美國樣本一併分析比較。</p>
-</div>
-
-<div>
-<p data-zh="主要發現" data-en="Key findings" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">主要發現</p>
-<p data-zh="分析歸納出四個主題：缺乏認可與支持（lack of validation and support）、失去的強烈程度（intensity of loss）、人與寵物關係的本質（nature of the human-pet relationship），以及持續的連結（continuing bonds）。兩組參與者的核心結論一致：寵物離世往往都是一種「被剝奪的哀傷」，而網上問卷本身，也可以成為一道「同理橋樑」（empathic bridging）——不少參與者形容，填寫這份問卷，是他們第一次有機會在安全、匿名的空間，把壓抑已久的感受說出來。同時，兩地也有一些具體差異：「內疚與悔恨」在法語加拿大參與者的回應中（29%）明顯多於美國參與者（12%）；在「持續連結」之中，有33%法語加拿大參與者形容與離世寵物有「重聚」的想像或盼望，美國參與者則只有3%；「存在意義」這個主題，亦在法語加拿大參與者（20%）比美國參與者（7%）更為常見。量化數據方面，兩組參與者喺哀傷量表（Inventory of Complicated Grief, ICG）嘅平均分（美國3.47、法語加拿大3.00），均高過另一項人類喪親研究嘅平均分（2.55）同另一項寵物離世研究嘅平均分（2.20）——從數字上，印證咗寵物離世嘅哀傷強度，確實可以同甚至超過人類喪親嘅經歷。" data-en="The analysis identified four major themes: lack of validation and support, intensity of loss, the nature of the human-pet relationship, and continuing bonds. Both groups reached the same core conclusion: pet loss is very often a form of disenfranchised grief, and the online survey itself could serve as a form of &quot;empathic bridging&quot; — many participants described filling out the survey as the first time they'd had the chance to put long-held-back feelings into words, in a space that felt safe and anonymous. At the same time, there were some concrete differences between the two groups: &quot;guilt and regret&quot; appeared notably more often among French Canadian participants (29%) than U.S. participants (12%); for &quot;continuing bonds,&quot; 33% of French Canadian participants described imagining or hoping to be &quot;reunited&quot; with their deceased pet, compared with just 3% of U.S. participants; and the theme of &quot;existential meaning&quot; was also more common among French Canadian participants (20%) than U.S. participants (7%). On the quantitative measures, both groups' average scores on the Inventory of Complicated Grief (ICG) — 3.47 for the U.S. sample and 3.00 for the French Canadian sample — were higher than the average score reported in a study of human bereavement (2.55) and another pet loss study (2.20), offering numerical support for the idea that pet loss grief can match, or even exceed, the intensity of human bereavement." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">分析歸納出四個主題：缺乏認可與支持（lack of validation and support）、失去的強烈程度（intensity of loss）、人與寵物關係的本質（nature of the human-pet relationship），以及持續的連結（continuing bonds）。兩組參與者的核心結論一致：寵物離世往往都是一種「被剝奪的哀傷」，而網上問卷本身，也可以成為一道「同理橋樑」（empathic bridging）——不少參與者形容，填寫這份問卷，是他們第一次有機會在安全、匿名的空間，把壓抑已久的感受說出來。同時，兩地也有一些具體差異：「內疚與悔恨」在法語加拿大參與者的回應中（29%）明顯多於美國參與者（12%）；在「持續連結」之中，有33%法語加拿大參與者形容與離世寵物有「重聚」的想像或盼望，美國參與者則只有3%；「存在意義」這個主題，亦在法語加拿大參與者（20%）比美國參與者（7%）更為常見。量化數據方面，兩組參與者喺哀傷量表（Inventory of Complicated Grief, ICG）嘅平均分（美國3.47、法語加拿大3.00），均高過另一項人類喪親研究嘅平均分（2.55）同另一項寵物離世研究嘅平均分（2.20）——從數字上，印證咗寵物離世嘅哀傷強度，確實可以同甚至超過人類喪親嘅經歷。</p>
-</div>
-
-<div>
-<p data-zh="這個研究告訴我們甚麼" data-en="What this study tells us" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">這個研究告訴我們甚麼</p>
-<ul style="margin:0;padding-left:20px;font-size:15px;color:#2E2A26;line-height:1.9;display:flex;flex-direction:column;gap:4px;">
-<li data-zh="寵物離世引發的哀傷，在很多社會環境下都未得到應有的認可與支持——這個現象不止出現在美國，法語加拿大的參與者也有類似經歷" data-en="Grief over pet loss often goes unrecognised and unsupported in many social settings, and this isn't unique to the U.S.; French Canadian participants reported similar experiences">寵物離世引發的哀傷，在很多社會環境下都未得到應有的認可與支持——這個現象不止出現在美國，法語加拿大的參與者也有類似經歷</li>
-<li data-zh="寵物離世的哀傷強度，很多時與失去人類親友相近，部分參與者甚至形容比失去人類摯友更難過" data-en="The intensity of pet loss grief is often comparable to losing a human loved one; some participants even described it as harder than losing a close human friend">寵物離世的哀傷強度，很多時與失去人類親友相近，部分參與者甚至形容比失去人類摯友更難過</li>
-<li data-zh="寵物在很多人生命裡扮演的角色，遠超「一隻動物」，常被形容為家人、子女，甚至靈魂伴侶" data-en="The role pets play in many people's lives goes far beyond &quot;just an animal&quot;; they're often described as family, as children, even as soulmates">寵物在很多人生命裡扮演的角色，遠超「一隻動物」，常被形容為家人、子女，甚至靈魂伴侶</li>
-<li data-zh="如果你曾經為安樂死的決定反覆自責、不斷「翻舊帳」——幾時先啱、係咪太早定太遲——這種反應在寵物離世的哀傷入面相當普遍，不代表你做錯了決定，而是這個決定本身帶來的沉重，需要時間同空間去消化" data-en="If you've found yourself endlessly second-guessing a euthanasia decision, whether it was too soon, too late, the right call, this reaction is remarkably common in pet loss grief. It doesn't mean you made the wrong decision; it reflects how weighty that decision is, and it takes time and space to come to terms with it">如果你曾經為安樂死的決定反覆自責、不斷「翻舊帳」——幾時先啱、係咪太早定太遲——這種反應在寵物離世的哀傷入面相當普遍，不代表你做錯了決定，而是這個決定本身帶來的沉重，需要時間同空間去消化</li>
-<li data-zh="內疚與自責是寵物離世哀傷中一種特別普遍的情緒，無論死因是甚麼、照顧得多周到，都可能出現" data-en="Guilt and self-blame are a particularly common emotion in pet loss grief, regardless of the cause of death or how well the pet was cared for">內疚與自責是寵物離世哀傷中一種特別普遍的情緒，無論死因是甚麼、照顧得多周到，都可能出現</li>
-<li data-zh="持續的連結（continuing bonds）是哀傷歷程常見、甚至健康的一部分，但不一定帶來安慰——有人透過回憶、夢境得到撫慰，也有人發現「處處都是牠的痕跡」，反而更難釋懷" data-en="Continuing bonds are a common, even healthy, part of the grieving process, though they don't always bring comfort; some find solace in memories and dreams, while others find being reminded of their pet &quot;everywhere&quot; makes it harder to find peace">持續的連結（continuing bonds）是哀傷歷程常見、甚至健康的一部分，但不一定帶來安慰——有人透過回憶、夢境得到撫慰，也有人發現「處處都是牠的痕跡」，反而更難釋懷</li>
-<li data-zh="單純有一個安全、不被judge的空間去表達感受，本身就有療癒作用，這正是輔導室可以提供的價值" data-en="Simply having a safe, non-judgemental space to express your feelings is, in itself, healing, and that's exactly the value a counselling room can offer">單純有一個安全、不被judge的空間去表達感受，本身就有療癒作用，這正是輔導室可以提供的價值</li>
-</ul>
-</div>
-
-<div>
-<p data-zh="實際應用" data-en="Practical takeaways" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">實際應用</p>
-<p data-zh="如果你正經歷寵物離世，這個研究想告訴你：你的傷心是合理的，不需要和誰比較，也不需要向任何人解釋。如果你發現自己透過回憶、夢境或物件，持續與離世的寵物保持連結，這不是放不下，而是很自然的歷程——但如果某些連結方式（例如特地回到某個地方）反而令你更難受，也可以選擇暫時放下，等情緒沒那麼強烈時再面對，這同樣是你的選擇。如果你曾經為安樂死的決定反覆自責、不斷「翻舊帳」——幾時先啱、係咪太早定太遲——這種反應在寵物離世的哀傷入面相當普遍，不代表你做錯了決定，而是這個決定本身帶來的沉重，需要時間同空間去消化。如果身邊有人正經歷寵物離世：請避免把牠的失去和人類的失去相比高低，單純認可對方的傷心，已經是很大的support。" data-en="If you're going through the loss of a pet, this study wants you to know: your grief is valid, and it doesn't need to be measured against anyone else's, or explained to anyone. If you find yourself continuing to feel connected to your pet through memories, dreams, or objects, that's not an inability to move on, it's a very natural part of the process; but if certain forms of connection, like deliberately returning to a particular place, end up making you feel worse rather than better, you're also allowed to set them aside for now and come back to them when your feelings feel less intense. That, too, is your choice to make. If you've found yourself endlessly second-guessing a euthanasia decision, whether it was too soon, too late, the right call, this reaction is remarkably common in pet loss grief. It doesn't mean you made the wrong decision; it reflects how weighty that decision is, and it takes time and space to come to terms with it. If someone around you is going through pet loss: avoid ranking their loss against a human loss; simply acknowledging their grief is already significant support." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">如果你正經歷寵物離世，這個研究想告訴你：你的傷心是合理的，不需要和誰比較，也不需要向任何人解釋。如果你發現自己透過回憶、夢境或物件，持續與離世的寵物保持連結，這不是放不下，而是很自然的歷程——但如果某些連結方式（例如特地回到某個地方）反而令你更難受，也可以選擇暫時放下，等情緒沒那麼強烈時再面對，這同樣是你的選擇。如果你曾經為安樂死的決定反覆自責、不斷「翻舊帳」——幾時先啱、係咪太早定太遲——這種反應在寵物離世的哀傷入面相當普遍，不代表你做錯了決定，而是這個決定本身帶來的沉重，需要時間同空間去消化。如果身邊有人正經歷寵物離世：請避免把牠的失去和人類的失去相比高低，單純認可對方的傷心，已經是很大的support。</p>
-<p data-zh="研究團隊亦特別提到一個真實例子：一位女士曾因為治療師對她說「失去朋友一定比失去狗更難過」而感到不被理解，於是轉求另一位治療師——這提醒助人工作者，主動以「很多人都形容自己的寵物是家人、是孩子，這是他們人生中最難過的一次失去」這類說法去邀請來訪者表達感受，會讓對方更願意敞開心扉。研究團隊建議，臨床上可以分兩步探討持續的連結：先了解來訪者經歷緊邊啲形式嘅連結，再了解呢啲連結帶嚟嘅係安慰定係困擾——帶嚟困擾嘅連結，可以陪同來訪者考慮暫時擱置，等哀傷冇咁強烈先再重新納入生活。同時，由於失去的強烈程度可能很深，評估自殺風險是必要的步驟；而內疚與自責，往往是用來迴避直接面對哀傷強度的一種方式，處理內疚本身，就是重要的臨床技巧。" data-en="The research team also shared a real example: a woman once felt invalidated when her therapist told her &quot;losing a friend must be harder for you than losing your dog,&quot; and went on to seek out another therapist instead. This is a reminder to helping professionals that proactively saying something like &quot;many people describe their pet as family, as a child, as the hardest loss of their life&quot; can invite a client to open up more freely. The research team suggested a two-step clinical approach to exploring continuing bonds: first understand what forms of connection the client is experiencing, then explore whether those connections bring comfort or distress; connections that bring distress can be gently set aside for now, with the client revisiting them once their grief feels less intense. At the same time, because the intensity of this loss can run deep, assessing suicide risk is a necessary step; and guilt and self-blame are often a way of avoiding the intensity of grief itself, so working through guilt is, in itself, an important clinical skill." style="margin:10px 0 0;font-size:15px;color:#2E2A26;line-height:1.9;">研究團隊亦特別提到一個真實例子：一位女士曾因為治療師對她說「失去朋友一定比失去狗更難過」而感到不被理解，於是轉求另一位治療師——這提醒助人工作者，主動以「很多人都形容自己的寵物是家人、是孩子，這是他們人生中最難過的一次失去」這類說法去邀請來訪者表達感受，會讓對方更願意敞開心扉。研究團隊建議，臨床上可以分兩步探討持續的連結：先了解來訪者經歷緊邊啲形式嘅連結，再了解呢啲連結帶嚟嘅係安慰定係困擾——帶嚟困擾嘅連結，可以陪同來訪者考慮暫時擱置，等哀傷冇咁強烈先再重新納入生活。同時，由於失去的強烈程度可能很深，評估自殺風險是必要的步驟；而內疚與自責，往往是用來迴避直接面對哀傷強度的一種方式，處理內疚本身，就是重要的臨床技巧。</p>
-</div>
-
-<div>
-<p data-zh="研究局限" data-en="Limitations" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">研究局限</p>
-<p data-zh="研究團隊自己亦提出了幾個限制：量化部分的數據來自自我評估問卷（PAS、ICG），未必能完全捕捉依附關係與哀傷的複雜程度；雖然團隊有仔細將問卷back-translate做法語，但問題本身對美國與法語加拿大參與者來說，可能帶有不完全一樣的意思；研究設計屬於橫斷面（cross-sectional），並非長期追蹤，未能反映哀傷隨時間變化的歷程——團隊建議日後可以用長期追蹤嘅方式，由寵物離世後即時，一路追蹤到一至三年後，了解持續連結嘅表達方式會點樣隨時間轉變。團隊亦特別提到，未來研究值得深入探討安樂死嘅決定過程，同埋呢個過程點樣影響之後哀傷嘅強度同長度。團隊喺文末提出一個發人深省嘅觀察：寵物離世嘅哀傷，好多時因為不被認可而得唔到支持，但如果主人身體出現病徵，卻反而會換嚟關心同照顧——團隊提出，呢個現象背後，係咪反映咗社會對「情緒上嘅痛苦」同「身體上嘅病痛」，存在住一種唔對等嘅重視程度，值得日後研究繼續探討。" data-en="The research team themselves named several limitations: the quantitative data relied on self-report measures (PAS, ICG), which may not fully capture the complexity of attachment and grief; although the team carefully back-translated the survey into French, the questions themselves may not have carried exactly the same meaning for U.S. and French Canadian participants; and the study design was cross-sectional rather than longitudinal, so it couldn't capture how grief changes over time - the team suggested future research could track continuing bonds longitudinally, from immediately after a pet's death through one to three years later, to see how these expressions change. The team also specifically noted that future research should explore the euthanasia decision-making process in more depth, and how it shapes the subsequent intensity and duration of grief. The authors closed with a thought-provoking observation: pet loss grief often goes unsupported because it isn't socially validated, yet if an owner develops physical symptoms, that tends to draw concern and care instead, raising the question of whether this reflects an unequal regard, in our wider culture, for emotional pain versus physical illness, something they suggested is worth further research." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">研究團隊自己亦提出了幾個限制：量化部分的數據來自自我評估問卷（PAS、ICG），未必能完全捕捉依附關係與哀傷的複雜程度；雖然團隊有仔細將問卷back-translate做法語，但問題本身對美國與法語加拿大參與者來說，可能帶有不完全一樣的意思；研究設計屬於橫斷面（cross-sectional），並非長期追蹤，未能反映哀傷隨時間變化的歷程——團隊建議日後可以用長期追蹤嘅方式，由寵物離世後即時，一路追蹤到一至三年後，了解持續連結嘅表達方式會點樣隨時間轉變。團隊亦特別提到，未來研究值得深入探討安樂死嘅決定過程，同埋呢個過程點樣影響之後哀傷嘅強度同長度。團隊喺文末提出一個發人深省嘅觀察：寵物離世嘅哀傷，好多時因為不被認可而得唔到支持，但如果主人身體出現病徵，卻反而會換嚟關心同照顧——團隊提出，呢個現象背後，係咪反映咗社會對「情緒上嘅痛苦」同「身體上嘅病痛」，存在住一種唔對等嘅重視程度，值得日後研究繼續探討。</p>
-</div>
-
-<p data-zh-html="原始文獻：Packman, W., Carmack, B. J., Katz, R., Carlos, F., Field, N. P., &amp; Landers, C. (2014). Online survey as empathic bridging for the disenfranchised grief of pet loss. &lt;em&gt;OMEGA – Journal of Death and Dying, 69&lt;/em&gt;(4), 333–356. https://doi.org/10.2190/OM.69.4.a" data-en-html="Reference: Packman, W., Carmack, B. J., Katz, R., Carlos, F., Field, N. P., &amp; Landers, C. (2014). Online survey as empathic bridging for the disenfranchised grief of pet loss. &lt;em&gt;OMEGA – Journal of Death and Dying, 69&lt;/em&gt;(4), 333–356. https://doi.org/10.2190/OM.69.4.a" style="margin:0;font-size:13px;color:#5E574F;line-height:1.7;">原始文獻：Packman, W., Carmack, B. J., Katz, R., Carlos, F., Field, N. P., &amp;Landers, C. (2014). Online survey as empathic bridging for the disenfranchised grief of pet loss. <em>OMEGA – Journal of Death and Dying, 69</em>(4), 333–356. https://doi.org/10.2190/OM.69.4.a</p>
-
-</div>
-</details>
-
-</div>
-
-<div style="background:#FFFDF8;border:1px solid #E2D8C6;border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:14px;">
-
-<div style="display:flex;flex-direction:column;gap:8px;">
-<span data-zh="研究摘要" data-en="Research Summary" style="font-size:13px;font-weight:500;color:#33402F;background:#E4EBDD;padding:3px 12px;border-radius:999px;align-self:flex-start;">研究摘要</span>
-<span data-zh="陪毛孩抗癌，主人也承受著「照顧者壓力」：香港研究的發現" data-en="When Your Pet Is Fighting Cancer, Owners Carry a Weight Too: Findings from a Hong Kong Study" style="font-family:'Noto Serif TC',serif;font-size:19px;color:#2F3D31;line-height:1.5;">陪毛孩抗癌，主人也承受著「照顧者壓力」：香港研究的發現</span>
-<span data-zh-html="原題：&lt;em&gt;Caregiver burden in owners of dogs and cats undergoing anticancer therapy in a referral hospital in Hong Kong&lt;/em&gt;" data-en-html="Original title: &lt;em&gt;Caregiver burden in owners of dogs and cats undergoing anticancer therapy in a referral hospital in Hong Kong&lt;/em&gt;" style="font-size:14px;color:#5E574F;">原題：<em>Caregiver burden in owners of dogs and cats undergoing anticancer therapy in a referral hospital in Hong Kong</em></span>
-<div style="font-size:13px;color:#5E574F;line-height:1.8;margin-top:2px;"><div data-zh="作者：K. M. Tam, A. Giuliano, S. S. U. H. Bukhari, P. V. Steagall" data-en="Authors: K. M. Tam, A. Giuliano, S. S. U. H. Bukhari, P. V. Steagall">作者：K. M. Tam, A. Giuliano, S. S. U. H. Bukhari, P. V. Steagall</div><div data-zh-html="出處：&lt;em&gt;Journal of Small Animal Practice&lt;/em&gt;, 2025（線上率先發表）, 67(1), 59–66" data-en-html="Published in: &lt;em&gt;Journal of Small Animal Practice&lt;/em&gt;, 2026, 67(1), 59–66 (online first 15 August 2025)" style="">出處：<em>Journal of Small Animal Practice</em>, 2026, 67(1), 59–66（2025年8月15日網上率先發表）</div><div data-zh-html="原文連結：&lt;a href=&quot;https://doi.org/10.1111/jsap.70015&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;color:#3E5040;&quot;&gt;https://doi.org/10.1111/jsap.70015&lt;/a&gt;" data-en-html="Original article: &lt;a href=&quot;https://doi.org/10.1111/jsap.70015&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;color:#3E5040;&quot;&gt;https://doi.org/10.1111/jsap.70015&lt;/a&gt;" style="">原文連結：<a href="https://doi.org/10.1111/jsap.70015" target="_blank" rel="noopener" style="color:#3E5040;">https://doi.org/10.1111/jsap.70015</a></div></div>
-</div>
-
-<details class="story">
-<summary style="display:flex;"><span class="read-toggle" style="font-size:14px;color:#3E5040;font-weight:500;"></span></summary>
-<div style="margin-top:4px;padding-top:16px;border-top:1px solid #E2D8C6;display:flex;flex-direction:column;gap:14px;">
-
-<div>
-<p data-zh="研究背景與方法" data-en="Background and method" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">研究背景與方法</p>
-<p data-zh-html="香港城市大學獸醫醫療中心（CityU Veterinary Medical Centre）腫瘤科，喺2023年11月至2024年8月期間，邀請正帶著寵物接受癌症治療的主人於覆診時用平板電腦填寫問卷，了解他們作為照顧者所承受的身心壓力。研究團隊採用一份經調整、簡化版的Zarit照顧者壓力量表（Zarit Burden Interview）——這份量表原本用於評估照顧認知障礙症或長期病患家人的壓力程度，團隊將它簡化為七個項目，滿分28分，9分或以上代表照顧者壓力已達到研究定義中「上升」的水平。團隊再以卡方檢定（chi-square test）及勝算比（odds ratio）分析，了解哪些因素與較高的壓力有關。最終收到54位主人的有效回應。" data-en-html="Between November 2023 and August 2024, clients of the oncology service at the CityU Veterinary Medical Centre in Hong Kong were invited to complete a tablet-based survey during their clinic visits, about the burden they carry as caregivers for pets undergoing cancer treatment. The research team used an adapted, abbreviated version of the Zarit Burden Interview — a scale originally developed to assess burden among caregivers of family members with dementia or chronic illness — shortened to seven items with a maximum score of 28; a score of 9 or above indicated what the study defined as increased burden. The team then used chi-square tests and odds ratios to identify which factors were associated with higher burden. In total, 54 valid responses were received." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">香港城市大學獸醫醫療中心（CityU Veterinary Medical Centre）腫瘤科，喺2023年11月至2024年8月期間，邀請正帶著寵物接受癌症治療的主人於覆診時用平板電腦填寫問卷，了解他們作為照顧者所承受的身心壓力。研究團隊採用一份經調整、簡化版的Zarit照顧者壓力量表（Zarit Burden Interview）——這份量表原本用於評估照顧認知障礙症或長期病患家人的壓力程度，團隊將它簡化為七個項目，滿分28分，9分或以上代表照顧者壓力已達到研究定義中「上升」的水平。團隊再以卡方檢定（chi-square test）及勝算比（odds ratio）分析，了解哪些因素與較高的壓力有關。最終收到54位主人的有效回應。</p>
-</div>
-
-<div>
-<p data-zh="主要發現" data-en="Key findings" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">主要發現</p>
-<p data-zh-html="在54位回應的主人之中，70.4%（38人）的壓力評分達到9分或以上，即屬於研究定義中壓力已上升的水平。較高壓力與以下因素有關：對治療費用感到擔心、對副作用感到擔心，以及治療時間較長。至於主人照顧的是貓還是狗，在壓力程度上沒有顯著差異。" data-en-html="Among the 54 responding owners, 70.4% (38 people) scored 9 or above, meeting the study&#x27;s definition of increased burden. Higher burden was associated with: concerns about treatment cost, concerns about side effects, and longer treatment duration. There was no significant difference in burden between cat and dog caregivers." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">在54位回應的主人之中，70.4%（38人）的壓力評分達到9分或以上，即屬於研究定義中壓力已上升的水平。較高壓力與以下因素有關：對治療費用感到擔心、對副作用感到擔心，以及治療時間較長。至於主人照顧的是貓還是狗，在壓力程度上沒有顯著差異。</p>
-</div>
-
-<div>
-<p data-zh="與其他研究比較" data-en="Comparison with other studies" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">與其他研究比較</p>
-<p data-zh-html="呢個研究結果，同其他地方嘅類似研究有啲共通，又有啲唔同。好似2024年喺巴西進行嘅一項研究，都發現超過三分之一照顧患癌寵物嘅主人出現壓力上升，而呢次香港嘅研究，比率明顯更高（70.4%），研究團隊推測，呢個差異可能同兩地照顧者嘅人口特徵唔同有關。至於壓力評分嘅平均數（9.8分，滿分28），亦同另一項針對患癌犬隻主人嘅研究（平均12.98分）方向一致，都反映壓力有上升；但高過一項更早期嘅研究（平均5.92分）——團隊指出，呢個分別可能同寵物患病時間長短有關：本研究超過九成主人嘅寵物已經患病超過一個月，當中65%嘅主人已經開始治療超過一個月，相比之下，之前嗰項研究入面逾六成動物患病少於一個月。患病時間愈長，照顧者承受嘅壓力似乎亦愈重，呼應咗「治療時間愈長、壓力愈大」呢個發現。" data-en-html="This study&#x27;s findings echo some patterns seen elsewhere, while diverging in others. A 2024 study conducted in Brazil also found increased burden in over a third of caregivers of pets undergoing cancer treatment; the Hong Kong study found a notably higher rate (70.4%), which the research team suggested may reflect demographic differences between the two caregiver populations. The average burden score here (9.8 out of 28) was broadly consistent with another study of owners of dogs with cancer (average 12.98), both pointing to an overall increase in burden, but higher than an earlier study (average 5.92). The team noted this may relate to how long the pet had been ill: in this study, over 90% of pets had been sick for more than a month, with 65% of owners already more than a month into treatment, compared with the earlier study where over 60% of animals had been sick for less than a month. Longer illness duration appears to track with heavier caregiver burden, echoing the study&#x27;s own finding that longer treatment duration was linked to higher burden." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">呢個研究結果，同其他地方嘅類似研究有啲共通，又有啲唔同。好似2024年喺巴西進行嘅一項研究，都發現超過三分之一照顧患癌寵物嘅主人出現壓力上升，而呢次香港嘅研究，比率明顯更高（70.4%），研究團隊推測，呢個差異可能同兩地照顧者嘅人口特徵唔同有關。至於壓力評分嘅平均數（9.8分，滿分28），亦同另一項針對患癌犬隻主人嘅研究（平均12.98分）方向一致，都反映壓力有上升；但高過一項更早期嘅研究（平均5.92分）——團隊指出，呢個分別可能同寵物患病時間長短有關：本研究超過九成主人嘅寵物已經患病超過一個月，當中65%嘅主人已經開始治療超過一個月，相比之下，之前嗰項研究入面逾六成動物患病少於一個月。患病時間愈長，照顧者承受嘅壓力似乎亦愈重，呼應咗「治療時間愈長、壓力愈大」呢個發現。</p>
-</div>
-
-<div>
-<p data-zh="這個研究告訴我們甚麼" data-en="What this study tells us" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">這個研究告訴我們甚麼</p>
-<ul style="margin:0;padding-left:20px;font-size:15px;color:#2E2A26;line-height:1.9;display:flex;flex-direction:column;gap:4px;">
-<li data-zh="照顧患癌毛孩期間，出現明顯身心壓力是相當普遍的——七成以上受訪主人都達到這個水平，不代表你特別脆弱或者做得不夠好" data-en="Experiencing significant caregiver burden while a pet undergoes cancer treatment is fairly common; more than seven in ten owners surveyed reached this level, and it doesn&#x27;t mean you&#x27;re unusually fragile or doing anything wrong">照顧患癌毛孩期間，出現明顯身心壓力是相當普遍的——七成以上受訪主人都達到這個水平，不代表你特別脆弱或者做得不夠好</li>
-<li data-zh="治療費用的擔憂，本身就是壓力的重要來源。研究團隊引述的參考資料顯示（以美國的收費為例，並非香港的實際收費），單是腫瘤科診金已經由約125至250美元不等，化療每次150至600美元，電療最高可達6000美元——治療往往需要持續一段時間，長遠的經濟壓力不容忽視，值得被認真看待，而不只是順道處理的小事" data-en="Worry about treatment cost is itself a major source of burden. The research team cited figures (from a US source, not Hong Kong pricing) showing oncology consultation fees alone running from roughly $125–250, chemotherapy $150–600 per dose, and radiation therapy up to $6,000; since treatment often continues for some time, the long-term financial pressure is real and deserves to be taken seriously rather than treated as a side issue">治療費用的擔憂，本身就是壓力的重要來源。研究團隊引述的參考資料顯示（以美國的收費為例，並非香港的實際收費），單是腫瘤科診金已經由約125至250美元不等，化療每次150至600美元，電療最高可達6000美元——治療往往需要持續一段時間，長遠的經濟壓力不容忽視，值得被認真看待，而不只是順道處理的小事</li>
-<li data-zh="對副作用的憂慮，亦是壓力的重要來源。研究團隊引述其他文獻指出，這種憂慮有時源於聽聞親友的經驗或者對治療的誤解——有研究發現，主人完成電療之後，對副作用同反覆麻醉的擔心反而會減少，反映初期的憂慮，部分可能同資訊不足有關；清楚了解治療的里程碑、副作用同效果，有助減輕這份不安" data-en="Worry about side effects is also a major source of burden. The research team cited other literature suggesting this worry sometimes stems from hearing about other people&#x27;s experiences, or misconceptions about treatment; one study found owners grew less worried about side effects and repeated anaesthesia after completing radiation therapy, suggesting some of the initial worry may stem from a lack of information. Understanding treatment milestones, side effects, and likely outcomes clearly can help ease this unease">對副作用的憂慮，亦是壓力的重要來源。研究團隊引述其他文獻指出，這種憂慮有時源於聽聞親友的經驗或者對治療的誤解——有研究發現，主人完成電療之後，對副作用同反覆麻醉的擔心反而會減少，反映初期的憂慮，部分可能同資訊不足有關；清楚了解治療的里程碑、副作用同效果，有助減輕這份不安</li>
-<li data-zh="治療時間愈長，照顧者承受的壓力也可能愈重，這提醒我們，心理支援需要隨住病程持續提供，而不只在剛確診時給予" data-en="Longer treatment duration may mean heavier burden over time, a reminder that psychological support should continue throughout treatment, not just at diagnosis">治療時間愈長，照顧者承受的壓力也可能愈重，這提醒我們，心理支援需要隨住病程持續提供，而不只在剛確診時給予</li>
-<li data-zh="不論照顧的是貓還是狗，主人同樣會承受相近程度的壓力" data-en="Burden levels were similar whether the pet was a cat or a dog">不論照顧的是貓還是狗，主人同樣會承受相近程度的壓力</li>
-<li data-zh-html="研究團隊特別提到「壓力轉移」（burden transfer）這個概念：主人的壓力，有時會透過緊張的互動，轉移到獸醫同護士身上，長遠甚至同獸醫行業的職業倦怠有關。這個發現提醒我們，照顧主人的情緒，同時都是在照顧整個獸醫團隊的身心健康——如果你是獸醫同業，有興趣可以參考我們另一篇文章：&lt;a href=&quot;/vet-burnout.html&quot; style=&quot;color:#3E5040;&quot;&gt;《認識獸醫行業的Burnout：不是你不夠堅強》&lt;/a&gt;" data-en-html="The research team specifically raised the concept of &quot;burden transfer&quot;: an owner&#x27;s burden can, through tense interactions, transfer onto vets and nurses, and over the long term has been linked to burnout in the veterinary profession. This is a reminder that supporting a caregiver&#x27;s emotional wellbeing is also, in part, supporting the wellbeing of the whole veterinary team. If you work in veterinary medicine, you might also be interested in our article &lt;a href=&quot;/vet-burnout.html&quot; style=&quot;color:#3E5040;&quot;&gt;Burnout in Veterinary Work: It&#x27;s Not About Being Strong Enough&lt;/a&gt;">研究團隊特別提到「壓力轉移」（burden transfer）這個概念：主人的壓力，有時會透過緊張的互動，轉移到獸醫同護士身上，長遠甚至同獸醫行業的職業倦怠有關。這個發現提醒我們，照顧主人的情緒，同時都是在照顧整個獸醫團隊的身心健康——如果你是獸醫同業，有興趣可以參考我們另一篇文章：<a href="/vet-burnout.html" style="color:#3E5040;">《認識獸醫行業的Burnout：不是你不夠堅強》</a></li>
-</ul>
-</div>
-
-<div>
-<p data-zh="實際應用" data-en="Practical takeaways" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">實際應用</p>
-<p data-zh-html="如果你正帶著毛孩接受癌症治療，這個研究想告訴你：你感受到的壓力、疲累，甚至擔心費用時的那份不安，都是很合理、很常見的反應，不代表你做得不夠好。如果你發現自己對某些醫療字眼或治療流程不太理解，可以主動向獸醫團隊提出，請他們用你聽得懂的方式再解釋一次——這不是麻煩，而是你應有的權利；研究亦顯示，對副作用的擔心，好多時會隨住你對治療愈嚟愈熟悉而減輕，這個過程需要時間，不用心急。如果治療費用令你感到壓力，這份壓力是好真實、好合理的，不需要因為「只是寵物」而覺得不應該咁上心——你可以主動同獸醫團隊傾吓，了解不同治療方案的選擇範圍（由最基本到最全面都有），搵一個你負擔得到、又安心的方案，而不一定要勉強自己選最貴的那個。如果身邊有朋友正帶著毛孩接受癌症治療：除了說一句「加油」，也可以具體問「費用方面還應付到嗎？」或者「治療流程你清楚嗎？需要我陪你一起問獸醫嗎？」，這類具體的關心，往往比空泛的鼓勵更實在。" data-en-html="If you&#x27;re caring for a pet going through cancer treatment, this study wants you to know: the stress, the exhaustion, even the unease you feel when worrying about costs, are all reasonable and common reactions, and they don&#x27;t mean you&#x27;re not doing enough. If you find certain medical terms or treatment steps hard to follow, you can ask your vet team to explain them again in a way that makes sense to you; that&#x27;s not a bother, it&#x27;s something you&#x27;re entitled to. Research also suggests that worry about side effects often eases as you become more familiar with the treatment; this takes time, and there&#x27;s no need to rush yourself. If the cost of treatment is weighing on you, that weight is real and reasonable; you don&#x27;t need to feel it&#x27;s not justified just because &quot;it&#x27;s only a pet.&quot; You can talk openly with your vet team about the range of treatment options available, from the most basic to the most comprehensive, and find something you can afford and feel at peace with, rather than feeling pressured into the most expensive option. If a friend is caring for a pet with cancer, beyond saying &quot;hang in there,&quot; you could ask something concrete, like &quot;are you managing okay with the costs?&quot; or &quot;do you feel clear on the treatment steps? Want me to come with you to ask the vet?&quot; This kind of specific concern often means more than general encouragement." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">如果你正帶著毛孩接受癌症治療，這個研究想告訴你：你感受到的壓力、疲累，甚至擔心費用時的那份不安，都是很合理、很常見的反應，不代表你做得不夠好。如果你發現自己對某些醫療字眼或治療流程不太理解，可以主動向獸醫團隊提出，請他們用你聽得懂的方式再解釋一次——這不是麻煩，而是你應有的權利；研究亦顯示，對副作用的擔心，好多時會隨住你對治療愈嚟愈熟悉而減輕，這個過程需要時間，不用心急。如果治療費用令你感到壓力，這份壓力是好真實、好合理的，不需要因為「只是寵物」而覺得不應該咁上心——你可以主動同獸醫團隊傾吓，了解不同治療方案的選擇範圍（由最基本到最全面都有），搵一個你負擔得到、又安心的方案，而不一定要勉強自己選最貴的那個。如果身邊有朋友正帶著毛孩接受癌症治療：除了說一句「加油」，也可以具體問「費用方面還應付到嗎？」或者「治療流程你清楚嗎？需要我陪你一起問獸醫嗎？」，這類具體的關心，往往比空泛的鼓勵更實在。</p>
-<p data-zh-html="對獸醫同業而言，這個研究提醒我們：主人的壓力不只來自寵物的病情本身，費用、副作用與治療時長同樣是重要因素。研究團隊建議的介入方法包括：及早同主人進行「治療目標」對話、按治療選擇範圍提供不同程度的方案、定期主動check-in，以及同心理健康專業人士建立轉介夥伴關係。這些做法不但對主人有幫助，亦有助減少「壓力轉移」帶來的額外負荷，長遠對獸醫—客戶關係以及獸醫團隊自己的身心健康，都有正面影響。" data-en-html="For fellow vets, this study is a reminder that an owner&#x27;s burden doesn&#x27;t come only from the pet&#x27;s condition itself; cost, side effects, and treatment duration all matter too. The interventions the research team recommended include early &quot;goals of care&quot; conversations with owners, offering a range of treatment options across the spectrum of care, proactive regular check-ins, and building referral partnerships with mental health professionals. These approaches don&#x27;t just help owners; they also help reduce the extra load that comes with &quot;burden transfer,&quot; with positive effects on the vet-client relationship and on the wellbeing of the veterinary team itself." style="margin:10px 0 0;font-size:15px;color:#2E2A26;line-height:1.9;">對獸醫同業而言，這個研究提醒我們：主人的壓力不只來自寵物的病情本身，費用、副作用與治療時長同樣是重要因素。研究團隊建議的介入方法包括：及早同主人進行「治療目標」對話、按治療選擇範圍提供不同程度的方案、定期主動check-in，以及同心理健康專業人士建立轉介夥伴關係。這些做法不但對主人有幫助，亦有助減少「壓力轉移」帶來的額外負荷，長遠對獸醫—客戶關係以及獸醫團隊自己的身心健康，都有正面影響。</p>
-</div>
-
-<div>
-<p data-zh="研究局限" data-en="Limitations" style="margin:0 0 6px;font-size:14px;font-weight:500;color:#3E5040;">研究局限</p>
-<p data-zh-html="研究團隊自己喺文中都提出咗幾個限制：樣本數相對小（54位主人），而且屬於便利抽樣，只來自香港城市大學獸醫醫療中心一間轉診醫院的腫瘤科，去呢間機構求診嘅主人，未必能夠代表去普通診所或者其他專科醫院求診嘅主人。研究亦冇specifically探討放射治療相關嘅照顧者壓力，選擇放射治療嘅主人嘅經驗，可能未被充分反映。團隊特別提到，佢哋所用嘅簡化版Zarit照顧者壓力量表（abbreviated ZBI），本身喺測量特性上已經過驗證，同完整版相關性良好——但呢個驗證嘅樣本係美國人口，香港同美國喺照顧文化上可能存在差異，例如唔少香港家庭有外傭幫手分擔照顧責任，呢次研究雖然有了解照顧係咪由多於一人分擔，但未有specifically探討外傭呢個角色點樣影響照顧者壓力嘅感受，仍然有待日後研究了解。" data-en-html="The research team themselves named several limitations: the sample size was relatively small (54 owners), drawn through convenience sampling from the oncology service of a single referral hospital in Hong Kong, the CityU Veterinary Medical Centre, so caregivers who sought care at this particular facility may not represent those attending general practices or other specialist hospitals. The study also did not look specifically at burden associated with radiation therapy, so the experience of owners who chose that treatment may be underrepresented. The team noted that the abbreviated Zarit Burden Interview they used is a validated tool shown to correlate well with the full version in its measurement properties, but that validation was carried out in a US population; there may be cultural differences between Hong Kong and the US that shape how caregiving and burden are experienced. One example the authors raised is the presence of paid domestic helpers, a feature fairly unique to Hong Kong households; the study did look at whether caregiving was shared among more than one person, but did not specifically examine the role of domestic helpers in that." style="margin:0;font-size:15px;color:#2E2A26;line-height:1.9;">研究團隊自己喺文中都提出咗幾個限制：樣本數相對小（54位主人），而且屬於便利抽樣，只來自香港城市大學獸醫醫療中心一間轉診醫院的腫瘤科，去呢間機構求診嘅主人，未必能夠代表去普通診所或者其他專科醫院求診嘅主人。研究亦冇specifically探討放射治療相關嘅照顧者壓力，選擇放射治療嘅主人嘅經驗，可能未被充分反映。團隊特別提到，佢哋所用嘅簡化版Zarit照顧者壓力量表（abbreviated ZBI），本身喺測量特性上已經過驗證，同完整版相關性良好——但呢個驗證嘅樣本係美國人口，香港同美國喺照顧文化上可能存在差異，例如唔少香港家庭有外傭幫手分擔照顧責任，呢次研究雖然有了解照顧係咪由多於一人分擔，但未有specifically探討外傭呢個角色點樣影響照顧者壓力嘅感受，仍然有待日後研究了解。</p>
-</div>
-
-<p data-zh-html="原始文獻：Tam, K. M., Giuliano, A., Bukhari, S. S. U. H., &amp;amp;Steagall, P. V. (2026). Caregiver burden in owners of dogs and cats undergoing anticancer therapy in a referral hospital in Hong Kong. &lt;em&gt;Journal of Small Animal Practice, 67&lt;/em&gt;(1), 59–66. https://doi.org/10.1111/jsap.70015" data-en-html="Reference: Tam, K. M., Giuliano, A., Bukhari, S. S. U. H., &amp;amp;Steagall, P. V. (2026). Caregiver burden in owners of dogs and cats undergoing anticancer therapy in a referral hospital in Hong Kong. &lt;em&gt;Journal of Small Animal Practice, 67&lt;/em&gt;(1), 59–66. https://doi.org/10.1111/jsap.70015" style="margin:0;font-size:13px;color:#5E574F;line-height:1.7;">原始文獻：Tam, K. M., Giuliano, A., Bukhari, S. S. U. H., &amp;Steagall, P. V. (2026). Caregiver burden in owners of dogs and cats undergoing anticancer therapy in a referral hospital in Hong Kong. <em>Journal of Small Animal Practice, 67</em>(1), 59–66. https://doi.org/10.1111/jsap.70015</p>
-
-</div>
-</details>
-
-</div>
-
 </div>
 </section>
 
