@@ -79,7 +79,7 @@ window.CONTENT.home = {
           blogTitle: '衛教文章', blogMore: '閱讀全文 →', blogPosts: [ { title: "認識獸醫行業的Burnout：不是你不夠堅強", href: "/vet-burnout.html" } ], blogShare: '分享你的想法與故事 →'
         },
         process: {
-          eyebrow: '輔導流程',
+          eyebrow: '輔導流程', cta: '優先登記',
           title: '三個步驟，按你的步伐開始',
           steps: [
             { n: '01', title: '預約', body: '透過網上預約，選擇合適的時間。' },
@@ -99,7 +99,7 @@ window.CONTENT.home = {
         },
         res: {
           eyebrow: '文章與故事', title: '在預約之前，先讀一點', more: '前往隨筆手記 →',
-          postsTitle: '衛教文章', postsMore: '查看全部 →', toolsTitle: '自我評估工具', otherTitle: '更多',
+          postsTitle: '衛教文章', postsMore: '查看全部 →', toolsTitle: '自我評估工具', toolNames: [ { v: '寵物生活質素評估' }, { v: '焦慮與情緒低落（GAD-7・PHQ-9）' }, { v: '寵物離世哀傷問卷（PBQ-C）' } ], otherTitle: '更多',
           posts: [
             { tag: '衛教文章', title: '寵物離世後，陪你認識哀傷', body: '可能的反應、哀傷的歷程、自助方法，以及甚麼時候要留意。', go: '閱讀文章', href: '/pet-loss-grief.html', tint: '#E3DCE6', img: '', hasImg: false, noImg: true },
             { tag: '衛教文章', title: '末期病患：如何陪自己走過「放手」的掙扎', body: '認識預期性哀傷，附生活質素評估工具。', go: '閱讀文章', href: '/letting-go.html', tint: '#DCE3E6', img: '', hasImg: false, noImg: true },
@@ -114,7 +114,7 @@ window.CONTENT.home = {
             { tag: '獸醫身心健康', title: '給獸醫與醫護的職場身心文章', body: 'Burnout、困難對話、Mental Health Awareness。', go: '閱讀文章', href: '/vets', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
           ]
         },
-        faq: { title: '常見問題' },
+        faq: { title: '常見問題', more: '還有疑問？', mail: '以電郵直接查詢 →' },
         faqs: [
           { q: '預約流程是怎樣的？', a: '① 填寫表單：按本頁「優先登記」按鈕填寫，數分鐘即可完成。\n② 電郵聯繫及免費初步評估：我會以電郵與你聯繫，預約一次免費的簡短初步評估（約 15 分鐘），了解你的需要和目前狀況。如評估後發現你的需要超出我能提供的服務範圍，我會盡力協助你轉介至其他合適的服務。\n③ 確認服務：確認輔導安排，並簽署服務同意書。\n④ 付款後取得服務確認書。\n⑤ 預約第一次輔導：每節 50 分鐘，按你的步伐進行，所有內容保密。' },
           { q: '我怎樣知道自己是否需要輔導？', a: '輔導不只是在「撐不住」時才需要。如果你發現自己有以下情況，都可以考慮找人談談：\n· 持續感到悲傷、內疚、憤怒或麻木\n· 睡眠、胃口、工作或人際關係受到影響\n· 反覆想著同一件事，例如毛孩離世前的決定或某個工作個案\n· 對工作失去熱情，下班後仍放不下\n· 覺得身邊的人不太明白你的感受\n如果不確定，也歡迎先填寫登記表格，我們可以先初步傾談，再一起決定是否適合。' },
@@ -128,11 +128,9 @@ window.CONTENT.home = {
         contact: {
           title: '慢慢來，我在這裡。',
           body: '輔導服務預計於 11 月正式開始。歡迎先填寫優先登記表格，或以電郵查詢。',
-          cta: '優先登記', mail: '電郵查詢', emailK: '電郵',
+          cta: '優先登記', mail: '電郵查詢', emailK: '電郵', blogK: '隨筆手記與衛教文章', blogV: '前往衛教資源 →',
           rows: [
-            { k: '形式', v: '面談或網上視像｜每節 50 分鐘' },
-            { k: '語言', v: '粵語／國語／英語' },
-            { k: 'Instagram / Threads', v: '@dr.heibe_counsellingvet' }
+            { k: 'Instagram / Threads', v: '@heibe.counsellingvet' }
           ],
           crisis: '如你或身邊的人有即時危險，請致電 999 或前往最近的急症室。24 小時精神健康支援熱線「情緒通」18111。'
         },
@@ -202,7 +200,7 @@ window.CONTENT.home = {
           blogTitle: 'Articles', blogMore: 'Read more →', blogPosts: [ { title: "Understanding burnout in the veterinary profession: it's not about being strong enough", href: "/vet-burnout.html" } ], blogShare: 'Share your thoughts and story →'
         },
         process: {
-          eyebrow: 'HOW IT WORKS',
+          eyebrow: 'HOW IT WORKS', cta: 'Register interest',
           title: 'Three steps, at your own pace',
           steps: [
             { n: '01', title: 'Book', body: 'Choose a time that suits you online.' },
@@ -222,7 +220,7 @@ window.CONTENT.home = {
         },
         res: {
           eyebrow: 'ARTICLES & STORIES', title: 'A little reading before you book', more: 'Go to essays →',
-          postsTitle: 'Articles', postsMore: 'View all →', toolsTitle: 'Self-assessment tools', otherTitle: 'More',
+          postsTitle: 'Articles', postsMore: 'View all →', toolsTitle: 'Self-assessment tools', toolNames: [ { v: 'Pet quality of life' }, { v: 'Anxiety & low mood (GAD-7 · PHQ-9)' }, { v: 'Pet bereavement (PBQ-C)' } ], otherTitle: 'More',
           posts: [
             { tag: 'Article', title: 'After pet loss: understanding your grief', body: 'Possible reactions, the grieving process, self-help, and when to seek support.', go: 'Read', href: '/pet-loss-grief.html', tint: '#E3DCE6', img: '', hasImg: false, noImg: true },
             { tag: 'Article', title: 'Terminal illness: finding the strength to let go', body: 'Understanding anticipatory grief, with a quality-of-life assessment tool.', go: 'Read', href: '/letting-go.html', tint: '#DCE3E6', img: '', hasImg: false, noImg: true },
@@ -237,7 +235,7 @@ window.CONTENT.home = {
             { tag: 'Vet wellbeing', title: 'Articles for vets and vet nurses', body: 'Burnout, difficult conversations, mental health awareness.', go: 'Read', href: '/vets', tint: '#D9DCCB', img: 'images/cover-vet-wellbeing.jpg', hasImg: true, noImg: false }
           ]
         },
-        faq: { title: 'Frequently asked questions' },
+        faq: { title: 'Frequently asked questions', more: 'Still have questions?', mail: 'Email me directly →' },
         faqs: [
           { q: 'How does booking work?', a: '① Fill in the form: use the “Register interest” button on this page. It only takes a few minutes.\n② Email contact and free initial screening: I\'ll email you to arrange a free, brief screening call (about 15 minutes) to understand your needs and current situation. If it turns out your needs are beyond what I can offer, I\'ll do my best to help you find other suitable services.\n③ Confirm the service: we agree on the arrangements and you sign the service consent form.\n④ Pay and receive your service confirmation.\n⑤ Book your first session: 50 minutes, at your own pace, in complete confidence.' },
           { q: 'How do I know if I need counselling?', a: 'Counselling isn\'t only for when you can no longer cope. It may be worth talking to someone if you notice:\n· Ongoing sadness, guilt, anger or numbness\n· Changes in your sleep, appetite, work or relationships\n· Going over the same thing again and again, such as a decision before your pet died or a case at work\n· Losing your passion for work, or being unable to switch off after a shift\n· Feeling that the people around you don\'t quite understand\nNot sure? You\'re welcome to fill in the registration form first. We can have a short chat and decide together whether counselling is right for you.' },
@@ -251,11 +249,9 @@ window.CONTENT.home = {
         contact: {
           title: 'Take your time. I\'m here.',
           body: 'Sessions are expected to open in November. Register your interest for priority booking, or get in touch by email.',
-          cta: 'Register interest', mail: 'Email me', emailK: 'Email',
+          cta: 'Register interest', mail: 'Email me', emailK: 'Email', blogK: 'Essays & articles', blogV: 'Go to Resources →',
           rows: [
-            { k: 'Format', v: 'In-person or online video · 50 minutes' },
-            { k: 'Languages', v: 'Cantonese / Mandarin / English' },
-            { k: 'Instagram / Threads', v: '@dr.heibe_counsellingvet' }
+            { k: 'Instagram / Threads', v: '@heibe.counsellingvet' }
           ],
           crisis: 'If you or someone close to you is in immediate danger, call 999 or go to the nearest emergency room. For 24-hour support, call the Mental Health Support Hotline on 18111.'
         },
