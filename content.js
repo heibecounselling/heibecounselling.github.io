@@ -82,11 +82,18 @@ window.CONTENT.home = {
           eyebrow: '輔導流程', cta: '優先登記',
           title: '三個步驟，按你的步伐開始',
           steps: [
-            { n: '01', title: '預約', body: '透過網上預約，選擇合適的時間。' },
+            { n: '01', title: '預約', body: '先預約 20 分鐘免費諮詢，直接在網上選擇合適的時間。' },
             { n: '02', title: '初次傾談', body: '了解你的需要與目標，一起決定最適合你的輔導方式。' },
             { n: '03', title: '持續陪伴', body: '按你的步伐進行輔導，所有內容均嚴格保密。' }
           ],
           format: [ { v: '面談或網上視像' }, { v: '每節 50 分鐘' }, { v: '粵語／國語／英語' } ]
+        },
+        booking: {
+          eyebrow: '免費諮詢', title: '預約 20 分鐘免費諮詢',
+          body: '如果你不確定輔導是否適合自己，可以先預約一次 20 分鐘的免費諮詢。我們會簡單談談你目前的情況和需要，再一起看看下一步。',
+          points: [ { v: '免費，20 分鐘' }, { v: '以 Google Meet 視像進行' }, { v: '直接選擇你方便的日期和時間' }, { v: '不涉及醫療診斷或第二意見' } ],
+          note: '預約後，你會收到確認電郵和 Google Meet 連結。如未能看到預約日曆，可按這裡開啟預約頁面。',
+          open: '開啟預約頁面'
         },
         notice: {
           eyebrow: "IMPORTANT NOTICE", title: "服務說明與須知",
@@ -116,7 +123,7 @@ window.CONTENT.home = {
         },
         faq: { title: '常見問題', more: '還有疑問？', mail: '以電郵直接查詢 →' },
         faqs: [
-          { q: '預約流程是怎樣的？', a: '① 填寫表單：按本頁「優先登記」按鈕填寫，數分鐘即可完成。\n② 電郵聯繫及免費初步評估：我會以電郵與你聯繫，預約一次免費的簡短初步評估（約 15 分鐘），了解你的需要和目前狀況。如評估後發現你的需要超出我能提供的服務範圍，我會盡力協助你轉介至其他合適的服務。\n③ 確認服務：確認輔導安排，並簽署服務同意書。\n④ 付款後取得服務確認書。\n⑤ 預約第一次輔導：每節 50 分鐘，按你的步伐進行，所有內容保密。' },
+          { q: '預約流程是怎樣的？', a: '① 預約免費諮詢：在本頁「預約 20 分鐘免費諮詢」直接選擇日期和時間。\n② 免費諮詢（20 分鐘，Google Meet）：了解你的需要和目前狀況。如諮詢後發現你的需要超出我能提供的服務範圍，我會盡力協助你轉介至其他合適的服務。\n③ 確認服務：確認輔導安排，並簽署服務同意書。\n④ 付款後取得服務確認書。\n⑤ 預約第一次輔導：每節 50 分鐘，按你的步伐進行，所有內容保密。' },
           { q: '我怎樣知道自己是否需要輔導？', a: '輔導不只是在「撐不住」時才需要。如果你發現自己有以下情況，都可以考慮找人談談：\n· 持續感到悲傷、內疚、憤怒或麻木\n· 睡眠、胃口、工作或人際關係受到影響\n· 反覆想著同一件事，例如毛孩離世前的決定或某個工作個案\n· 對工作失去熱情，下班後仍放不下\n· 覺得身邊的人不太明白你的感受\n如果不確定，也歡迎先填寫登記表格，我們可以先初步傾談，再一起決定是否適合。' },
           { q: '輔導和看獸醫有甚麼不同？', a: '輔導專注於你的情緒與想法，不涉及診斷或治療建議。我會陪你整理感受與顧慮，讓你更有力量與主診獸醫溝通。' },
           { q: '毛孩離開很久了，還適合尋求輔導嗎？', a: '哀傷沒有時間表。無論是數天還是數年，只要它仍影響你的生活，都值得被聆聽。' },
@@ -203,11 +210,18 @@ window.CONTENT.home = {
           eyebrow: 'HOW IT WORKS', cta: 'Register interest',
           title: 'Three steps, at your own pace',
           steps: [
-            { n: '01', title: 'Book', body: 'Choose a time that suits you online.' },
+            { n: '01', title: 'Book', body: 'Start with a free 20-minute consultation, booked online at a time that suits you.' },
             { n: '02', title: 'First conversation', body: 'We talk through what you need and agree on the approach that suits you best.' },
             { n: '03', title: 'Ongoing support', body: 'We continue at your pace, in complete confidence.' }
           ],
           format: [ { v: 'In-person or online video' }, { v: '50-minute sessions' }, { v: 'Cantonese / Mandarin / English' } ]
+        },
+        booking: {
+          eyebrow: 'FREE CONSULTATION', title: 'Book a free 20-minute consultation',
+          body: 'If you\'re not sure whether counselling is right for you, you\'re welcome to book a free 20-minute consultation. We\'ll talk briefly about where you are and what you need, then think about the next step together.',
+          points: [ { v: 'Free, 20 minutes' }, { v: 'Online via Google Meet' }, { v: 'Pick a date and time that suits you' }, { v: 'No medical diagnosis or second opinion' } ],
+          note: 'Once booked, you\'ll receive a confirmation email with a Google Meet link. If the calendar doesn\'t load, you can open the booking page here.',
+          open: 'Open booking page'
         },
         notice: {
           eyebrow: "IMPORTANT NOTICE", title: "About the service",
@@ -237,7 +251,7 @@ window.CONTENT.home = {
         },
         faq: { title: 'Frequently asked questions', more: 'Still have questions?', mail: 'Email me directly →' },
         faqs: [
-          { q: 'How does booking work?', a: '① Fill in the form: use the “Register interest” button on this page. It only takes a few minutes.\n② Email contact and free initial screening: I\'ll email you to arrange a free, brief screening call (about 15 minutes) to understand your needs and current situation. If it turns out your needs are beyond what I can offer, I\'ll do my best to help you find other suitable services.\n③ Confirm the service: we agree on the arrangements and you sign the service consent form.\n④ Pay and receive your service confirmation.\n⑤ Book your first session: 50 minutes, at your own pace, in complete confidence.' },
+          { q: 'How does booking work?', a: '① Book a free consultation: pick a date and time in “Book a free 20-minute consultation” on this page.\n② Free consultation (20 minutes, Google Meet): we talk about your needs and current situation. If it turns out your needs are beyond what I can offer, I\'ll do my best to help you find other suitable services.\n③ Confirm the service: we agree on the arrangements and you sign the service consent form.\n④ Pay and receive your service confirmation.\n⑤ Book your first session: 50 minutes, at your own pace, in complete confidence.' },
           { q: 'How do I know if I need counselling?', a: 'Counselling isn\'t only for when you can no longer cope. It may be worth talking to someone if you notice:\n· Ongoing sadness, guilt, anger or numbness\n· Changes in your sleep, appetite, work or relationships\n· Going over the same thing again and again, such as a decision before your pet died or a case at work\n· Losing your passion for work, or being unable to switch off after a shift\n· Feeling that the people around you don\'t quite understand\nNot sure? You\'re welcome to fill in the registration form first. We can have a short chat and decide together whether counselling is right for you.' },
           { q: 'How is counselling different from seeing a vet?', a: 'Counselling focuses on your feelings and thoughts; it doesn\'t involve diagnosis or treatment advice. I can help you sort through what you\'re feeling, so you can talk with your vet more clearly.' },
           { q: 'My pet passed away a long time ago. Is counselling still for me?', a: 'Grief has no timetable. Whether it has been days or years, if it still affects your life, it deserves to be heard.' },
