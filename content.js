@@ -16,13 +16,13 @@ window.CONTENT = {};
  * ============================================================ */
 window.CONTENT.home = {
       zh: {
-        nav: { about: '關於我', owners: '服務內容', vets: '獸醫同業專區', blog: '隨筆手記', faq: '常見問題', book: '優先登記', resources: '衛教資源', assessment: '寵物離世哀傷評估', petLossZone: '寵物離世專區', caregiverZone: '照顧者情緒支援專區' },
+        nav: { about: '關於我', owners: '服務內容', vets: '獸醫同業專區', blog: '隨筆手記', faq: '常見問題', book: '登記服務', resources: '衛教資源', assessment: '寵物離世哀傷評估', petLossZone: '寵物離世專區', caregiverZone: '照顧者情緒支援專區' },
         hero: {
           eyebrow: '寵物哀傷輔導 · 獸醫業界心理支援',
           l1: '用獸醫的角度照顧動物，', l2: '用輔導的視角理解人',
           body: '無論你正面對毛孩離世、照顧患病毛孩的疲累，還是在獸醫工作中感到身心疲憊，這裡是一個可以慢慢說、不必急著堅強的空間。',
-          cta: '優先登記', cta2: '認識 Dr. Heibe',
-          launch: '輔導服務預計於 11 月正式開始，歡迎先優先登記。',
+          cta: '登記服務', cta2: '認識 Dr. Heibe',
+          launch: '輔導服務已開放登記，歡迎先預約 20 分鐘免費諮詢。',
           p1: '我是寵物主人', p1d: '失去毛孩、照顧年老或患病的毛孩、面對艱難的醫療抉擇',
           p2: '我是獸醫同業', p2d: '為獸醫、獸醫護士及診所團隊而設的心理支援'
         },
@@ -79,7 +79,7 @@ window.CONTENT.home = {
           blogTitle: '衛教文章', blogMore: '閱讀全文 →', blogPosts: [ { title: "認識獸醫行業的Burnout：不是你不夠堅強", href: "/vet-burnout.html" } ], blogShare: '分享你的想法與故事 →'
         },
         process: {
-          eyebrow: '輔導流程', cta: '優先登記',
+          eyebrow: '輔導流程', cta: '登記服務',
           title: '三個步驟，按你的步伐開始',
           steps: [
             { n: '01', title: '預約', body: '先預約 20 分鐘免費諮詢，直接在網上選擇合適的時間。' },
@@ -88,16 +88,12 @@ window.CONTENT.home = {
           ],
           format: [ { v: '面談或網上視像' }, { v: '每節 50 分鐘' }, { v: '粵語／國語／英語' } ]
         },
-        booking: {
-          eyebrow: '免費諮詢', title: '預約 20 分鐘免費諮詢',
-          body: '如果你不確定輔導是否適合自己，可以先預約一次 20 分鐘的免費諮詢。我們會簡單談談你目前的情況和需要，再一起看看下一步。',
-          points: [ { v: '免費，20 分鐘' }, { v: '以 Google Meet 視像進行' }, { v: '直接選擇你方便的日期和時間' }, { v: '不涉及醫療診斷或第二意見' } ],
-          note: '預約後，你會收到確認電郵和 Google Meet 連結。如未能看到預約日曆，可按這裡開啟預約頁面。',
-          open: '開啟預約頁面'
-        },
+        booking: {"eyebrow": "登記服務", "title": "選擇適合你的服務", "body": "你可以先預約 20 分鐘免費諮詢，了解個人輔導是否適合你；也可以登記參加小組或工作坊，我會把近期活動的日期和詳情電郵給你。", "svc": [{"tag": "一對一", "title": "個人輔導", "meta": "面談或網上視像 · 每節 50 分鐘", "body": "寵物哀傷、照顧者壓力、醫療決定後的情緒，以及獸醫同業的工作壓力。", "cta": "預約 20 分鐘免費諮詢", "href": "#consult"}, {"tag": "小組 · 4–6 人", "title": "寵物哀傷敘事治療團體", "meta": "面談 · 小組形式", "body": "透過敘事治療，在同路人之間重新述說你和牠的故事，整理思念，找到繼續連結的方式。", "cta": "電郵登記", "href": "mailto:dr.heibelau.work@gmail.com?subject=%E7%99%BB%E8%A8%98%EF%BC%9A%E5%AF%B5%E7%89%A9%E5%93%80%E5%82%B7%E6%95%98%E4%BA%8B%E6%B2%BB%E7%99%82%E5%9C%98%E9%AB%94&body=%E5%A7%93%E5%90%8D%EF%BC%9A%0A%E9%9B%BB%E8%A9%B1%EF%BC%9A%0A%E5%AF%B5%E7%89%A9%E7%9A%84%E5%90%8D%E5%AD%97%E5%8F%8A%E7%A8%AE%E9%A1%9E%EF%BC%9A%0A%E6%96%B9%E4%BE%BF%E7%9A%84%E6%97%A5%E5%AD%90%E6%88%96%E6%99%82%E6%AE%B5%EF%BC%9A%0A"}, {"tag": "工作坊 · 上限 15 人", "title": "照顧者藝術工作坊", "meta": "面談 · 工作坊形式", "body": "給正在照顧年老或患病寵物的你：透過藝術創作，放下一點疲累，照顧自己的情緒。", "cta": "電郵登記", "href": "mailto:dr.heibelau.work@gmail.com?subject=%E7%99%BB%E8%A8%98%EF%BC%9A%E7%85%A7%E9%A1%A7%E8%80%85%E8%97%9D%E8%A1%93%E5%B7%A5%E4%BD%9C%E5%9D%8A&body=%E5%A7%93%E5%90%8D%EF%BC%9A%0A%E9%9B%BB%E8%A9%B1%EF%BC%9A%0A%E7%85%A7%E9%A1%A7%E4%B8%AD%E7%9A%84%E5%AF%B5%E7%89%A9%E5%8F%8A%E6%83%85%E6%B3%81%EF%BC%9A%0A%E6%96%B9%E4%BE%BF%E7%9A%84%E6%97%A5%E5%AD%90%E6%88%96%E6%99%82%E6%AE%B5%EF%BC%9A%0A"}], "groupNote": "按「電郵登記」會開啟電郵，寫上你的資料後寄出即可。收到登記後，我會把近期活動的日期和詳情電郵給你，你可以按自己的時間選擇和報名。", "cTitle": "預約 20 分鐘免費諮詢", "steps": [{"v": "① 選擇日期和時間"}, {"v": "② 填寫資料，並在最後確認聲明"}, {"v": "③ 收到確認電郵和 Google Meet 連結"}], "disclaimerH": "免費諮詢須知", "disclaimer": "免費諮詢旨在初步了解你的需要和介紹服務內容，並不構成正式輔導，亦不建立輔導關係，也不提供醫療診斷或獸醫第二意見。正式輔導須在你簽署服務同意書及保密協議，並完成付款後才開始。如你正處於情緒危機，請致電「情緒通」18111 或前往就近急症室。", "flowH": "正式輔導流程", "flow": "免費諮詢 → 簽署服務同意書及保密協議 → 付款並取得服務確認書 → 第一節輔導", "noticeLink": "閱讀服務說明與須知 →", "note": "如未能看到預約日曆，可按這裡開啟預約頁面。", "open": "開啟預約頁面"},
         notice: {
           eyebrow: "IMPORTANT NOTICE", title: "服務說明與須知",
           items: [
+            {"h": "免費諮詢", "b": "免費諮詢旨在初步了解你的需要和介紹服務內容，並不構成正式輔導，亦不建立輔導關係，也不提供醫療診斷或獸醫第二意見。正式輔導須在你簽署服務同意書及保密協議，並完成付款後才開始。如需改期或取消免費諮詢，請使用確認電郵內的連結。"},
+            {"h": "收集個人資料聲明", "b": "你在預約或登記時提供的個人資料（例如姓名、電話、電郵及你分享的情況），只會用於聯絡你、安排及提供輔導服務。預約系統由 Calendly 及 Google 提供，資料會儲存在這些服務上。除法律要求外，我們不會把你的資料轉交其他第三方。你有權查閱及更正你的個人資料，請電郵 dr.heibelau.work@gmail.com。"},
             { h: "輔導服務的性質", b: "Dr. Heibe 提供的是情緒支持與陪伴，協助你理解獸醫已提供的醫療資訊、消化情緒、釐清想法。這不是醫療診斷，也不能取代獸醫的專業意見或獨立第二意見；如你正處於情緒危機或有傷害自己的念頭，請立即撥打「情緒通」18111，或前往就近急症室求助。是否接受輔導、何時開始或結束，決定權在你；個案內容可能在保密及匿名原則下接受專業督導討論，不會透露任何足以辨識你身份的資訊。" },
             { h: "保密與其限制", b: "除非你同意，輔導內容不會透露給第三方。以下情況為例外：你或第三方有立即、嚴重的傷害風險；懷疑兒童或其他易受傷害人士遭受虐待；法律要求必須揭露資料（例如法庭命令）。" },
             { h: "雙重角色與專業界線", b: "Dr. Heibe 同時具備獸醫與輔導員身份。如你的個案涉及她過去曾以獸醫身份直接診治的動物，會在提供輔導服務前主動告知，並與你討論是否適合繼續或轉介。" },
@@ -124,18 +120,18 @@ window.CONTENT.home = {
         faq: { title: '常見問題', more: '還有疑問？', mail: '以電郵直接查詢 →' },
         faqs: [
           { q: '預約流程是怎樣的？', a: '① 預約免費諮詢：在本頁「預約 20 分鐘免費諮詢」直接選擇日期和時間。\n② 免費諮詢（20 分鐘，Google Meet）：了解你的需要和目前狀況。如諮詢後發現你的需要超出我能提供的服務範圍，我會盡力協助你轉介至其他合適的服務。\n③ 確認服務：確認輔導安排，並簽署服務同意書。\n④ 付款後取得服務確認書。\n⑤ 預約第一次輔導：每節 50 分鐘，按你的步伐進行，所有內容保密。' },
-          { q: '我怎樣知道自己是否需要輔導？', a: '輔導不只是在「撐不住」時才需要。如果你發現自己有以下情況，都可以考慮找人談談：\n· 持續感到悲傷、內疚、憤怒或麻木\n· 睡眠、胃口、工作或人際關係受到影響\n· 反覆想著同一件事，例如毛孩離世前的決定或某個工作個案\n· 對工作失去熱情，下班後仍放不下\n· 覺得身邊的人不太明白你的感受\n如果不確定，也歡迎先填寫登記表格，我們可以先初步傾談，再一起決定是否適合。' },
+          { q: '我怎樣知道自己是否需要輔導？', a: '輔導不只是在「撐不住」時才需要。如果你發現自己有以下情況，都可以考慮找人談談：\n· 持續感到悲傷、內疚、憤怒或麻木\n· 睡眠、胃口、工作或人際關係受到影響\n· 反覆想著同一件事，例如毛孩離世前的決定或某個工作個案\n· 對工作失去熱情，下班後仍放不下\n· 覺得身邊的人不太明白你的感受\n如果不確定，也歡迎先預約 20 分鐘免費諮詢，我們可以先初步傾談，再一起決定是否適合。' },
           { q: '輔導和看獸醫有甚麼不同？', a: '輔導專注於你的情緒與想法，不涉及診斷或治療建議。我會陪你整理感受與顧慮，讓你更有力量與主診獸醫溝通。' },
           { q: '毛孩離開很久了，還適合尋求輔導嗎？', a: '哀傷沒有時間表。無論是數天還是數年，只要它仍影響你的生活，都值得被聆聽。' },
           { q: '我是獸醫／獸醫護士，同行身份會令我尷尬嗎？', a: '所有輔導內容均嚴格保密（法律規定的例外情況除外），我不會向任何人揭示你正在接受輔導、你的個人身分，以及輔導期間分享的私人內容。除非你願意，否則無需公開你所在診所和同事的真實姓名。在輔導空間內，我們的身分是輔導員（我）和客戶（你），輔導的內容及方式以你的最大利益為優先。正因為我了解這個行業，你不必花時間解釋工作背景，可以更快談到真正困擾你的事。' },
           { q: '輔導內容會保密嗎？', a: '會。除涉及人身安全等法律規定的例外情況外，所有內容均嚴格保密，並會在初次傾談時清楚說明及簽署保密協議書和服務同意書。' },
-          { q: '輔導形式和收費是怎樣的？', a: '可選擇面談或網上視像，每節 50 分鐘，以粵語、國語或英語進行。服務預計於 11 月正式開始，收費將於優先登記後通知。機構方案請洽談報價。' },
+          { q: '輔導形式和收費是怎樣的？', a: '可選擇面談或網上視像，每節 50 分鐘，以粵語、國語或英語進行。收費會在免費諮詢時說明。機構方案請洽談報價。' },
           { q: '面談和網上視像輔導，應該怎樣選擇？', a: '兩種形式同樣保密，可按你的生活節奏和需要選擇：\n· 網上視像：適合時間緊湊、需要輪班，或想在熟悉環境（例如家中）傾談的人。請預備一個安靜、不會被打擾的私人空間及穩定的網絡。\n· 面談：適合希望暫時離開日常環境、專心面對面傾談的人。\n你可以隨時轉換形式，我們會在初次聯絡時一起決定最合適的安排。' }
         ],
         contact: {
           title: '慢慢來，我在這裡。',
-          body: '輔導服務預計於 11 月正式開始。歡迎先填寫優先登記表格，或以電郵查詢。',
-          cta: '優先登記', mail: '電郵查詢', emailK: '電郵', blogK: '隨筆手記與衛教文章', blogV: '前往衛教資源 →',
+          body: '輔導服務已開放登記。歡迎預約 20 分鐘免費諮詢，或以電郵查詢。',
+          cta: '登記服務', mail: '電郵查詢', emailK: '電郵', blogK: '隨筆手記與衛教文章', blogV: '前往衛教資源 →',
           rows: [
             { k: 'Instagram / Threads', v: '@heibe.counsellingvet' }
           ],
@@ -144,13 +140,13 @@ window.CONTENT.home = {
         foot: { home: '首頁', vets: '獸醫同業', blog: '衛教資源' }
       },
       en: {
-        nav: { about: 'About', owners: 'Our services', vets: 'For vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Register interest', resources: 'Resources', assessment: 'Pet bereavement assessment', petLossZone: 'Pet Loss', caregiverZone: 'Caregiver Support' },
+        nav: { about: 'About', owners: 'Our services', vets: 'For vet professionals', blog: 'Blog', faq: 'FAQ', book: 'Our services', resources: 'Resources', assessment: 'Pet bereavement assessment', petLossZone: 'Pet Loss', caregiverZone: 'Caregiver Support' },
         hero: {
           eyebrow: 'PET BEREAVEMENT COUNSELLING · WELLBEING SUPPORT FOR VET TEAMS',
           l1: 'Caring for animals as\u00a0a\u00a0vet,', l2: 'understanding people as\u00a0a\u00a0counsellor',
           body: 'Whether you\'re grieving a pet, worn down by caring for one who is ill, or exhausted by the demands of veterinary work, this is a space to talk at your own pace, with no rush to be strong.',
-          cta: 'Register interest', cta2: 'Meet Dr. Heibe',
-          launch: 'Sessions are expected to open in November. Register your interest now for priority booking.',
+          cta: 'Our services', cta2: 'Meet Dr. Heibe',
+          launch: 'Counselling is now open. You\'re welcome to start with a free 20-minute consultation.',
           p1: 'I\'m a pet owner', p1d: 'Losing a pet, caring for an older or ill pet, or facing a hard decision',
           p2: 'I work in veterinary care', p2d: 'Support for vets, vet nurses and clinic teams'
         },
@@ -207,7 +203,7 @@ window.CONTENT.home = {
           blogTitle: 'Articles', blogMore: 'Read more →', blogPosts: [ { title: "Understanding burnout in the veterinary profession: it's not about being strong enough", href: "/vet-burnout.html" } ], blogShare: 'Share your thoughts and story →'
         },
         process: {
-          eyebrow: 'HOW IT WORKS', cta: 'Register interest',
+          eyebrow: 'HOW IT WORKS', cta: 'Our services',
           title: 'Three steps, at your own pace',
           steps: [
             { n: '01', title: 'Book', body: 'Start with a free 20-minute consultation, booked online at a time that suits you.' },
@@ -216,16 +212,12 @@ window.CONTENT.home = {
           ],
           format: [ { v: 'In-person or online video' }, { v: '50-minute sessions' }, { v: 'Cantonese / Mandarin / English' } ]
         },
-        booking: {
-          eyebrow: 'FREE CONSULTATION', title: 'Book a free 20-minute consultation',
-          body: 'If you\'re not sure whether counselling is right for you, you\'re welcome to book a free 20-minute consultation. We\'ll talk briefly about where you are and what you need, then think about the next step together.',
-          points: [ { v: 'Free, 20 minutes' }, { v: 'Online via Google Meet' }, { v: 'Pick a date and time that suits you' }, { v: 'No medical diagnosis or second opinion' } ],
-          note: 'Once booked, you\'ll receive a confirmation email with a Google Meet link. If the calendar doesn\'t load, you can open the booking page here.',
-          open: 'Open booking page'
-        },
+        booking: {"eyebrow": "OUR SERVICES", "title": "Find the support that suits you", "body": "You can start with a free 20-minute consultation to see whether individual counselling is right for you, or register for a group or workshop and I'll email you the dates and details of upcoming sessions.", "svc": [{"tag": "One-to-one", "title": "Individual counselling", "meta": "In person or by video · 50-minute sessions", "body": "Pet bereavement, caregiver stress, feelings after medical decisions, and work stress for veterinary professionals.", "cta": "Book a free 20-minute consultation", "href": "#consult"}, {"tag": "Group · 4–6 people", "title": "Narrative therapy group for pet bereavement", "meta": "In person · small group", "body": "Using narrative therapy, retell your story with your pet among people who understand, make sense of missing them, and find ways to stay connected.", "cta": "Register by email", "href": "mailto:dr.heibelau.work@gmail.com?subject=Registration%3A%20Narrative%20therapy%20group%20for%20pet%20bereavement&body=Name%3A%0APhone%3A%0AYour%20pet%27s%20name%20and%20species%3A%0APreferred%20days%20or%20times%3A%0A"}, {"tag": "Workshop · up to 15", "title": "Art workshop for caregivers", "meta": "In person · workshop", "body": "For those caring for an elderly or sick pet: set down some of the tiredness through art-making, and care for your own feelings.", "cta": "Register by email", "href": "mailto:dr.heibelau.work@gmail.com?subject=Registration%3A%20Art%20workshop%20for%20caregivers&body=Name%3A%0APhone%3A%0AThe%20pet%20you%27re%20caring%20for%20and%20their%20condition%3A%0APreferred%20days%20or%20times%3A%0A"}], "groupNote": "\"Register by email\" opens a new email. Add your details and send it. Once I receive it, I'll email you the dates and details of upcoming sessions so you can choose and sign up when it suits you.", "cTitle": "Book a free 20-minute consultation", "steps": [{"v": "① Choose a date and time"}, {"v": "② Fill in your details and confirm the declaration at the end"}, {"v": "③ Receive a confirmation email with a Google Meet link"}], "disclaimerH": "About the free consultation", "disclaimer": "The free consultation is a chance to understand your needs and introduce the service. It is not formal counselling, does not establish a counselling relationship, and does not provide a medical diagnosis or a veterinary second opinion. Formal counselling begins only after you have signed the service agreement and confidentiality agreement and completed payment. If you are in emotional crisis, please call the 18111 Mental Health Support Hotline or go to your nearest A&E.", "flowH": "How formal counselling begins", "flow": "Free consultation → sign the service agreement and confidentiality agreement → payment and service confirmation → first session", "noticeLink": "Read the service notes →", "note": "If the calendar doesn't load, you can open the booking page here.", "open": "Open booking page"},
         notice: {
           eyebrow: "IMPORTANT NOTICE", title: "About the service",
           items: [
+            {"h": "Free consultation", "b": "The free consultation is a chance to understand your needs and introduce the service. It is not formal counselling, does not establish a counselling relationship, and does not provide a medical diagnosis or a veterinary second opinion. Formal counselling begins only after you have signed the service agreement and confidentiality agreement and completed payment. To reschedule or cancel a free consultation, please use the link in your confirmation email."},
+            {"h": "Personal information collection statement", "b": "The personal information you provide when booking or registering (such as your name, phone number, email and anything you share about your situation) is used only to contact you and to arrange and provide counselling services. Bookings are handled by Calendly and Google, and your information is stored on these services. Except where required by law, your information will not be passed to any other third party. You have the right to access and correct your personal information. Please email dr.heibelau.work@gmail.com."},
             { h: "Nature of the service", b: "Dr. Heibe offers emotional support and companionship: helping you make sense of the medical information your vet has already given you, process your emotions and clarify your thoughts. This is not a medical diagnosis, and it cannot replace your vet's professional advice or an independent second opinion. If you are in an emotional crisis or having thoughts of harming yourself, call the 24-hour Mental Health Support Hotline on 18111 now, or go to your nearest Accident & Emergency department. Whether to start, continue or end counselling is always your choice. Your case may be discussed in professional supervision, kept confidential and anonymised, with nothing that could identify you." },
             { h: "Confidentiality and its limits", b: "What you share in counselling stays private unless you agree otherwise. The exceptions are: an immediate, serious risk of harm to you or someone else; suspected abuse of a child or another vulnerable person; or when the law requires disclosure (for example, a court order)." },
             { h: "Dual roles and professional boundaries", b: "Dr. Heibe is both a vet and a counsellor. If your case involves an animal she has treated as a vet, she will tell you before counselling begins and talk with you about whether to continue or be referred elsewhere." },
@@ -252,18 +244,18 @@ window.CONTENT.home = {
         faq: { title: 'Frequently asked questions', more: 'Still have questions?', mail: 'Email me directly →' },
         faqs: [
           { q: 'How does booking work?', a: '① Book a free consultation: pick a date and time in “Book a free 20-minute consultation” on this page.\n② Free consultation (20 minutes, Google Meet): we talk about your needs and current situation. If it turns out your needs are beyond what I can offer, I\'ll do my best to help you find other suitable services.\n③ Confirm the service: we agree on the arrangements and you sign the service consent form.\n④ Pay and receive your service confirmation.\n⑤ Book your first session: 50 minutes, at your own pace, in complete confidence.' },
-          { q: 'How do I know if I need counselling?', a: 'Counselling isn\'t only for when you can no longer cope. It may be worth talking to someone if you notice:\n· Ongoing sadness, guilt, anger or numbness\n· Changes in your sleep, appetite, work or relationships\n· Going over the same thing again and again, such as a decision before your pet died or a case at work\n· Losing your passion for work, or being unable to switch off after a shift\n· Feeling that the people around you don\'t quite understand\nNot sure? You\'re welcome to fill in the registration form first. We can have a short chat and decide together whether counselling is right for you.' },
+          { q: 'How do I know if I need counselling?', a: 'Counselling isn\'t only for when you can no longer cope. It may be worth talking to someone if you notice:\n· Ongoing sadness, guilt, anger or numbness\n· Changes in your sleep, appetite, work or relationships\n· Going over the same thing again and again, such as a decision before your pet died or a case at work\n· Losing your passion for work, or being unable to switch off after a shift\n· Feeling that the people around you don\'t quite understand\nNot sure? You\'re welcome to book a free 20-minute consultation first. We can have a short chat and decide together whether counselling is right for you.' },
           { q: 'How is counselling different from seeing a vet?', a: 'Counselling focuses on your feelings and thoughts; it doesn\'t involve diagnosis or treatment advice. I can help you sort through what you\'re feeling, so you can talk with your vet more clearly.' },
           { q: 'My pet passed away a long time ago. Is counselling still for me?', a: 'Grief has no timetable. Whether it has been days or years, if it still affects your life, it deserves to be heard.' },
           { q: 'I\'m a vet or vet nurse. Will it feel awkward to see someone from the same field?', a: 'Everything is strictly confidential (apart from legally required exceptions). I will never tell anyone that you are in counselling, who you are, or anything personal you share in our sessions. Unless you choose to, you never need to name your clinic or colleagues. In our sessions, I am your counsellor and you are my client, and everything we do is guided by your best interests. Because I know the industry, you won\'t need to explain how it works, so we can get to what\'s really troubling you sooner.' },
           { q: 'Is what I share confidential?', a: 'Yes. Apart from legally required exceptions such as risk to safety, everything is kept strictly confidential. I explain this clearly in our first conversation, and we sign a confidentiality agreement and a service consent form.' },
-          { q: 'What is the format, and how much does it cost?', a: 'Sessions are 50 minutes, in person or by video, in Cantonese, Mandarin or English. Services are expected to open in November, and fees will be shared with everyone who registers their interest. Organisations are welcome to ask for a quote.' },
+          { q: 'What is the format, and how much does it cost?', a: 'Sessions are 50 minutes, in person or by video, in Cantonese, Mandarin or English. Fees will be explained during the free consultation. Organisations are welcome to ask for a quote.' },
           { q: 'Should I choose in-person or online counselling?', a: 'Both are equally confidential. Choose whichever fits your life and needs:\n· Online video: good if your schedule is tight, you work shifts, or you\'d rather talk somewhere familiar such as home. Please find a quiet, private space where you won\'t be interrupted, with a stable internet connection.\n· In person: good if you\'d like to step away from your everyday surroundings and talk face to face.\nYou can switch between formats at any time; we\'ll decide on the best arrangement together when we first talk.' }
         ],
         contact: {
           title: 'Take your time. I\'m here.',
-          body: 'Sessions are expected to open in November. Register your interest for priority booking, or get in touch by email.',
-          cta: 'Register interest', mail: 'Email me', emailK: 'Email', blogK: 'Essays & articles', blogV: 'Go to Resources →',
+          body: 'Counselling is now open. Book a free 20-minute consultation, or get in touch by email.',
+          cta: 'Our services', mail: 'Email me', emailK: 'Email', blogK: 'Essays & articles', blogV: 'Go to Resources →',
           rows: [
             { k: 'Instagram / Threads', v: '@heibe.counsellingvet' }
           ],
@@ -452,7 +444,7 @@ window.CONTENT.essays = {
       "owners": "寵物主人",
       "vets": "獸醫同業",
       "wall": "寵物牆",
-      "book": "優先登記"
+      "book": "登記服務"
     },
     "hero": {
       "eyebrow": "隨筆 · Blog",
@@ -592,7 +584,7 @@ window.CONTENT.essays = {
       "owners": "Pet owners",
       "vets": "Vet professionals",
       "wall": "Pet Wall",
-      "book": "Register interest"
+      "book": "Our services"
     },
     "hero": {
       "eyebrow": "Blog",
@@ -733,7 +725,7 @@ window.CONTENT.blog = {
     "nav": {
       "home": "首頁",
       "essays": "隨筆手記",
-      "book": "優先登記"
+      "book": "登記服務"
     },
     "hero": {
       "eyebrow": "寵物牆 · SHARE YOUR STORY",
@@ -805,7 +797,7 @@ window.CONTENT.blog = {
     "nav": {
       "home": "Home",
       "essays": "Essays",
-      "book": "Register interest"
+      "book": "Our services"
     },
     "hero": {
       "eyebrow": "PET WALL · SHARE YOUR STORY",
